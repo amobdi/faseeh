@@ -1,0 +1,7 @@
+.env
+*.pyc
+*~
+.DS_Store
+build/
+logs/
+fasseh.egg-info

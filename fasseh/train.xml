@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+		<pattern>WHAT UPPER ONTOLOGY</pattern>
+		<template>
+			The general framework of concepts.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * UPPER ONTOLOGY *</pattern>
+		<template>
+			The general framework of concepts.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * UPPER ONTOLOGY</pattern>
+		<template>
+			The general framework of concepts.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * ONTOLOGICAL ENGINEERING</pattern>
+		<template>
+			Representing abstract concepts such as Events, Time, Physical Objects, and Beliefs that occur in many different domains.
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * INTRODUCE * CLASSES *.</pattern>
+		<template>
+			by describing the technology (TTL, CMOS, and so on) as well as the input–output specification. If we wanted to discuss reliability or diagnosis, we would include the possibility that the structure of the circuit or the properties of the gates might change spontaneously. To account for stray capacitances, we would need to represent where the wires are on the board.
+		</template>
+	</category>
+	<category>
+		<pattern>* GENERAL-PURPOSE ONTOLOGY * DIFFER * SPECIAL-PURPOSE ONTOLOGIES</pattern>
+		<template>
+			A general-purpose ontology should be applicable in more or less any special-purpose domain (with the addition of domain-specific axioms). This means that no representational issue can be finessed or brushed under the carpet. In any sufficiently demanding domain, different areas of knowledge must be unified, because reasoning and problem solving could involve several areas simultaneously. A robot circuit-repair system, for instance, needs to reason about circuits in terms of electrical connectivity and physical layout, and about time, both for circuit timing analysis and estimating labor costs. The sentences describing time therefore must be capable of being combined with those describing spatial layout and must work equally well for nanoseconds and minutes and for angstroms and meters.
+		</template>
+	</category>
+	<category>
+		<pattern>* ROUTES * BUILD * EXISTING ONTOLOGIES</pattern>
+		<template>
+			1. By a team of trained ontologist/logicians, who architect the ontology and write axioms. The CYC system was mostly built this way (Lenat and Guha, 1990). 2. By importing categories, attributes, and values from an existing database or databases. DBPEDIA was built by importing structured facts from Wikipedia (Bizer et al., 2007). 3. By parsing text documents and extracting information from them. TEXTRUNNER was built by reading a large corpus of Web pages (Banko and Etzioni, 2008). 4. By enticing unskilled amateurs to enter commonsense knowledge. The OPENMIND system was built by volunteers who proposed facts in English (Singh et al., 2002; Chklovski and Gil, 2005).
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * DEFINITION * REIFICATION</pattern>
+		<template>
+			Turning a proposition into an object is called reification.
+		</template>
+	</category>
+	<category>
+		<pattern>CATEGORIES * EXAMPLES</pattern>
+		<template>
+			• An object is a member of a category. BB9 ∈ Basketballs • A category is a subclass of another category. Basketballs ⊂ Balls • All members of a category have some properties. (x∈ Basketballs) ⇒ Spherical(x) • Members of a category can be recognized by some properties. Orange(x) ∧ Round(x) ∧ Diameter(x)=9.5 ∧ x∈ Balls ⇒ x∈ Basketballs • A category as a whole has some properties. Dogs ∈ DomesticatedSpecies
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * DISJOINT CATEGORIES</pattern>
+		<template>
+			two or more categories are disjoint if they have no members in common.
+		</template>
+	</category>
+	<category>
+		<pattern>CHARACTERISTIC * CATEGORIES * COMPOSITE OBJECTS</pattern>
+		<template>
+			Categories of composite objects are often characterized by structural relations among parts.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * LOGICAL MINIMIZATION</pattern>
+		<template>
+			logical minimization means defining an object as the smallest one satisfying certain conditions.
+		</template>
+	</category>
+	<category>
+		<pattern>WHEN * OBJECT * TRIANGLE</pattern>
+		<template>
+			an object is a triangle if and only if it is a polygon with three sides.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * NATURAL KIND CATEGORIES</pattern>
+		<template>
+			categories in the real world which have no clear-cut definition.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * MEASURES</pattern>
+		<template>
+			The values that we assign for properties like e height, mass, cost, and so on.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * ASPECT * MEASURES</pattern>
+		<template>
+			The most important aspect of measures is not the particular numerical values, but the fact that measures can be ordered.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * QUALITATIVE PHYSICS</pattern>
+		<template>
+			a subfield of AI that investigates how to reason about physical systems without plunging into detailed equations and numerical simulations.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * INDIVIDUATION</pattern>
+		<template>
+			division into distinct objects.
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * STUFF</pattern>
+		<template>
+			begin with the obvious. We need to have as objects in our ontology at least the gross “lumps” of stuff we interact with.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * INTRINSIC PROPERTIES</pattern>
+		<template>
+			they belong to the very substance of the object, rather than to the object as a whole.
+		</template>
+	</category>
+	<category>
+		<pattern>GIVE * EXAMPLE * EXTRINSIC PROPERTIES</pattern>
+		<template>
+			weight, length, shape, and so on.
+		</template>
+	</category>
+	<category>
+		<pattern>WHY * SITUATION CALCULUS * LIMITE</pattern>
+		<template>
+			it was designed to describe a world in which actions are discrete, instantaneous, and happen one at a time. Consider a continuous action, such as filling a bathtub. Situation calculus can say that the tub is empty before the action and full when the action is done, but it can’t talk about what happens during the action. It also can’t describe two actions happening at the same time.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * ACTION * CONNOTE</pattern>
+		<template>
+			action connotes an agent
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * EVENT * CONNOTE</pattern>
+		<template>
+			event connotes the possibility of agentless actions
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * EVENT CALCULUS</pattern>
+		<template>
+			an alternative formalism to situation calculus known as event calculus, which is based on points of time rather than on situations
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * DISCRETE EVENTS</pattern>
+		<template>
+			they have a definite structure.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * PROPOSITIONAL ATTITUDES</pattern>
+		<template>
+			attitudes that an agent can have toward mental objects, attitudes such as Believes, Knows, Wants, Intends, and Informs. The difficulty is that these attitudes do not behave like “normal” predicates.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * REFERENTIAL TRANSPARENCY</pattern>
+		<template>
+			it doesn’t matter what REFERENTIAL TRANSPARENCY term a logic uses to refer to an object, what matters is the object that the term names.
+		</template>
+	</category>
+	<category>
+		<pattern> * present * </pattern>
+		<template>
+			<srai> <star index="1"/> introduce <star index="2"/> </srai>
+		</template>
+	</category>
+</aiml>

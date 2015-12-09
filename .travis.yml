@@ -1,5 +1,10 @@
 language: python
 python:
-  - '3.4'
-install: make install
+  - "2.6"
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+install: 
+- pip install .
 script: make test

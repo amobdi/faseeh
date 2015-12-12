@@ -226,13 +226,13 @@ class Ui_MainWindow(object):
         
         
 
-    def add_new_label(self,direction):
+    def add_new_label(self,direction,mytext):
         if self.textEdit.toPlainText()!= "" or direction == 1:
             label_5 = QtGui.QLabel(self.scrollAreaWidgetContents_2)
             label_5.setFixedWidth(600)
             label_5.setFixedHeight(80)
             label_5.setText(self.textEdit.toPlainText())
-            #self.textEdit.setText("")
+            self.textEdit.setText("")
             sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
             sizePolicy.setHorizontalStretch(9)
             sizePolicy.setVerticalStretch(6)
@@ -244,6 +244,7 @@ class Ui_MainWindow(object):
             label_5.setFont(font)
             if direction == 1 :
                 label_5.setLayoutDirection(QtCore.Qt.RightToLeft)
+                label_5.setText(mytext)
             label_5.setAutoFillBackground(False)
             label_5.setStyleSheet(_fromUtf8("background-color:white;\n"
 "border-radius:15%;\n"

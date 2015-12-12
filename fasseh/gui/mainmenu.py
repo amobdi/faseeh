@@ -22,11 +22,23 @@ if __name__ == "__main__":
     ui2 = chat2.Ui_MainWindow()
     ui2.setupUi(MainWindow2)
 
-    ui2.pushButton_4.clicked.connect(lambda:goback(MainWindow2,MainWindow))
+    #Chat_PAGE inputs and buttons
+    ###########################
+    ui2.pushButton_4.clicked.connect(lambda:goback(MainWindow2,MainWindow)) # back_button
+    #ui2.pushButton_3.clicked.connect()                                      # send_button
+    #ui2.textEdit.toPlainText()                                              # message_input
+    #ui2.add_new_label(direction,mytext)                                     # use it to send your replay :: direction = 1 ,  mytext => string
 
-    ui.pushButton.clicked.connect(lambda:gochat(MainWindow,MainWindow2))
-    ui.pushButton_2.clicked.connect(lambda:gochat(MainWindow,MainWindow2))
-    MainWindow.show()
+
+    #MAIN_PAGE inputs and buttons
+    ###########################
+    #ui.lineEdit.text()                                                     # ip_input
+    ui.pushButton.clicked.connect(lambda:gochat(MainWindow,MainWindow2))    # human_button
+    ui.pushButton_2.clicked.connect(lambda:gochat(MainWindow,MainWindow2))  # machine_button
+    #ui.pushButton_3.clicked.connect()                                      # ip_go_button
+    #ui.radioButton.isChecked()                                                # client radio button
+    #ui.radioButton_2.isChecked()                                              # server radio button
+    MainWindow.show()                                                       #MAIN PAGE WINDOW
     
 
     sys.exit(app.exec_())

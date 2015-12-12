@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     #Chat_PAGE inputs and buttons
     ###########################
-    ui2.pushButton_4.clicked.connect(lambda:goback(MainWindow2,MainWindow)) # back_button
+    ui2.pushButton_4.clicked.connect(lambda:goback(MainWindow2,MainWindow))  # back_button
     #ui2.pushButton_3.clicked.connect()                                      # send_button
     #ui2.textEdit.toPlainText()                                              # message_input
     #ui2.add_new_label(direction,mytext)                                     # use it to send your replay :: direction = 1 ,  mytext => string

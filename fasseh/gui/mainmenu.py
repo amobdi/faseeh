@@ -1,4 +1,4 @@
-import chat2, main
+import chat, main
 from PyQt4 import QtGui, QtCore
 
 
@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
 
     MainWindow2 = QtGui.QMainWindow()
-    ui2 = chat2.Ui_MainWindow()
+    ui2 = chat.Ui_MainWindow()
     ui2.setupUi(MainWindow2)
 
     #Chat_PAGE inputs and buttons

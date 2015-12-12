@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         MainWindow.setFont(font)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("LOGO.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("img/LOGO.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(_fromUtf8("background-color: #00aced;\n"
 "\n"
@@ -64,16 +64,16 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton#pushButton_3{    \n"
 "border:none;\n"
-"image: url(\"go2.png\"); \n"
+"image: url(\"img/go2.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_3:hover{    \n"
 "border:none;\n"
-"image: url(\"go.png\"); \n"
+"image: url(\"img/go.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_3:pressed{    \n"
-"image: url(\"go2.png\"); \n"
+"image: url(\"img/go2.png\"); \n"
 "}\n"
 "\n"
 "\n"
@@ -89,7 +89,7 @@ class Ui_MainWindow(object):
         self.label = QtGui.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(250, 30, 281, 311))
         self.label.setText(_fromUtf8(""))
-        self.label.setPixmap(QtGui.QPixmap(_fromUtf8("logo_300.png")))
+        self.label.setPixmap(QtGui.QPixmap(_fromUtf8("img/logo_300.png")))
         self.label.setObjectName(_fromUtf8("label"))
         self.pushButton = QtGui.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(130, 420, 181, 71))
@@ -125,11 +125,11 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_fromUtf8(""))
         self.pushButton_3.setObjectName(_fromUtf8("pushButton_3"))
         self.radioButton = QtGui.QRadioButton(self.centralwidget)
-        self.radioButton.setGeometry(QtCore.QRect(160, 170, 82, 17))
-        self.radioButton.setObjectName(_fromUtf8("client"))
+        self.radioButton.setGeometry(QtCore.QRect(520, 560, 82, 17))
+        self.radioButton.setObjectName(_fromUtf8("radioButton"))
         self.radioButton_2 = QtGui.QRadioButton(self.centralwidget)
-        self.radioButton_2.setGeometry(QtCore.QRect(160, 190, 82, 17))
-        self.radioButton_2.setObjectName(_fromUtf8("server"))     
+        self.radioButton_2.setGeometry(QtCore.QRect(650, 560, 82, 17))
+        self.radioButton_2.setObjectName(_fromUtf8("radioButton_2"))     
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 798, 21))
@@ -146,6 +146,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Fasseh", None))
         self.pushButton.setText(_translate("MainWindow", "Human", None))
         self.pushButton_2.setText(_translate("MainWindow", "Machine", None))
+        self.radioButton.setText(_translate("MainWindow", "Client", None))
+        self.radioButton_2.setText(_translate("MainWindow", "Server", None))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "Please, Enter the machine IP ", None))
 
 

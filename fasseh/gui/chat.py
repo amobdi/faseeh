@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         MainWindow.setFont(font)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("LOGO.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("img/LOGO.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(_fromUtf8("background-color: #00aced;\n"
 "\n"
@@ -77,29 +77,29 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton#pushButton_3{    \n"
 "border:none;\n"
-"image: url(\"go2.png\"); \n"
+"image: url(\"img/go2.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_3:hover{    \n"
 "border:none;\n"
-"image: url(\"go.png\"); \n"
+"image: url(\"img/go.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_3:pressed{    \n"
-"image: url(\"go2.png\"); \n"
+"image: url(\"img/go2.png\"); \n"
 "}\n"
 "QPushButton#pushButton_4{    \n"
 "border:none;\n"
-"image: url(\"back2.png\"); \n"
+"image: url(\"img/back2.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_4:hover{    \n"
 "border:none;\n"
-"image: url(\"back.png\"); \n"
+"image: url(\"img/back.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_4:pressed{    \n"
-"image: url(\"back2.png\"); \n"
+"image: url(\"img/back2.png\"); \n"
 "}\n"
 "\n"
 "\n"
@@ -115,7 +115,7 @@ class Ui_MainWindow(object):
         self.label = QtGui.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(690, 0, 71, 71))
         self.label.setText(_fromUtf8(""))
-        self.label.setPixmap(QtGui.QPixmap(_fromUtf8("logo_300.png")))
+        self.label.setPixmap(QtGui.QPixmap(_fromUtf8("img/logo_300.png")))
         self.label.setScaledContents(True)
         self.label.setObjectName(_fromUtf8("label"))
         self.pushButton_3 = QtGui.QPushButton(self.centralwidget)
@@ -187,7 +187,7 @@ class Ui_MainWindow(object):
         
         
         #self.pushButton_4.clicked.connect(lambda: self.add_new_label(1))
-        self.pushButton_3.clicked.connect(self.add_new_label) 
+        self.pushButton_3.clicked.connect(lambda: self.add_new_label(0,"sd")) 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 798, 21))
@@ -203,14 +203,14 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "Fasseh", None))
         
-        self.label_7.setText(_translate("MainWindow", "hiiiiiiiiiiiiiiiiiiiiiiiii", None))    
+        self.label_7.setText(_translate("MainWindow", "hi, i'm fasse7", None))    
     def gotoback(self):
         self.label_3.setWordWrap(True);
         self.label_3.setText(self.textEdit.toPlainText())
         self.resizeEvent(self.label_3)
     def resizeEvent(self,lblx):     
         lblx.setWordWrap(True)
-        text_width1 = lblx.fontMetrics().boundingRect(lblx.text()).width()
+        text_width1 = lblx.fontMetrics().boundingRect(lblx.text()).width() + 30
         text_height = lblx.fontMetrics().boundingRect(lblx.text()).height()
         if text_width1 < 90 :
             text_width1 = text_width1 + 30
@@ -226,13 +226,13 @@ class Ui_MainWindow(object):
         
         
 
-    def add_new_label(self,direction):
+    def add_new_label(self,direction,mytext):
         if self.textEdit.toPlainText()!= "" or direction == 1:
             label_5 = QtGui.QLabel(self.scrollAreaWidgetContents_2)
             label_5.setFixedWidth(600)
             label_5.setFixedHeight(80)
             label_5.setText(self.textEdit.toPlainText())
-            #self.textEdit.setText("")
+            self.textEdit.setText("")
             sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
             sizePolicy.setHorizontalStretch(9)
             sizePolicy.setVerticalStretch(6)
@@ -244,6 +244,7 @@ class Ui_MainWindow(object):
             label_5.setFont(font)
             if direction == 1 :
                 label_5.setLayoutDirection(QtCore.Qt.RightToLeft)
+                label_5.setText(mytext)
             label_5.setAutoFillBackground(False)
             label_5.setStyleSheet(_fromUtf8("background-color:white;\n"
 "border-radius:15%;\n"

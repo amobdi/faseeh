@@ -123,7 +123,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setStyleSheet(_fromUtf8(""))
         self.pushButton_3.setText(_fromUtf8(""))
         self.pushButton_3.setObjectName(_fromUtf8("pushButton_3"))
-        self.textEdit = QtGui.QTextEdit(self.centralwidget)
+        self.textEdit = MessageTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(30, 460, 731, 91))
         self.textEdit.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
         self.textEdit.setLineWrapMode(QtGui.QTextEdit.FixedPixelWidth)
@@ -150,7 +150,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
 
         #type your code here#
-        
+        #self.textEdit.sendMessage.connect(lambda: self.add_new_label(0,"sd"))
+        QtCore.QObject.connect(self.textEdit, QtCore.SIGNAL("sendMessage"), lambda: self.add_new_label(0,"sd"))
         #type your code here#
         self.label_7 = QtGui.QLabel(self.scrollAreaWidgetContents_2)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
@@ -213,7 +214,7 @@ class Ui_MainWindow(object):
         text_width1 = lblx.fontMetrics().boundingRect(lblx.text()).width() + 30
         text_height = lblx.fontMetrics().boundingRect(lblx.text()).height()
         if text_width1 < 90 :
-            text_width1 = text_width1 + 30
+            text_width1 = text_width1
             text_height = lblx.fontMetrics().boundingRect(lblx.text()).height() +30
             lblx.setFixedHeight(text_height)
         if text_width1 > 600 :
@@ -259,12 +260,34 @@ class Ui_MainWindow(object):
             label_5.setObjectName(_fromUtf8("label_5"))
             self.verticalLayout_3.addWidget(label_5)
             self.resizeEvent(label_5)
-
-           
             
-            self.scrollArea.verticalScrollBar().setValue(1000)
+            #self.scrollArea.verticalScrollBar().ensureVisible(0, scrollAreaHeight, 0, 0)
+            scrollBar = self.scrollArea.verticalScrollBar()
+            scrollBar.setValue(scrollBar.maximum())
+            scrollBar.setMaximum(scrollBar.maximum() + 1000)
+            xxczczx= scrollBar.value() + 1000
+            scrollBar.setValue(xxczczx)
+#############################################################################
+class MessageTextEdit(QtGui.QTextEdit):
+    def __init__(self,  parent):
+        super(MessageTextEdit,  self).__init__(parent)
 
+        self.parent = parent
+        self.__sendMessageOnReturn = False
 
+    def sendMessageOnreturn(self):
+        return self.__sendMessageOnReturn
+
+    def setSendMessageOnReturn(self,  state):
+        self.__sendMessageOnReturn = state
+
+    def keyPressEvent(self,  event):
+        if event.key() == QtCore.Qt.Key_Return:
+            self.emit(QtCore.SIGNAL("sendMessage"))
+                
+        #self.emit(QtCore.SIGNAL("sendMessage"))
+        QtGui.QTextEdit.keyPressEvent(self,  event)
+#################################################################################
 
 if __name__ == "__main__":
     import sys

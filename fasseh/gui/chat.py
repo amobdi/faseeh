@@ -214,7 +214,7 @@ class Ui_MainWindow(object):
         text_width1 = lblx.fontMetrics().boundingRect(lblx.text()).width() + 30
         text_height = lblx.fontMetrics().boundingRect(lblx.text()).height()
         if text_width1 < 90 :
-            text_width1 = text_width1 + 30
+            text_width1 = text_width1
             text_height = lblx.fontMetrics().boundingRect(lblx.text()).height() +30
             lblx.setFixedHeight(text_height)
         if text_width1 > 600 :

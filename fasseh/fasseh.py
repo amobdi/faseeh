@@ -17,10 +17,8 @@ import time
 class Faseeh(object) :
 	def __init__(self) :
 		
-		# Setting log information.
 		self.log = logging.getLogger('fasseh.main')
-
-		self.log.info('Fasseh started')
+		self.log.info('Faseeh Started')
 
 		self.questions = ['What is upper ontology?', 'What is ontological engineering?', 'What is reification?']
 		self.enemy_direction = 1
@@ -54,41 +52,41 @@ class Faseeh(object) :
 		self.ui.pushButton_2.clicked.connect(lambda:self.gochat('MTM'))  		# machine_button
 		self.MainWindow.show()                             				# MAIN PAGE WINDOW    
 
-		# print 'work as', sys.argv[1]
-		# self.gochatTest('MTM', '127.0.0.1', sys.argv[1])
+		if len(sys.argv) == 2 :
+			self.log.info('work as ' + sys.argv[1]) 
+			self.gochatTest('MTM', '127.0.0.1', sys.argv[1])
 
 		sys.exit(self.app.exec_())
 	
 	def answer_the_question(self, question) : 
-		self.log.info('question: ' + question)
 		self.blob = TextBlob(question)
 		question_combinations = self.parser.get_all_question_combinations(self.blob.tags)
 		response = ''
 		for sample_question in question_combinations :
+			self.log.info('sample_question: ' + sample_question)
 			response = self.kernel.respond(sample_question)
 			if response != self.no_answer_string :
 				break
 
 		self.log.info('response: ' + response)
 		self.log.info('---------------------------------------------------------------------')	
-		
 		return response
 
 	def client_work(self, ServerIP) :
 		try :
-			print ('client started')
+			self.log.info('client started')
 			comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			comm_socket.settimeout(self.TIME_OUT)
 			comm_socket.connect((ServerIP, self.SERVER_PORT))
-			print ('client connected')
+			self.log.info('client connected')
 			for question in self.questions :
-				print ('question: ' + question)
+				self.log.info('question: ' + question)
 				comm_socket.send( question + '#' )
 				self.ui2.add_new_label(0, question)
 				answer = str( comm_socket.recv(self.BUFFER_SIZE) )
 				while not '#' in answer:
 					answer = str( comm_socket.recv(BUFFER_SIZE) )
-				print ('answer: ' + answer)
+				self.log.info('answer: ' + answer)
 				self.ui2.add_new_label(1, answer)
 
 			comm_socket.close()	
@@ -97,22 +95,22 @@ class Faseeh(object) :
 
 	def server_work(self, ServerIP) :
 		try :
-			print ('server started')
+			self.log.info('server started')
 			comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			comm_socket.bind((ServerIP, self.SERVER_PORT))
 			comm_socket.listen(1)
 			conn, addr = comm_socket.accept()
 			conn.settimeout(self.TIME_OUT)
-			print ('server connected')
+			self.log.info('server connected')
 			for i in range (len(self.questions)):
 				question = str( conn.recv(self.BUFFER_SIZE) )
 				while not '#' in question:
 					question = str( conn.recv(self.BUFFER_SIZE) )
 
 				self.ui2.add_new_label(self.enemy_direction, question)
-				print 'question', question
+				self.log.info('question: ' + question)
 				answer = self.answer_the_question(question)
-				print 'answer', answer
+				self.log.info('answer: ' + answer)
 				self.ui2.add_new_label(self.my_direction, answer)
 				conn.send( answer + '#' )
 
@@ -136,7 +134,7 @@ class Faseeh(object) :
 		# Machine To Machine
 		if mode == 'MTM' :
 			ServerIP = self.ui.lineEdit.text()
-			print 'ServerIP', ServerIP
+			self.log.info('ServerIP: ' + ServerIP)
 
 			if self.ui.radioButton.isChecked() :		# client
 				self.client_work(ServerIP)
@@ -152,7 +150,7 @@ class Faseeh(object) :
 	def gochatTest(self, mode, ServerIP, conn_mode) :
 		# Machine To Machine
 		if mode == 'MTM' :
-			print 'ServerIP', ServerIP
+			self.log.info('ServerIP: ' + ServerIP)
 
 			if conn_mode == 'c' :		# client
 				self.client_work(ServerIP)

@@ -83,11 +83,9 @@ class Parser(object):
 			sub_lists = list(itertools.combinations(statement, l))
 			for sub_list in sub_lists :
 				sample_question = ''
-				for idx, word in enumerate(sub_list) :
-					if idx == 0 :
-						sample_question = word
-					else :
-						sample_question = sample_question + ' ' + word
+				for word in sub_list :
+					sample_question = sample_question + ' | ' + word
 				
+				sample_question = sample_question + ' | '
 				result.append(sample_question)
 		return result

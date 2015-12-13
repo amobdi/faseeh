@@ -5,5 +5,5 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
-install: "pip install -r requirements.txt"
-script: make build
+script: make install
+make build

@@ -5,5 +5,6 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
-script: make install
-make build
+script:
+- make install
+- make build

@@ -3,8 +3,15 @@ python:
   - "2.6"
   - "2.7"
   - "3.2"
-  - "3.3"
-  - "3.4"
-install:
-  - pip install .
-script: make build
+
+
+before_install:
+ - sudo apt-get install -qq python-numpy python-scipy
+ 
+# command to install dependencies
+virtualenv:
+  system_site_packages: true
+  
+  
+# command to run tests
+script: nosetests

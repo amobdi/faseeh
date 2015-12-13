@@ -149,14 +149,3 @@ class Ui_MainWindow(object):
         self.radioButton.setText(_translate("MainWindow", "Client", None))
         self.radioButton_2.setText(_translate("MainWindow", "Server", None))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "Please, Enter the machine IP ", None))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtGui.QApplication(sys.argv)
-    MainWindow = QtGui.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
-

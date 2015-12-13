@@ -11,6 +11,7 @@ class Parser(object):
 		self.question_tags = ['WP','WP$','WRB','WDT']
 		self.verb_tags = ['VB','VBZ','VBP','VBD','VBG','VP','VPN']
 		self.neglect = ['is','are','was','were','be','am','do','did','does','doing','done','has','have','had','having']
+		self.separator = ' H '
 	
 	# parse the tags to extract the nouns
 	# args:
@@ -83,11 +84,9 @@ class Parser(object):
 			sub_lists = list(itertools.combinations(statement, l))
 			for sub_list in sub_lists :
 				sample_question = ''
-				for idx, word in enumerate(sub_list) :
-					if idx == 0 :
-						sample_question = word
-					else :
-						sample_question = sample_question + ' ' + word
+				for word in sub_list :
+					sample_question = sample_question + self.separator + word
 				
+				sample_question = sample_question + self.separator
 				result.append(sample_question)
 		return result

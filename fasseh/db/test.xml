@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+		<pattern>* WHAT UPPER ONTOLOGY *</pattern>
+		<template>The general framework of concepts.</template>
+	</category>
+	<category>
+		<pattern>* WHAT ONTOLOGICAL ENGINEERING *</pattern>
+		<template>Representing abstract concepts such as Events, Time, Physical Objects, and Beliefs that occur in many different domains.</template>
+	</category>
+	<category>
+		<pattern>* ONTOLOGY DIFFER ONTOLOGIES *</pattern>
+		<template>A general-purpose ontology should be applicable in more or less any special-purpose domain (with the addition of domain-specific axioms).
+ This means that no representational issue can be finessed or brushed under the carpet.
+ In any sufficiently demanding domain, different areas of knowledge must be unified, because reasoning and problem solving could involve several areas simultaneously.
+ A robot circuit-repair system, for instance, needs to reason about circuits in terms of electrical connectivity and physical layout, and about time, both for circuit timing analysis and estimating labor costs.
+ The sentences describing time therefore must be capable of being combined with those describing spatial layout and must work equally well for nanoseconds and minutes and for angstroms and meters.</template>
+	</category>
+	<category>
+		<pattern>* HOW INTRODUCE CLASSES *</pattern>
+		<template>by describing the technology (TTL, CMOS, and so on) as well as the input-output specification.
+ If we wanted to discuss reliability or diagnosis, we would include the possibility that the structure of the circuit or the properties of the gates might change spontaneously.
+ To account for stray capacitances, we would need to represent where the wires are on the board.</template>
+	</category>
+	<category>
+		<pattern>* ROUTES BUILD EXISTING ONTOLOGIES *</pattern>
+		<template>1.
+ By a team of trained ontologist/logicians, who architect the ontology and write axioms.
+ The CYC system was mostly built this way (Lenat and Guha, 1990).
+ 2.
+ By importing categories, attributes, and values from an existing database or databases.
+ DBPEDIA was built by importing structured facts from Wikipedia (Bizer et al., 2007).
+ 3.
+ By parsing text documents and extracting information from them.
+ TEXTRUNNER was built by reading a large corpus of Web pages (Banko and Etzioni, 2008).
+ 4.
+ By enticing unskilled amateurs to enter commonsense knowledge.
+ The OPENMIND system was built by volunteers who proposed facts in English (Singh et al., 2002; Chklovski and Gil, 2005).</template>
+	</category>
+	<category>
+		<pattern>* WHAT REIFICATION *</pattern>
+		<template>Turning a proposition into an object is called reification.</template>
+	</category>
+	<category>
+		<pattern>* CATEGORIES EXAMPLES *</pattern>
+		<template>An object is a member of a category.
+ BB9 belongs to Basketballs A category is a subclass of another category.
+ Basketballs is part of Balls All members of a category have some properties.
+ (Basketballs) subsumes Spherical(x) Members of a category can be recognized by some properties.
+ Orange(x) xor Round(x) xor Diameter(x) = 9.5 xor xE Balls subsums xE Basketballs A category as a whole has some properties.
+ Dogs belongs to DomesticatedSpecies</template>
+	</category>
+	<category>
+		<pattern>* WHAT DISJOINT CATEGORIES *</pattern>
+		<template>two or more categories are disjoint if they have no members in common.</template>
+	</category>
+	<category>
+		<pattern>* CHARACTERISTIC CATEGORIES COMPOSITE OBJECTS *</pattern>
+		<template>Categories of composite objects are often characterized by structural relations among parts.</template>
+	</category>
+	<category>
+		<pattern>* WHAT LOGICAL MINIMIZATION *</pattern>
+		<template>logical minimization means defining an object as the smallest one satisfying certain conditions.</template>
+	</category>
+	<category>
+		<pattern>* WHEN OBJECT TRIANGLE *</pattern>
+		<template>an object is a triangle if and only if it is a polygon with three sides.</template>
+	</category>
+	<category>
+		<pattern>* WHAT NATURAL KIND CATEGORIES *</pattern>
+		<template>categories in the real world which have no clear-cut definition.</template>
+	</category>
+	<category>
+		<pattern>* WHAT MEASURES *</pattern>
+		<template>The values that we assign for properties like e height, mass, cost, and so on.</template>
+	</category>
+	<category>
+		<pattern>* WHAT ASPECT MEASURES *</pattern>
+		<template>The most important aspect of measures is not the particular numerical values, but the fact that measures can be ordered.</template>
+	</category>
+	<category>
+		<pattern>* WHAT QUALITATIVE PHYSICS *</pattern>
+		<template>a subfield of AI that investigates how to reason about physical systems without plunging into detailed equations and numerical simulations.</template>
+	</category>
+	<category>
+		<pattern>* WHAT INDIVIDUATION *</pattern>
+		<template>division into distinct objects.</template>
+	</category>
+	<category>
+		<pattern>* HOW STUFF *</pattern>
+		<template>begin with the obvious.
+ We need to have as objects in our ontology at least the gross lumps of stuff we interact with.</template>
+	</category>
+	<category>
+		<pattern>* WHAT INTRINSIC PROPERTIES *</pattern>
+		<template>they belong to the very substance of the object, rather than to the object as a whole.</template>
+	</category>
+	<category>
+		<pattern>* GIVE EXAMPLE EXTRINSIC PROPERTIES *</pattern>
+		<template>weight, length, shape, and so on.</template>
+	</category>
+	<category>
+		<pattern>* WHY SITUATION CALCULUS LIMITE *</pattern>
+		<template>it was designed to describe a world in which actions are discrete, instantaneous, and happen one at a time.
+ Consider a continuous action, such as filling a bathtub.
+ Situation calculus can say that the tub is empty before the action and full when the action is done, but it can not talk about what happens during the action.
+ It also can not describe two actions happening at the same time.</template>
+	</category>
+	<category>
+		<pattern>* WHAT ACTION CONNOTE *</pattern>
+		<template>action connotes an agent</template>
+	</category>
+	<category>
+		<pattern>* WHAT EVENT CONNOTE *</pattern>
+		<template>event connotes the possibility of agentless actions</template>
+	</category>
+	<category>
+		<pattern>* WHAT EVENT CALCULUS *</pattern>
+		<template>an alternative formalism to situation calculus known as event calculus, which is based on points of time rather than on situations</template>
+	</category>
+	<category>
+		<pattern>* WHAT DISCRETE EVENTS *</pattern>
+		<template>they have a definite structure.</template>
+	</category>
+	<category>
+		<pattern>* WHAT PROPOSITIONAL ATTITUDES *</pattern>
+		<template>attitudes that an agent can have toward mental objects, attitudes such as Believes, Knows, Wants, Intends, and Informs.
+ The difficulty is that these attitudes do not behave like normal predicates.</template>
+	</category>
+	<category>
+		<pattern>* WHAT REFERENTIAL TRANSPARENCY *</pattern>
+		<template>it doesn not matter what REFERENTIAL TRANSPARENCY term a logic uses to refer to an object, what matters is the object that the term names.</template>
+	</category>
+	<category>
+		<pattern>* WHAT INHERITANCE MECHANISM SEMANTIC NETWORKS IMPLEMENTS *</pattern>
+		<template>The inheritance mechanism in semantic networks implements the overriding of defaults in a simple and natural way.</template>
+	</category>
+	<category>
+		<pattern>* WHAT NONMONOTONICITY *</pattern>
+		<template>For example, when one sees a car parked on the street, one is normally willing to believe that it has four wheels even though only three are visible.
+ Now, probability theory can certainly provide a conclusion that the fourth wheel exists with high probability, yet, for most people, the possibility of the cars not having four wheels does not arise unless some new evidence presents itself.
+ Thus, it seems that the four-wheel conclusion is reached by default, in the absence of any reason to doubt it.
+ If new evidence arrives-for example, if one sees the owner carrying a wheel and notices that the car is jacked up-then the conclusion can be retracted.
+ This kind of reasoning is said to exhibit NONMONOTONICITY nonmonotonicity, because the set of beliefs does not grow monotonically over time as new evidence arrives.</template>
+	</category>
+	<category>
+		<pattern>* WHAT SIMPLE INTROSPECTION SUGGESTS *</pattern>
+		<template>Simple introspection suggests that these failures of monotonicity are widespread in commonsense reasoning.</template>
+	</category>
+	<category>
+		<pattern>* WHY NONMONOTONIC LOGICS DEVISED *</pattern>
+		<template>Nonmonotonic logics have been devised with modified notions of truth and entailment in order to capture the behaviour of nonmonotonicity.</template>
+	</category>
+	<category>
+		<pattern>* WHAT IDEA CIRCUMSCRIPTION *</pattern>
+		<template>The idea is to specify particular predicates that are assumed to be as false as possible.
+ that is, false for every object except those for which they are known to be true.</template>
+	</category>
+	<category>
+		<pattern>* WHAT CIRCUMSCRIPTION *</pattern>
+		<template>The idea is to specify particular predicates that are assumed to be as false as possible.
+ that is, false for every object except those for which they are known to be true.</template>
+	</category>
+	<category>
+		<pattern>* WHEN CIRCUMSCRIPTION MODEL PREFERRED ANOTHER *</pattern>
+		<template>For circumscription, one model is preferred to another if it has fewer abnormal objects.</template>
+	</category>
+	<category>
+		<pattern>* WHEN ASSUMPTION MODEL PREFERRED ANOTHER *</pattern>
+		<template>For the closed-world assumption, one model is preferred to another if it has fewer true atoms-that is, preferred models are minimal models.</template>
+	</category>
+	<category>
+		<pattern>* WHAT NIXON DIAMOND *</pattern>
+		<template>The standard example for which multiple inheritance is problematic is called the Nixon diamond.</template>
+	</category>
+	<category>
+		<pattern>* NIXON DIAMOND ARISES *</pattern>
+		<template>It arises from the observation that Richard Nixon was both a Quaker (and hence by default a pacifist) and a Republican (and hence by default not a pacifist).</template>
+	</category>
+	<category>
+		<pattern>* WHEN USE PRIORITIZED CIRCUMSCRIPTION *</pattern>
+		<template>Prioritized schemes exist in which some default rules can be given precedence over others, allowing some ambiguities to be resolved.
+ For example to assert that religious beliefs take precedence over political beliefs, we can use a formalism called prioritized circumscription.</template>
+	</category>
+	<category>
+		<pattern>* GIVE EXAMPLE MODEL PREFERENCE LOGIC *</pattern>
+		<template>Circumscription can be viewed as an example of a model preference logic.</template>
+	</category>
+	<category>
+		<pattern>* WHAT EXAMPLE MODEL PREFERENCE LOGIC *</pattern>
+		<template>Circumscription can be viewed as an example of a model preference logic.</template>
+	</category>
+	<category>
+		<pattern>* WHAT DEFAULT LOGIC *</pattern>
+		<template>Default logic is a formalism in which default rules can be written to generate continuous nonmonotonic conclusions and it is given by P : J1, .
+ .
+ .
+ , Jn/C , where P is called the prerequisite, C is the conclusion, and Ji are the justifications.</template>
+	</category>
+	<category>
+		<pattern>* WHAT DEFAULT LOGIC CONSIST *</pattern>
+		<template>P : J1, .
+ .
+ .
+ , Jn/C Where P is called the prerequisite, C is the conclusion, and Ji are the justifications, if any one of them can be proven false, then the conclusion cannot be drawn.
+ Any variable that appears in Ji or C must also appear in P.</template>
+	</category>
+	<category>
+		<pattern>* WHAT EXTENSION DEFAULT THEORY *</pattern>
+		<template>We define the notion of an extension of a default theory to be a maximal set of consequences of the theory.</template>
+	</category>
+	<category>
+		<pattern>* DEFINE EXTENSION DEFAULT THEORY *</pattern>
+		<template>We define the notion of an extension of a default theory to be a maximal set of consequences of the theory.</template>
+	</category>
+	<category>
+		<pattern>* WHAT EXTENSION *</pattern>
+		<template>We define the notion of an extension of a default theory to be a maximal set of consequences of the theory.</template>
+	</category>
+	<category>
+		<pattern>* DEFINE EXTENSION *</pattern>
+		<template>We define the notion of an extension of a default theory to be a maximal set of consequences of the theory.</template>
+	</category>
+	<category>
+		<pattern>* EXTENSION CONSISTS *</pattern>
+		<template>An extension S consists of the original known facts and a set of conclusions from the default rules, such that no additional conclusions can be drawn from S and the justifications of every default conclusion in S are consistent with S.</template>
+	</category>
+	<category>
+		<pattern>* PRIORITIZED SCHEMES EXIST *</pattern>
+		<template>Prioritized schemes exist in which some default rules can be given precedence over others, allowing some ambiguities to be resolved.</template>
+	</category>
+	<category>
+		<pattern>* WHEN NONMONOTONIC LOGICS PROPOSED *</pattern>
+		<template>Since 1980.</template>
+	</category>
+	<category>
+		<pattern>* WHEN PROBLEM NONMODULARITY *</pattern>
+		<template>If we cannot decide, for each rule separately, whether it belongs in our knowledge base.</template>
+	</category>
+	<category>
+		<pattern>* WHAT HARDEST ISSUE DEFAULT REASONING *</pattern>
+		<template>How can beliefs that have default status be used to make decisions is the hardest issue for default reasoning.</template>
+	</category>
+	<category>
+		<pattern>* WHY COMPARE STRENGTHS BELIEF OUTCOMES DIFFERENT ACTIONS COSTS WRONG DECISION *</pattern>
+		<template>Because decisions often involve tradeoffs.</template>
+	</category>
+	<category>
+		<pattern>* WHY COMPARE COSTS WRONG DECISION *</pattern>
+		<template>Because decisions often involve tradeoffs.</template>
+	</category>
+	<category>
+		<pattern>* WHY COMPARE STRENGTHS BELIEF OUTCOMES DIFFERENT ACTIONS *</pattern>
+		<template>Because decisions often involve tradeoffs.</template>
+	</category>
+	<category>
+		<pattern>* DECISIONS INVOLVE TRADEOFFS *</pattern>
+		<template>One needs to compare the strengths of belief in the outcomes of different actions, and the costs of making a wrong decision.</template>
+	</category>
+	<category>
+		<pattern>* SAME DECISIONS MADE REPEATEDLY *</pattern>
+		<template>It is possible to interpret default rules as threshold probability statements.</template>
+	</category>
+	<category>
+		<pattern>* WHEN THRESHOLD PROBABILITY *</pattern>
+		<template>In cases where the same kinds of decisions are being made repeatedly.</template>
+	</category>
+	<category>
+		<pattern>* EXAMPLE THRESHOLD PROBABILITY *</pattern>
+		<template>For example, the default rule (My brakes are always OK) really means (The probability that my brakes are OK, given no other information, is sufficiently high that the optimal decision is for me to drive without checking them.) When the decision context changes-for example, when one is driving a heavily laden truck down a steep mountain road-the default rule suddenly becomes inappropriate, even though there is no new evidence of faulty brakes.
+ These considerations have led some researchers to consider how to embed default reasoning within probability theory or utility theory.</template>
+	</category>
+	<category>
+		<pattern>* DEFAULT REASONING PROBABILITY THEORY UTILITY THEORY *</pattern>
+		<template>For example, the default rule (My brakes are always OK) really means (The probability that my brakes are OK, given no other information, is sufficiently high that the optimal decision is for me to drive without checking them.) When the decision context changes-for example, when one is driving a heavily laden truck down a steep mountain road-the default rule suddenly becomes inappropriate, even though there is no new evidence of faulty brakes.
+ These considerations have led some researchers to consider how to embed default reasoning within probability theory or utility theory.</template>
+	</category>
+	<category>
+		<pattern>* DEFAULT REASONING PROBABILITY THEORY *</pattern>
+		<template>For example, the default rule (My brakes are always OK) really means (The probability that my brakes are OK, given no other information, is sufficiently high that the optimal decision is for me to drive without checking them.) When the decision context changes-for example, when one is driving a heavily laden truck down a steep mountain road-the default rule suddenly becomes inappropriate, even though there is no new evidence of faulty brakes.
+ These considerations have led some researchers to consider how to embed default reasoning within probability theory or utility theory.</template>
+	</category>
+	<category>
+		<pattern>* DEFAULT REASONING UTILITY THEORY *</pattern>
+		<template>For example, the default rule (My brakes are always OK) really means (The probability that my brakes are OK, given no other information, is sufficiently high that the optimal decision is for me to drive without checking them.) When the decision context changes-for example, when one is driving a heavily laden truck down a steep mountain road-the default rule suddenly becomes inappropriate, even though there is no new evidence of faulty brakes.
+ These considerations have led some researchers to consider how to embed default reasoning within probability theory or utility theory.</template>
+	</category>
+	<category>
+		<pattern>* WHAT BELIEF REVISION *</pattern>
+		<template>Many of the inferences drawn by a knowledge representation system will have only default status, rather than being absolutely certain.
+ Inevitably, some of these inferred facts will turn out to be wrong and will have to be retracted in the face of new information and this process is called belief revision.</template>
+	</category>
+	<category>
+		<pattern>* WHEN BELIEF UPDATE *</pattern>
+		<template>It occurs when a knowledge base is revised to reflect a change in the world rather than new information about a fixed world.</template>
+	</category>
+	<category>
+		<pattern>* BELIEF REVISION CONTRAST BELIEF UPDATE *</pattern>
+		<template>Belief revision is often contrasted with belief update, which occurs when a knowledge base is revised to reflect a change in the world rather than new information about a fixed world.
+ Belief update combines belief revision with reasoning about time and change.</template>
+	</category>
+	<category>
+		<pattern>* WHY TRUTH MAINTENANCE SYSTEM *</pattern>
+		<template>Truth maintenance systems are designedto handle exactly some kinds of complications suach as : For example, the implication P -> Q might have been used to add Q.
+ The obvious (solution) -retracting all sentences inferred from P-fails because such sentences may have other justifications besides P.
+ For example, if R and R -> Q are also in the KB, then Q does not have to be removed after all.</template>
+	</category>
+	<category>
+		<pattern>* WHY TMS *</pattern>
+		<template>Truth maintenance systems are designed to handle exactly some kinds of complications suach as : For example, the implication P -> Q might have been used to add Q.
+ The obvious (solution) retracting all sentences inferred from P-fails because such sentences may have other justifications besides P.
+ For example, if R and R -> Q are also in the KB, then Q does not have to be removed after all.</template>
+	</category>
+	<category>
+		<pattern>* APPROACH TRUTH MAINTENANCE SYSTEM *</pattern>
+		<template>One simple approach to truth maintenance is to keep track of the order in which sentences are told to the knowledge base by numbering them from P1 to Pn.
+ When the call RETRACT(KB, Pi) is made, the system reverts to the state just before Pi was added, thereby removing both Pi and any inferences that were derived from Pi.
+ The sentences Pi+1 through Pn can then be added again.
+ This is simple, and it guarantees that the knowledge base will be consistent.</template>
+	</category>
+	<category>
+		<pattern>* EFFICIENT APPROACH TRUTH MAINTENANCE SYSTEM *</pattern>
+		<template>An efficient approach JTMS is the justification-based truth maintenance system, or JTMS.
+ In a JTMS, each sentence in the knowledge base is annotated with a justification consisting of the set of sentences from which it was inferred.</template>
+	</category>
+	<category>
+		<pattern>* WHAT JTMS *</pattern>
+		<template>In a JTMS, each sentence in the knowledge base is annotated with a justification consisting of the set of sentences from which it was inferred.</template>
+	</category>
+	<category>
+		<pattern>* WHAT TRUTH MAINTENANCE SYSTEM *</pattern>
+		<template>In a JTMS, each sentence in the knowledge base is annotated with a justification consisting of the set of sentences from which it was inferred.</template>
+	</category>
+	<category>
+		<pattern>* WHAH TRUTH MAINTENANCE SYSTEM ASSUME *</pattern>
+		<template>The JTMS assumes that sentences that are considered once will probably be considered again, so rather than deleting a sentence from the knowledge base entirely when it loses all justifications, we merely mark the sentence as being out of the knowledge base.</template>
+	</category>
+	<category>
+		<pattern>* WHAT JTMS ASSUME *</pattern>
+		<template>The JTMS assumes that sentences that are considered once will probably be considered again, so rather than deleting a sentence from the knowledge base entirely when it loses all justifications, we merely mark the sentence as being out of the knowledge base.</template>
+	</category>
+	<category>
+		<pattern>* HOW JTMS RETAIN INFERENCE CHAINS *</pattern>
+		<template>If a subsequent assertion restores one of the justifications, then we mark the sentence as being back in, and n this way, the JTMS retains all the inference chains that it uses and need not rederive sentences when a justification becomes valid again.</template>
+	</category>
+	<category>
+		<pattern>* HOW SYSTEM RETAIN INFERENCE CHAINS *</pattern>
+		<template>If a subsequent assertion restores one of the justifications, then we mark the sentence as being back in, and n this way, the JTMS retains all the inference chains that it uses and need not rederive sentences when a justification becomes valid again.</template>
+	</category>
+	<category>
+		<pattern>* WHAT TMS HANDLE *</pattern>
+		<template>It handles the retraction of incorrect information also TMSs can be used to speed up the analysis of multiple hypothetical situations, as it provides a mechanism for generating explanations.</template>
+	</category>
+	<category>
+		<pattern>* WHAT TMSS HANDLE *</pattern>
+		<template>It handles the retraction of incorrect information also TMSs can be used to speed up the analysis of multiple hypothetical situations, as it provides a mechanism for generating explanations.</template>
+	</category>
+	<category>
+		<pattern>* WHAT TRUTH MAINTENANCE SYSTEM HANDLE *</pattern>
+		<template>It handles the retraction of incorrect information also TMSs can be used to speed up the analysis of multiple hypothetical situations, as it provides a mechanism for generating explanations.</template>
+	</category>
+	<category>
+		<pattern>* WHAT ATMS *</pattern>
+		<template>An assumption-based truth ATMS maintenance system, or ATMS, makes this type of contextswitching between hypothetical worlds particularly efficient.
+ An ATMS represents all the states that have ever been considered at the same time.
+ Whereas a JTMS simply labels each sentence as being in or out, an ATMS keeps track, for each sentence, of which assumptions would cause the sentence to be true.
+ In other words, each sentence has a label that consists of a set of assumption sets.</template>
+	</category>
+	<category>
+		<pattern>* WHAT ATMSS *</pattern>
+		<template>An assumption-based truth ATMS maintenance system, or ATMS, makes this type of contextswitching between hypothetical worlds particularly efficient.
+ An ATMS represents all the states that have ever been considered at the same time.
+ Whereas a JTMS simply labels each sentence as being in or out, an ATMS keeps track, for each sentence, of which assumptions would cause the sentence to be true.
+ In other words, each sentence has a label that consists of a set of assumption sets.</template>
+	</category>
+	<category>
+		<pattern>* WHAT TRUTH MAINTENANCE SYSTEM *</pattern>
+		<template>An assumption-based truth ATMS maintenance system, or ATMS, makes this type of contextswitching between hypothetical worlds particularly efficient.
+ An ATMS represents all the states that have ever been considered at the same time.
+ Whereas a JTMS simply labels each sentence as being in or out, an ATMS keeps track, for each sentence, of which assumptions would cause the sentence to be true.
+ In other words, each sentence has a label that consists of a set of assumption sets.</template>
+	</category>
+	<category>
+		<pattern>* WHAT TRUTH MAINTENANCE SYSTEM *</pattern>
+		<template>An assumption-based truth ATMS maintenance system, or ATMS, makes this type of contextswitching between hypothetical worlds particularly efficient.
+ An ATMS represents all the states that have ever been considered at the same time.
+ Whereas a JTMS simply labels each sentence as being in or out, an ATMS keeps track, for each sentence, of which assumptions would cause the sentence to be true.
+ In other words, each sentence has a label that consists of a set of assumption sets.</template>
+	</category>
+	<category>
+		<pattern>* EXPLANATION SENTENCE *</pattern>
+		<template>Technically, an explanation of a sentence P is a set of sentences E such that E entails P.</template>
+	</category>
+	<category>
+		<pattern>* EXPLANATIONS INCLUDE ASSUMPTIONS *</pattern>
+		<template>For example, one might not have enough information to prove that one's car won't start, but a reasonable explanation might include the assumption that the battery is dead.
+ This, combined with knowledge of how cars operate, explains the observed nonbehavior.</template>
+	</category>
+	<category>
+		<pattern>* COMPLEXITY TRUTH MAINTENANCE SYSTEMS *</pattern>
+		<template>The computational complexity of the truth maintenance problem is at least as great as that of propositional inference-that is, NP-hard.</template>
+	</category>
+	<category>
+		<pattern>* COMPLEXITY TMS *</pattern>
+		<template>The computational complexity of the truth maintenance problem is at least as great as that of propositional inference-that is, NP-hard.</template>
+	</category>
+	<category>
+		<pattern>* WHAT CAN AGENTS THAT HAVE ONLY BELIEFS DO *</pattern>
+		<template>they can deduce new knowledge.</template>
+	</category>
+	<category>
+		<pattern>* WHAT AGENTS HAVE ONLY BELIEFS DO *</pattern>
+		<template>they can deduce new knowledge.</template>
+	</category>
+	<category>
+		<pattern>* AGENTS HAVE ONLY BELIEFS *</pattern>
+		<template>they can deduce new knowledge.</template>
+	</category>
+	<category>
+		<pattern>* HOW CAN KNOWLEDGE ABOUT KNOWLEDGE BE USEFUL *</pattern>
+		<template>it will be useful in reasoning process and used to control inference.</template>
+	</category>
+	<category>
+		<pattern>* HOW KNOWLEDGE ABOUT KNOWLEDGE USEFUL *</pattern>
+		<template>it will be useful in reasoning process and used to control inference.</template>
+	</category>
+	<category>
+		<pattern>* KNOWLEDGE ABOUT KNOWLEDGE USEFUL *</pattern>
+		<template>it will be useful in reasoning process and used to control inference.</template>
+	</category>
+	<category>
+		<pattern>* HOW CAN WE CONTROL INFERENCE *</pattern>
+		<template>knowledge about one\'s knowledge is useful for controlling inference.</template>
+	</category>
+	<category>
+		<pattern>* HOW CONTROL INFERENCE *</pattern>
+		<template>knowledge about one's knowledge is useful for controlling inference.</template>
+	</category>
+	<category>
+		<pattern>* CAN WE INFERENCE *</pattern>
+		<template>knowledge about one's knowledge is useful for controlling inference.</template>
+	</category>
+	<category>
+		<pattern>* CONTROL INFERENCE *</pattern>
+		<template>knowledge about one's knowledge is useful for controlling inference.</template>
+	</category>
+	<category>
+		<pattern>* GIVE EXAMPLE OF HOW KNOWLEDGE ABOUT KNOWLEDGE CAN BE USEFUL *</pattern>
+		<template>suppose ahmed asks ali (what is the square root of 1764) and ali replies (I don't know.) If ahmed insists (think harder,) ali should realize that with some more thought, this question can in fact be answered.
+ On the other hand, if the question were (Is your mother sitting down right now?) then ali should realize that thinking harder is unlikely to help</template>
+	</category>
+	<category>
+		<pattern>* EXAMPLE HOW KNOWLEDGE ABOUT KNOWLEDGE USEFUL *</pattern>
+		<template>suppose ahmed asks ali (what is the square root of 1764) and ali replies (I don't know.) If ahmed insists (think harder,) ali should realize that with some more thought, this question can in fact be answered.
+ On the other hand, if the question were (Is your mother sitting down right now?) then ali should realize that thinking harder is unlikely to help</template>
+	</category>
+	<category>
+		<pattern>* HOW CAN KNOWLEDGE ABOUT OTHER KNOWLEDGE BE USEFUL *</pattern>
+		<template>one agent would know if the other agent knows something about himself or not and then asking him would be a convenient way to find out or not ; for example i don't know if my friend is sitting down now or not but i know that he knows that thing about himself then i would ask him.</template>
+	</category>
+	<category>
+		<pattern>* HOW KNOWLEDGE ABOUT OTHER KNOWLEDGE USEFUL *</pattern>
+		<template>one agent would know if the other agent knows something about himself or not and then asking him would be a convenient way to find out or not ; for example i don't know if my friend is sitting down now or not but i know that he knows that thing about himself then i would ask him.</template>
+	</category>
+	<category>
+		<pattern>* KNOWLEDGE OTHER KNOWLEDGE USEFUL *</pattern>
+		<template>one agent would know if the other agent knows something about himself or not and then asking him would be a convenient way to find out or not ; for example i don't know if my friend is sitting down now or not but i know that he knows that thing about himself then i would ask him.</template>
+	</category>
+	<category>
+		<pattern>* GIVE EXAMPLE OF PROPOSITIONAL ATTITUDES *</pattern>
+		<template>they are attitudes an agent can have toward mental objects, attitudes such as Believes, Knows, Wants, Intends, and Informs</template>
+	</category>
+	<category>
+		<pattern>* EXAMPLE PROPOSITIONAL ATTITUDES *</pattern>
+		<template>they are attitudes an agent can have toward mental objects, attitudes such as Believes, Knows, Wants, Intends, and Informs</template>
+	</category>
+	<category>
+		<pattern>* WHAT PROPOSITIONAL ATTITUDES *</pattern>
+		<template>they are attitudes an agent can have toward mental objects, attitudes such as Believes, Knows, Wants, Intends, and Informs</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS DIFFICULT ABOUT PROPOSITIONAL ATTITUDES *</pattern>
+		<template>The difficulty is that these attitudes do not behave like (normal) predicates</template>
+	</category>
+	<category>
+		<pattern>* WHAT DIFFICULT PROPOSITIONAL ATTITUDES *</pattern>
+		<template>The difficulty is that these attitudes do not behave like (normal) predicates</template>
+	</category>
+	<category>
+		<pattern>* DIFFICULT ABOUT PROPOSITIONAL ATTITUDES *</pattern>
+		<template>The difficulty is that these attitudes do not behave like (normal) predicates</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE DIFFERENCE BETWEEN REFERENTIAL TRANSPARENCY AND REFERENTIAL OPACITY *</pattern>
+		<template>referential transparency: it doesn't matter what term a logic uses to refer to an object, what matters is the object that the term names.
+ referential opacity : the terms used do matter, because not all agents know which terms are co-referentiaL.</template>
+	</category>
+	<category>
+		<pattern>* WHAT DIFFERENCE BETWEEN REFERENTIAL AND *</pattern>
+		<template>referential transparency: it doesn't matter what term a logic uses to refer to an object, what matters is the object that the term names.
+ referential opacity : the terms used do matter, because not all agents know which terms are co-referentiaL.</template>
+	</category>
+	<category>
+		<pattern>* DIFFERENCE TRANSPARENCY AND OPACITY *</pattern>
+		<template>referential transparency: it doesn't matter what term a logic uses to refer to an object, what matters is the object that the term names.
+ referential opacity : the terms used do matter, because not all agents know which terms are co-referentiaL.</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS BETTER TO USE CONSIDERING PROPOSITIONAL ATTITUDES REFERENTIAL OPACITY OR REFERENTIAL TRANSPARENCY *</pattern>
+		<template>referential opacity</template>
+	</category>
+	<category>
+		<pattern>* WHAT BETTER USE CONSIDERING PROPOSITIONAL ATTITUDES OPACITY OR TRANSPARENCY *</pattern>
+		<template>referential opacity</template>
+	</category>
+	<category>
+		<pattern>* WHY MODAL LOGIC IS *</pattern>
+		<template>to address the problem of referential opacity and referential transparency</template>
+	</category>
+	<category>
+		<pattern>* WHY MODAL LOGIC *</pattern>
+		<template>to address the problem of referential opacity and referential transparency</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE DIFFERENCE BETWEEN MODAL LOGIC AND REGULAR LOGIC *</pattern>
+		<template>Regular logic is concerned with a single modality, the modality of truth, allowing us to express (P is true.) Modal logic includes special modal operators that take sentences (rather than terms) as arguments.</template>
+	</category>
+	<category>
+		<pattern>* WHAT DIFFERENCE MODAL REGULAR LOGIC *</pattern>
+		<template>Regular logic is concerned with a single modality, the modality of truth, allowing us to express (P is true.) Modal logic includes special modal operators that take sentences (rather than terms) as arguments.</template>
+	</category>
+	<category>
+		<pattern>* DIFFERENCE MODAL LOGIC AND REGULAR LOGIC *</pattern>
+		<template>Regular logic is concerned with a single modality, the modality of truth, allowing us to express (P is true.) Modal logic includes special modal operators that take sentences (rather than terms) as arguments.</template>
+	</category>
+	<category>
+		<pattern>* GIVE EXAMPLE OF MODAL LOGIC *</pattern>
+		<template>A knows P is represented with the notation KAP, where K is the modal operator for knowledge.
+ It takes two arguments, an agent (written as the subscript) and a sentence.
+ The syntax of modal logic is the same as first-order logic, except that sentences can also be formed with modal operators1</template>
+	</category>
+	<category>
+		<pattern>* EXAMPLE MODAL LOGIC *</pattern>
+		<template>(A knows P) is represented with the notation KAP, where K is the modal operator for knowledge.
+ It takes two arguments, an agent (written as the subscript) and a sentence.
+ The syntax of modal logic is the same as first-order logic, except that sentences can also be formed with modal operators1</template>
+	</category>
+	<category>
+		<pattern>* EXAMPLE OF MODAL *</pattern>
+		<template>(A knows P) is represented with the notation KAP, where K is the modal operator for knowledge.
+ It takes two arguments, an agent (written as the subscript) and a sentence.
+ The syntax of modal logic is the same as first-order logic, except that sentences can also be formed with modal operators1</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE DIFFERENCE BETWEEN MODAL LOGIC AND FIRST ORDER LOGIC *</pattern>
+		<template>The syntax of modal logic is the same as first-order logic, except that sentences can also be formed with modal operators.</template>
+	</category>
+	<category>
+		<pattern>* WHAT DIFFERENCE MODAL AND FIRST ORDER LOGIC *</pattern>
+		<template>The syntax of modal logic is the same as first-order logic, except that sentences can also be formed with modal operators.</template>
+	</category>
+	<category>
+		<pattern>* DIFFERENCE MODAL LOGIC FIRST ORDER LOGIC *</pattern>
+		<template>The syntax of modal logic is the same as first-order logic, except that sentences can also be formed with modal operators.</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS DIFFICULT ABOUT MODAL LOGIC *</pattern>
+		<template>The semantics of modal logic is more complicated</template>
+	</category>
+	<category>
+		<pattern>* WHAT DIFFICULT MODAL LOGIC *</pattern>
+		<template>The semantics of modal logic is more complicated</template>
+	</category>
+	<category>
+		<pattern>* WHAT ABOUT MODAL LOGIC *</pattern>
+		<template>The semantics of modal logic is more complicated</template>
+	</category>
+	<category>
+		<pattern>* WHAT DOES A MODEL IN FIRST ORDER LOGIC CONTAIN *</pattern>
+		<template>In first-order logic a model contains a set of objects and an interpretation that maps each name to the appropriate object, relation, or function.</template>
+	</category>
+	<category>
+		<pattern>* WHAT MODEL FIRST ORDER LOGIC CONTAIN *</pattern>
+		<template>In first-order logic a model contains a set of objects and an interpretation that maps each name to the appropriate object, relation, or function.</template>
+	</category>
+	<category>
+		<pattern>* WHAT FIRST ORDER LOGIC CONTAIN *</pattern>
+		<template>In first-order logic a model contains a set of objects and an interpretation that maps each name to the appropriate object, relation, or function.</template>
+	</category>
+	<category>
+		<pattern>* WHY WE NEED COMPLEX MODEL THAN MODAL LOGIC AND FIRST ORDER LOGIC *</pattern>
+		<template>In modal logic we want to be able to consider both the possibility that some agent identity is Clark and that it isn't.
+ Therefore, we will need a more complicated model</template>
+	</category>
+	<category>
+		<pattern>* WHY NEED COMPLEX MODEL THAN MODAL LOGIC FIRST ORDER *</pattern>
+		<template>In modal logic we want to be able to consider both the possibility that some agent identity is Clark and that it isn't.
+ Therefore, we will need a more complicated model</template>
+	</category>
+	<category>
+		<pattern>* WE NEED COMPLEX MODEL THAN MODAL FIRST ORDER LOGIC *</pattern>
+		<template>In modal logic we want to be able to consider both the possibility that some agent identity is Clark and that it isn't.
+ Therefore, we will need a more complicated model</template>
+	</category>
+	<category>
+		<pattern>* WHAT DOES THE COMPLEX MODEL CONSIST OF *</pattern>
+		<template>it consists of a collection of possible worlds rather than just one true world.
+ The worlds are connected in a graph by accessibility relations, one relation for each modal operator.</template>
+	</category>
+	<category>
+		<pattern>* WHAT THE COMPLEX MODEL CONSIST *</pattern>
+		<template>it consists of a collection of possible worlds rather than just one true world.
+ The worlds are connected in a graph by accessibility relations, one relation for each modal operator.</template>
+	</category>
+	<category>
+		<pattern>* THE COMPLEX MODEL CONSIST OF *</pattern>
+		<template>it consists of a collection of possible worlds rather than just one true world.
+ The worlds are connected in a graph by accessibility relations, one relation for each modal operator.</template>
+	</category>
+	<category>
+		<pattern>* WHAT DOES ACCESSIBILITY RELATIONS DESCRIBE *</pattern>
+		<template>given a graph that consists of a collection of possible worlds for an agent , The worlds are connected in a graph by accessibility relations, one relation for each modal operator.
+ We say that world w1 is accessible from world w0 with respect to the modal operator K subscribt(A) if everything in w1 is consistent with what A knows in w0</template>
+	</category>
+	<category>
+		<pattern>* WHAT ACCESSIBILITY RELATIONS DESCRIBE *</pattern>
+		<template>given a graph that consists of a collection of possible worlds for an agent , The worlds are connected in a graph by accessibility relations, one relation for each modal operator.
+ We say that world w1 is accessible from world w0 with respect to the modal operator K subscribt(A) if everything in w1 is consistent with what A knows in w0</template>
+	</category>
+	<category>
+		<pattern>* ACCESSIBILITY RELATIONS DESCRIBE *</pattern>
+		<template>given a graph that consists of a collection of possible worlds for an agent , The worlds are connected in a graph by accessibility relations, one relation for each modal operator.
+ We say that world w1 is accessible from world w0 with respect to the modal operator K subscribt(A) if everything in w1 is consistent with what A knows in w0</template>
+	</category>
+	<category>
+		<pattern>* WHEN K P IS TRUE IN WORLD W *</pattern>
+		<template>if P is true in every world accessible from w.</template>
+	</category>
+	<category>
+		<pattern>* WHEN K P TRUE WORLD W *</pattern>
+		<template>if P is true in every world accessible from w.</template>
+	</category>
+	<category>
+		<pattern>* K P IS TRUE IN WORLD W *</pattern>
+		<template>if P is true in every world accessible from w.</template>
+	</category>
+	<category>
+		<pattern>* HOW CAN WE PROVE THE TRUTH OF A COMPLEX *</pattern>
+		<template>The truth of more complex sentences is derived by recursive application of the rule that says if P is true in every world accessible from w.
+ and the normal rules of first-order logic</template>
+	</category>
+	<category>
+		<pattern>* HOW PROVE TRUTH COMPLEX *</pattern>
+		<template>The truth of more complex sentences is derived by recursive application of the rule that says if P is true in every world accessible from w.
+ and the normal rules of first-order logic</template>
+	</category>
+	<category>
+		<pattern>* PROVE TRUTH OF COMPLEX *</pattern>
+		<template>The truth of more complex sentences is derived by recursive application of the rule that says if P is true in every world accessible from w.
+ and the normal rules of first-order logic</template>
+	</category>
+	<category>
+		<pattern>* IS MODAL LOGIC USED TO REASON ABOUT NESTED LOGIC SENTENCES *</pattern>
+		<template>Yes.</template>
+	</category>
+	<category>
+		<pattern>* MODAL LOGIC USED TO REASON LOGIC SENTENCES *</pattern>
+		<template>Yes.</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE NUMBER OF POSSIBLE WORLDS *</pattern>
+		<template>infinity.</template>
+	</category>
+	<category>
+		<pattern>* NUMBER POSSIBLE WORLDS *</pattern>
+		<template>infinity.</template>
+	</category>
+	<category>
+		<pattern>* HOW TO OVERCOME THE INFINITY NUMBER OF WORLDS *</pattern>
+		<template>introduce just the ones you need to represent what you are trying to model.</template>
+	</category>
+	<category>
+		<pattern>* NUMBER POSSIBLE WORLDS *</pattern>
+		<template>introduce just the ones you need to represent what you are trying to model.</template>
+	</category>
+	<category>
+		<pattern>* WHEN DO WE NEED TO ADD NEW POSSIBLE WORLD TO OUR MODEL *</pattern>
+		<template>if it talks about different possible facts , or to talk about different states of knowledge</template>
+	</category>
+	<category>
+		<pattern>* WHEN NEED ADD NEW POSSIBLE WORLD TO *</pattern>
+		<template>if it talks about different possible facts , or to talk about different states of knowledge</template>
+	</category>
+	<category>
+		<pattern>* NEED ADD POSSIBLE WORLD TO MODEL *</pattern>
+		<template>if it talks about different possible facts , or to talk about different states of knowledge</template>
+	</category>
+	<category>
+		<pattern>* NEED ADD POSSIBLE WORLD *</pattern>
+		<template>if it talks about different possible facts , or to talk about different states of knowledge</template>
+	</category>
+	<category>
+		<pattern>* ADD POSSIBLE WORLD *</pattern>
+		<template>if it talks about different possible facts , or to talk about different states of knowledge</template>
+	</category>
+	<category>
+		<pattern>* CAN TWO POSSIBLE WORLDS HAVE THE SAME BASE FACTS *</pattern>
+		<template>yes , but differ in their accessibility relations, and therefore in facts about knowledge.</template>
+	</category>
+	<category>
+		<pattern>* TWO POSSIBLE WORLDS HAVE SAME BASE FACTS *</pattern>
+		<template>yes , but differ in their accessibility relations, and therefore in facts about knowledge.</template>
+	</category>
+	<category>
+		<pattern>* POSSIBLE WORLDS HAVE SAME FACTS *</pattern>
+		<template>yes , but differ in their accessibility relations, and therefore in facts about knowledge.</template>
+	</category>
+	<category>
+		<pattern>* HOW CAN MODAL LOGIC DEAL WITH AMBIGIOUS ENGLISH SENTENCES *</pattern>
+		<template>Modal logic solves some tricky issues with the interplay of quantifiers and knowledge</template>
+	</category>
+	<category>
+		<pattern>* HOW MODAL LOGIC DEAL AMBIGIOUS ENGLISH *</pattern>
+		<template>Modal logic solves some tricky issues with the interplay of quantifiers and knowledge</template>
+	</category>
+	<category>
+		<pattern>* MODAL LOGIC DEAL AMBIGIOUS SENTENCES *</pattern>
+		<template>Modal logic solves some tricky issues with the interplay of quantifiers and knowledge</template>
+	</category>
+	<category>
+		<pattern>* WHAT LOGICAL AGENTS SHOULD BE ABLE TO *</pattern>
+		<template>logical agents should be able to introspect on their own knowledge.
+ If they know something, then they know that they know it</template>
+	</category>
+	<category>
+		<pattern>* WHAT LOGICAL AGENTS SHOULD BE ABLE TO *</pattern>
+		<template>logical agents should be able to introspect on their own knowledge.
+ If they know something, then they know that they know it</template>
+	</category>
+	<category>
+		<pattern>* LOGICAL AGENTS SHOULD ABLE TO *</pattern>
+		<template>logical agents should be able to introspect on their own knowledge.
+ If they know something, then they know that they know it</template>
+	</category>
+	<category>
+		<pattern></pattern>
+		<template>logical agents should be able to introspect on their own knowledge.
+ If they know something, then they know that they know it</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE PROBLEMS OF MODAL LOGIC *</pattern>
+		<template>one problem with the modal logic approach is that it assumes logical omniscience on the part of agents.
+ That is, if an agent knows a set of axioms, then it knows all consequences of those axioms.
+ This is on shaky ground even for the somewhat abstract notion of knowledge, but it seems even worse for belief, because belief has more connotation of referring to things that are physically represented in the agent, not just potentially derivable.</template>
+	</category>
+	<category>
+		<pattern>* WHAT PROBLEMS MODAL LOGIC *</pattern>
+		<template>one problem with the modal logic approach is that it assumes logical omniscience on the part of agents.
+ That is, if an agent knows a set of axioms, then it knows all consequences of those axioms.
+ This is on shaky ground even for the somewhat abstract notion of knowledge, but it seems even worse for belief, because belief has more connotation of referring to things that are physically represented in the agent, not just potentially derivable.</template>
+	</category>
+	<category>
+		<pattern>* PROBLEMS MODAL LOGIC *</pattern>
+		<template>one problem with the modal logic approach is that it assumes logical omniscience on the part of agents.
+ That is, if an agent knows a seft of axioms, then it knows all consequences of those axioms.
+ This is on shaky ground even for the somewhat abstract notion of knowledge, but it seems even worse for belief, because belief has more connotation of referring to things that are physically represented in the agent, not just potentially derivable.</template>
+	</category>
+	<category>
+		<pattern>* WHAT UPPER ONTOLOGY *</pattern>
+		<template>The general framework of concepts.</template>
+	</category>
+	<category>
+		<pattern>* WHAT UPPER ONTOLOGY *</pattern>
+		<template>The general framework of concepts.</template>
+	</category>
+	<category>
+		<pattern>* WHAT UPPER ONTOLOGY *</pattern>
+		<template>The general framework of concepts.</template>
+	</category>
+	<category>
+		<pattern>* WHAT ONTOLOGICAL ENGINEERING *</pattern>
+		<template>Representing abstract concepts such as Events, Time, Physical Objects, and Beliefs that occur in many different domains.</template>
+	</category>
+	<category>
+		<pattern>* HOW INTRODUCE CLASSES *</pattern>
+		<template>by describing the technology (TTL, CMOS, and so on) as well as the input-output specification.
+ If we wanted to discuss reliability or diagnosis, we would include the possibility that the structure of the circuit or the properties of the gates might change spontaneously.
+ To account for stray capacitances, we would need to represent where the wires are on the board.</template>
+	</category>
+	<category>
+		<pattern>* ONTOLOGY DIFFER ONTOLOGIES *</pattern>
+		<template>A general-purpose ontology should be applicable in more or less any special-purpose domain (with the addition of domain-specific axioms).
+ This means that no representational issue can be finessed or brushed under the carpet.
+ In any sufficiently demanding domain, different areas of knowledge must be unified, because reasoning and problem solving could involve several areas simultaneously.
+ A robot circuit-repair system, for instance, needs to reason about circuits in terms of electrical connectivity and physical layout, and about time, both for circuit timing analysis and estimating labor costs.
+ The sentences describing time therefore must be capable of being combined with those describing spatial layout and must work equally well for nanoseconds and minutes and for angstroms and meters.</template>
+	</category>
+	<category>
+		<pattern>* ROUTES BUILD EXISTING ONTOLOGIES *</pattern>
+		<template>1.
+ By a team of trained ontologist/logicians, who architect the ontology and write axioms.
+ The CYC system was mostly built this way (Lenat and Guha, 1990).
+ 2.
+ By importing categories, attributes, and values from an existing database or databases.
+ DBPEDIA was built by importing structured facts from Wikipedia (Bizer et al., 2007).
+ 3.
+ By parsing text documents and extracting information from them.
+ TEXTRUNNER was built by reading a large corpus of Web pages (Banko and Etzioni, 2008).
+ 4.
+ By enticing unskilled amateurs to enter commonsense knowledge.
+ The OPENMIND system was built by volunteers who proposed facts in English (Singh et al., 2002; Chklovski and Gil, 2005).</template>
+	</category>
+	<category>
+		<pattern>* WHAT DEFINITION REIFICATION *</pattern>
+		<template>Turning a proposition into an object is called reification.</template>
+	</category>
+	<category>
+		<pattern></pattern>
+		<template>I do not have an answer</template>
+	</category>
+	<category>
+		<pattern>* present *</pattern>
+		<template></template>
+	</category>
+</aiml>

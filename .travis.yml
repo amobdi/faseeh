@@ -14,4 +14,4 @@ virtualenv:
   
   
 # command to run tests
-script: nosetests
+script: make test

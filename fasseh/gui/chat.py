@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         MainWindow.setFont(font)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("LOGO.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("img/LOGO.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(_fromUtf8("background-color: #00aced;\n"
 "\n"
@@ -77,29 +77,29 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton#pushButton_3{    \n"
 "border:none;\n"
-"image: url(\"go2.png\"); \n"
+"image: url(\"img/go2.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_3:hover{    \n"
 "border:none;\n"
-"image: url(\"go.png\"); \n"
+"image: url(\"img/go.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_3:pressed{    \n"
-"image: url(\"go2.png\"); \n"
+"image: url(\"img/go2.png\"); \n"
 "}\n"
 "QPushButton#pushButton_4{    \n"
 "border:none;\n"
-"image: url(\"back2.png\"); \n"
+"image: url(\"img/back2.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_4:hover{    \n"
 "border:none;\n"
-"image: url(\"back.png\"); \n"
+"image: url(\"img/back.png\"); \n"
 "background-color: #00acee;\n"
 "}\n"
 "QPushButton#pushButton_4:pressed{    \n"
-"image: url(\"back2.png\"); \n"
+"image: url(\"img/back2.png\"); \n"
 "}\n"
 "\n"
 "\n"
@@ -115,7 +115,7 @@ class Ui_MainWindow(object):
         self.label = QtGui.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(690, 0, 71, 71))
         self.label.setText(_fromUtf8(""))
-        self.label.setPixmap(QtGui.QPixmap(_fromUtf8("logo_300.png")))
+        self.label.setPixmap(QtGui.QPixmap(_fromUtf8("img/logo_300.png")))
         self.label.setScaledContents(True)
         self.label.setObjectName(_fromUtf8("label"))
         self.pushButton_3 = QtGui.QPushButton(self.centralwidget)
@@ -123,7 +123,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setStyleSheet(_fromUtf8(""))
         self.pushButton_3.setText(_fromUtf8(""))
         self.pushButton_3.setObjectName(_fromUtf8("pushButton_3"))
-        self.textEdit = QtGui.QTextEdit(self.centralwidget)
+        self.textEdit = MessageTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(30, 460, 731, 91))
         self.textEdit.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
         self.textEdit.setLineWrapMode(QtGui.QTextEdit.FixedPixelWidth)
@@ -150,7 +150,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
 
         #type your code here#
-        
+        #self.textEdit.sendMessage.connect(lambda: self.add_new_label(0,"sd"))
+        QtCore.QObject.connect(self.textEdit, QtCore.SIGNAL("sendMessage"), lambda: self.add_new_label(0,"sd"))
         #type your code here#
         self.label_7 = QtGui.QLabel(self.scrollAreaWidgetContents_2)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
@@ -187,7 +188,7 @@ class Ui_MainWindow(object):
         
         
         #self.pushButton_4.clicked.connect(lambda: self.add_new_label(1))
-        self.pushButton_3.clicked.connect(self.add_new_label) 
+        self.pushButton_3.clicked.connect(lambda: self.add_new_label(0,"sd")) 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 798, 21))
@@ -203,17 +204,17 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "Fasseh", None))
         
-        self.label_7.setText(_translate("MainWindow", "hiiiiiiiiiiiiiiiiiiiiiiiii", None))    
+        self.label_7.setText(_translate("MainWindow", "hi, i'm fasse7", None))    
     def gotoback(self):
         self.label_3.setWordWrap(True);
         self.label_3.setText(self.textEdit.toPlainText())
         self.resizeEvent(self.label_3)
     def resizeEvent(self,lblx):     
         lblx.setWordWrap(True)
-        text_width1 = lblx.fontMetrics().boundingRect(lblx.text()).width()
+        text_width1 = lblx.fontMetrics().boundingRect(lblx.text()).width() + 30
         text_height = lblx.fontMetrics().boundingRect(lblx.text()).height()
         if text_width1 < 90 :
-            text_width1 = text_width1 + 30
+            text_width1 = text_width1
             text_height = lblx.fontMetrics().boundingRect(lblx.text()).height() +30
             lblx.setFixedHeight(text_height)
         if text_width1 > 600 :
@@ -226,13 +227,13 @@ class Ui_MainWindow(object):
         
         
 
-    def add_new_label(self,direction):
+    def add_new_label(self,direction,mytext):
         if self.textEdit.toPlainText()!= "" or direction == 1:
             label_5 = QtGui.QLabel(self.scrollAreaWidgetContents_2)
             label_5.setFixedWidth(600)
             label_5.setFixedHeight(80)
             label_5.setText(self.textEdit.toPlainText())
-            #self.textEdit.setText("")
+            self.textEdit.setText("")
             sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
             sizePolicy.setHorizontalStretch(9)
             sizePolicy.setVerticalStretch(6)
@@ -244,6 +245,7 @@ class Ui_MainWindow(object):
             label_5.setFont(font)
             if direction == 1 :
                 label_5.setLayoutDirection(QtCore.Qt.RightToLeft)
+                label_5.setText(mytext)
             label_5.setAutoFillBackground(False)
             label_5.setStyleSheet(_fromUtf8("background-color:white;\n"
 "border-radius:15%;\n"
@@ -258,12 +260,34 @@ class Ui_MainWindow(object):
             label_5.setObjectName(_fromUtf8("label_5"))
             self.verticalLayout_3.addWidget(label_5)
             self.resizeEvent(label_5)
-
-           
             
-            self.scrollArea.verticalScrollBar().setValue(1000)
+            #self.scrollArea.verticalScrollBar().ensureVisible(0, scrollAreaHeight, 0, 0)
+            scrollBar = self.scrollArea.verticalScrollBar()
+            scrollBar.setValue(scrollBar.maximum())
+            scrollBar.setMaximum(scrollBar.maximum() + 1000)
+            xxczczx= scrollBar.value() + 1000
+            scrollBar.setValue(xxczczx)
+#############################################################################
+class MessageTextEdit(QtGui.QTextEdit):
+    def __init__(self,  parent):
+        super(MessageTextEdit,  self).__init__(parent)
 
+        self.parent = parent
+        self.__sendMessageOnReturn = False
 
+    def sendMessageOnreturn(self):
+        return self.__sendMessageOnReturn
+
+    def setSendMessageOnReturn(self,  state):
+        self.__sendMessageOnReturn = state
+
+    def keyPressEvent(self,  event):
+        if event.key() == QtCore.Qt.Key_Return:
+            self.emit(QtCore.SIGNAL("sendMessage"))
+                
+        #self.emit(QtCore.SIGNAL("sendMessage"))
+        QtGui.QTextEdit.keyPressEvent(self,  event)
+#################################################################################
 
 if __name__ == "__main__":
     import sys

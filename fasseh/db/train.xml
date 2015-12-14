@@ -801,7 +801,7 @@
  The OPENMIND system was built by volunteers who proposed facts in English (Singh et al., 2002; Chklovski and Gil, 2005).</template>
 	</category>
 	<category>
-		<pattern>* WHAT * DEFINITION * REIFICATION *</pattern>
+		<pattern>* WHAT * REIFICATION *</pattern>
 		<template>Turning a proposition into an object is called reification.</template>
 	</category>
 	<category>
@@ -2959,6 +2959,566 @@
 		<template>With disjunctive descriptions, nested definitions can lead easily to an exponential number of alternative routes by which one category can subsume another.</template>
 	</category>
 
+		<category>
+		<pattern>* WHAT * REASONING SYSTEMS * CATEGORIES*</pattern>
+		<template>
+		Reasoning systems Categories are the primary building blocks of large-scale knowledge representation schemes.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * CATEGORIES * REASONING SYSTEMS*</pattern>
+		<template>
+		Reasoning systems Categories are the primary building blocks of large-scale knowledge representation schemes.
+		</template>
+	</category>
+	<category>	
+		<pattern>* WHAT * PRIMARY * BLOCKS * KNOWLEDGE REPRESENTATION *</pattern>
+		<template>
+		Categories are the primary building blocks of large-scale knowledge representation schemes.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * FAMILIES * REASONING SYSTEMS*</pattern>
+		<template>
+		There are two closely related families of systems: semantic networks and description logics.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * FAMILIES * REASONING SYSTEMS*</pattern>
+		<template>
+		There are two closely related families of systems: semantic networks and description logics.
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINE * SEMANTIC NETWORKS *</pattern>
+		<template>
+		Semantic networks provide graphical aids for visualizing a knowledge base and efficient algorithms for inferring properties of an object on the basis of its category membership.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * SEMANTIC NETWORKS PROVIDE *</pattern>
+		<template>
+		Semantic networks provide graphical aids for visualizing a knowledge base and efficient algorithms for inferring properties of an object on the basis of its category membership.
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINE * DESCRIPTION LOGICS *</pattern>
+		<template>
+		Description logics provide a formal language for constructing and combining category definitions and efficient algorithms for deciding subset and superset relationships between categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * DESCRIPTION LOGICS PROVIDE *</pattern>
+		<template>
+		Description logics provide a formal language for constructing and combining category definitions and efficient algorithms for deciding subset and superset relationships between categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * CHARLES * PROPOSE*</pattern>
+		<template>
+		In 1909, Charles S. Peirce proposed a graphical notation of nodes and edges called existential graphs.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * PEIRCE * PROPOSE*</pattern>
+		<template>
+		In 1909, Charles S. Peirce proposed a graphical notation of nodes and edges called existential graphs.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * CHARLES * PROPOSAL*</pattern>
+		<template>
+		In 1909, Charles S. Peirce proposed a graphical notation of nodes and edges called existential graphs.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * PEIRCE * PROPOSAL*</pattern>
+		<template>
+		In 1909, Charles S. Peirce proposed a graphical notation of nodes and edges called existential graphs.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHEN * EXESTENIAL GRAPHS * *</pattern>
+		<template>
+		In 1909, Charles S. Peirce proposed a graphical notation of nodes and edges called existential graphs.
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINE * EXESTENIAL GRAPHS *</pattern>
+		<template>
+		A graphical notation of nodes and edges that was called "the logic of the future."
+		</template>
+	</category>
+	<category>
+		<pattern>* DESCRIBE * DEBATE * EXESTENIAL GRAPHS *</pattern>
+		<template>
+		There is a long-running debate between advocates of "logic" and advocates of "semantic networks." Unfortunately, the debate obscured the fact that semantics networks-at least those with well-defined semantics-are a form of logic.
+		</template>
+	</category>
+	<category>
+		<pattern>* * SEMANTIC NETWORKS * LOGIC *</pattern>
+		<template>
+		The notation that semantic networks provide for certain kinds of sentences is often more convenient, but if we strip away the "human interface" issues, the underlying concepts-objects, relations, quantification, and so on-are the same.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * SEMANTIC NETWORKS * REPRESENT *</pattern>
+		<template>
+		There are many variants of semantic networks, but all are capable of representing individual objects, categories of objects, and relations among objects.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * SEMANTIC NETWORKS * REPRESENTATION *</pattern>
+		<template>
+		There are many variants of semantic networks, but all are capable of representing individual objects, categories of objects, and relations among objects.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * TYPICAL GRAPHICAL * SEMANTIC NETWORKS *</pattern>
+		<template>
+		A typical graphical notation displays object or category names in ovals or boxes, and connects them with labeled links.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * DOUBLE BOXED *</pattern>
+		<template>
+		A special notation for the semantic networks. For example, we know that persons have female persons as mothers, so can we draw a HasMother link from Persons to FemalePersons? The answer is no, because HasMother is a relation between a person and his or her mother, and categories do not have mothers.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * SINGLE BOXED *</pattern>
+		<template>
+		the single-boxed link is used to assert properties of every member of a category.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * SEMANTIC NETWORKS * INHERITANCE *</pattern>
+		<template>
+		By virtue of being a person, Mary inherits the property of having two legs. Thus, to find out how many legs Mary has, the inheritance algorithm follows the MemberOf link from Mary to the category she belongs to, and then follows SubsetOf links up the hierarchy until it finds a category for which there is a boxed Legs link-in this case, the Persons category.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * SEMANTIC NETWORKS * INHERITANCE *</pattern>
+		<template>
+		By virtue of being a person, Mary inherits the property of having two legs. Thus, to find out how many legs Mary has, the inheritance algorithm follows the MemberOf link from Mary to the category she belongs to, and then follows SubsetOf links up the hierarchy until it finds a category for which there is a boxed Legs link-in this case, the Persons category.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * ATTRACTIONS * SEMANTIC NETWORKS * *</pattern>
+		<template>
+		The simplicity and efficiency of this inference mechanism, compared with logical theorem proving, has been one of the main attractions of semantic networks.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * SEMANTIC NETWORKS * ATTRACTIONS *</pattern>
+		<template>
+		The simplicity and efficiency of this inference mechanism, compared with logical theorem proving, has been one of the main attractions of semantic networks.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHEN * INHERITANCE * COMPLICATED *</pattern>
+		<template>
+		Inheritance becomes complicated when an object can belong to more than one category or when a category can be a subset of more than one other category.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * INHERITANCE * COMPLICATED *</pattern>
+		<template>
+		Inheritance becomes complicated when an object can belong to more than one category or when a category can be a subset of more than one other category.
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINE * MULTIPLE INHERITANCE*</pattern>
+		<template>
+		Multiple inheritance is when an object can belong to more than one category or when a category can be a subset of more than one other category.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHY * MULTIPLE * INHERITANCE * BANNED *</pattern>
+		<template>
+		The inheritance algorithm might find two or more conflicting values answering the query. For this reason, multiple inheritance is banned in some object-oriented programming (OOP) languages, such as Java
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * BAN * MULTIPLE * INHERITANCE *</pattern>
+		<template>
+		The inheritance algorithm might find two or more conflicting values answering the query. For this reason, multiple inheritance is banned in some object-oriented programming (OOP) languages, such as Java
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * DRAWBACK * SEMANTIC NETWORKS * FIRST-ORDER LOGIC *</pattern>
+		<template>
+		The fact that links between bubbles represent only binary relations. For example, the sentence Fly(Shankar, NewYork, NewDelhi, Yesterday) cannot be asserted directly in a semantic network.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * N-ARY ASSERTIONS *</pattern>
+		<template>
+		We can obtain the effect of n-ary assertions by reifying the proposition itself as an event belonging to an appropriate event category.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * N-ARY ASSERTIONS *</pattern>
+		<template>
+		We can obtain the effect of n-ary assertions by reifying the proposition itself as an event belonging to an appropriate event category.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * RESTRICTION * BINARY RELATIONS *</pattern>
+		<template>
+		The restriction to binary relations forces the creation of a rich ontology of reified concepts.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * RESTRICTION * BINARY RELATIONS *</pattern>
+		<template>
+		The restriction to binary relations forces the creation of a rich ontology of reified concepts.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * REIFICTION * PROPOSITIONS *</pattern>
+		<template>
+		Reification of propositions makes it possible to represent every ground, function-free atomic sentence of first-order logic in the semantic network notation.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * REIFICTION * PROPOSITIONS *</pattern>
+		<template>
+		Reification of propositions makes it possible to represent every ground, function-free atomic sentence of first-order logic in the semantic network notation.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * UNIVERSALLY QUALIFIED * ASSERTED *</pattern>
+		<template>
+		 Certain kinds of universally quantified sentences can be asserted using inverse links and the singly boxed and doubly boxed arrows applied to categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * UNIVERSALLY QUALIFIED * ASSERTED *</pattern>
+		<template>
+		 Certain kinds of universally quantified sentences can be asserted using inverse links and the singly boxed and doubly boxed arrows applied to categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * MISSING * FIRST-ORDER * SEMANTIC * *</pattern>
+		<template>
+		Negation, disjunction, nested function symbols, and existential quantification are all missing.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * MISSING * FIRST-ORDER * SEMANTIC * *</pattern>
+		<template>
+		Negation, disjunction, nested function symbols, and existential quantification are all missing.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * SEMANTIC NETWORKS * EQUIVILANT * FIRST-ORDER *</pattern>
+		<template>
+		 It is possible to extend the notation to make it equivalent to first-order logic-as in Peirce's existential graphs-but doing so negates one of the main advantages of semantic networks, which is the simplicity and transparency of the inference processes.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * SEMANTIC NETWORKS * EQUIVILANT * FIRST-ORDER *</pattern>
+		<template>
+		 It is possible to extend the notation to make it equivalent to first-order logic-as in Peirce's existential graphs-but doing so negates one of the main advantages of semantic networks, which is the simplicity and transparency of the inference processes.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * EXTEND NOTATION * SEMANTIC NETWORKS *</pattern>
+		<template>
+		It is possible to extend the notation to make it equivalent to first-order logic-as in Peirce's existential graphs-but doing so negates one of the main advantages of semantic networks, which is the simplicity and transparency of the inference processes.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * NOTATION EXTENSION * SEMANTIC NETWORKS *</pattern>
+		<template>
+		 It is possible to extend the notation to make it equivalent to first-order logic-as in Peirce's existential graphs-but doing so negates one of the main advantages of semantic networks, which is the simplicity and transparency of the inference processes.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * ADVANTAGES * SEMANTIC NETWORKS *</pattern>
+		<template>
+		The simplicity and transparency of the inference processes.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * ADVANTAGES * SEMANTIC NETWORKS *</pattern>
+		<template>
+		The simplicity and transparency of the inference processes.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHY * LARGE NETWORKS * QUERIES * EFFICIENT *</pattern>
+		<template>
+		because (a) it is easy to visualize the steps that the inference procedure will go through and (b) in some cases the query language is so simple that difficult queries cannot be posed.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * EFFICIENCY * LARGE NETWORKS * QUERIES *</pattern>
+		<template>
+		because (a) it is easy to visualize the steps that the inference procedure will go through and (b) in some cases the query language is so simple that difficult queries cannot be posed.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHEN * SEMANTIC NETWORKS * PROCEDURAL ATTACHMENT *</pattern>
+		<template>
+		In cases where the expressive power proves to be too limiting, many semantic network systems provide for procedural attachment to fill in the gaps.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * SEMANTIC NETWORKS * PROCEDURAL ATTACHMENT *</pattern>
+		<template>
+		In cases where the expressive power proves to be too limiting, many semantic network systems provide for procedural attachment to fill in the gaps.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * SEMANTIC NETWORKS * FILL * GAPS *</pattern>
+		<template>
+		Many semantic network systems provide for procedural attachment to fill in the gaps
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * PROCEDURAL ATTACHMENT*</pattern>
+		<template>
+		Procedural attachment is a technique whereby a query about (or sometimes an assertion of) a certain relation results in a call to a special procedure designed for that relation rather than a general inference algorithm.
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINE * PROCEDURAL ATTACHMENT*</pattern>
+		<template>
+		Procedural attachment is a technique whereby a query about (or sometimes an assertion of) a certain relation results in a call to a special procedure designed for that relation rather than a general inference algorithm.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * IMPORTANT * SEMANTIC NETWORKS *</pattern>
+		<template>
+		One of the most important aspects of semantic networks is their ability to represent default values for categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * IMPORTANT * SEMANTIC NETWORKS *</pattern>
+		<template>
+		One of the most important aspects of semantic networks is their ability to represent default values for categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * OVERRIDING * DEFAULT VALUES *</pattern>
+		<template>
+		The default semantics is enforced naturally by the inheritance algorithm, because it follows links upwards from the object itself (John in this case) and stops as soon as it finds a value. We say that the default is overridden by the more specific value.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * OVERRIDING * DEFAULT VALUES *</pattern>
+		<template>
+		The default semantics is enforced naturally by the inheritance algorithm, because it follows links upwards from the object itself (John in this case) and stops as soon as it finds a value. We say that the default is overridden by the more specific value.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * FULL-ORDER * DESIGN *</pattern>
+		<template>
+		The syntax of first-order logic is designed to make it easy to say things about objects. 
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * DESCRIPTION LOGICS * DESIGN *</pattern>
+		<template>
+		Description logics are notations that are designed to make it easier to describe definitions and properties of categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPARE * FULL-ORDER * DESCRIPTION LOGICS *</pattern>
+		<template>
+		The syntax of first-order logic is designed to make it easy to say things about objects. Description logics are notations that are designed to make it easier to describe definitions and properties of categories.
+		The description logic has an an algebra of operations on predicates, which of course we can't do in first-order logic. Any description in C LASSIC can be translated into an equivalent first-order sentence, but some descriptions are more straightforward in CLASSIC.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * DESCRIPTION LOGIC * EVOLVE *</pattern>
+		<template>
+		Description logic systems evolved from semantic networks in response to pressure to formalize what the networks mean while retaining the emphasis on taxonomic structure as an organizing principle.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * EVOLUTION * DESCRIPTION LOGIC *</pattern>
+		<template>
+		Description logic systems evolved from semantic networks in response to pressure to formalize what the networks mean while retaining the emphasis on taxonomic structure as an organizing principle.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * PRINCIPAL INFERENCE * DESCRIPTION LOGICS *</pattern>
+		<template>
+		The principal inference tasks for description logics are subsumption, classification, and Some systems also include consistency of a category definition.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * PRINCIPAL INFERENCE * DESCRIPTION LOGICS *</pattern>
+		<template>
+		The principal inference tasks for description logics are subsumption, classification, and Some systems also include consistency of a category definition.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * SUBSUMPTION*</pattern>
+		<template>
+		checking if one category is a subset of another by comparing their definitions.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * CLASSIFICATION*</pattern>
+		<template>
+		checking whether an object belongs to a category.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * CONSISTENCY * CATEGORY *</pattern>
+		<template>
+		checking whether the membership criteria are logically satisfiable.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * CLASSIC * DESCRIPTION LOGIC *</pattern>
+		<template>
+		The CLASSIC language (Borgida et al., 1989) is a typical description logic.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * IMPORTANT * DESCRIPTION LOGICS *</pattern>
+		<template>
+		Perhaps the most important aspect of description logics is their emphasis on tractability of inference.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * IMPORTANT * DESCRIPTION LOGICS *</pattern>
+		<template>
+		Perhaps the most important aspect of description logics is their emphasis on tractability of inference.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * PROBLEM INSTANCE *</pattern>
+		<template>
+		A problem instance is solved by describing it and then asking if it is subsumed by one of several possible solution categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * PROBLEM INSTANCE *</pattern>
+		<template>
+		A problem instance is solved by describing it and then asking if it is subsumed by one of several possible solution categories.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * FIRST-ORDER LOGIC * DESCRIPTION LOGICS * TIME *</pattern>
+		<template>
+		In standard first-order logic systems, predicting the solution time is often impossible. It is frequently left to the user to engineer the representation to detour around sets of sentences that seem to be causing the system to take several weeks to solve a problem. The thrust in description logics, on the other hand, is to ensure that subsumption-testing can be solved in time polynomial in the size of the descriptions.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * CONSEQUENCES * PROBLEM *</pattern>
+		<template>
+		It can only have one of two consequences: either hard problems cannot be stated at all, or they require exponentially large descriptions! 
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * TRACTABILITY RESULTS *</pattern>
+		<template>
+		The tractability results do shed light on what sorts of constructs cause problems and thus help the user to understand how different representations behave.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * TRACTABILITY RESULTS *</pattern>
+		<template>
+		The tractability results do shed light on what sorts of constructs cause problems and thus help the user to understand how different representations behave.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * TRACTABILITY RESULTS *</pattern>
+		<template>
+		The tractability results do shed light on what sorts of constructs cause problems and thus help the user to understand how different representations behave. For example, description logics usually lack negation and disjunction.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * DESCRIPTION LOGICS * LACK *</pattern>
+		<template>
+		Description logics usually lack negation and disjunction.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * LACK * DESCRIPTION LOGICS *</pattern>
+		<template>
+		Description logics usually lack negation and disjunction.
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT * DISADVANTAGES * DESCRIPTION LOGICS *</pattern>
+		<template>
+		Description logics usually lack negation and disjunction.
+		</template>
+	</category>
+	<category>
+		<pattern>* LIST * DISADVANTAGES * DESCRIPTION LOGICS *</pattern>
+		<template>
+		Description logics usually lack negation and disjunction.
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW * DESCRIPTION LOGIC * DISJUNCTION *</pattern>
+		<template>
+		CLASSIC allows only a limited form of disjunction in the Fills and One Of constructs, which permit disjunction over explicitly enumerated individuals but not over descriptions.
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUSS * DESCRIPTION LOGIC * DISJUNCTION *</pattern>
+		<template>
+		CLASSIC allows only a limited form of disjunction in the Fills and One Of constructs, which permit disjunction over explicitly enumerated individuals but not over descriptions.
+		</template>
+	</category>
+	<category>
+		<pattern>*  WHAT * DESCRIPTION LOGICS * NESTED DEFINITION *</pattern>
+		<template>
+		With disjunctive descriptions, nested definitions can lead easily to an exponential number of alternative routes by which one category can subsume another.
+		</template>
+	</category>
+	<category>
+		<pattern>*  DISCUSS * DESCRIPTION LOGICS * NESTED DEFINITION *</pattern>
+		<template>
+		With disjunctive descriptions, nested definitions can lead easily to an exponential number of alternative routes by which one category can subsume another.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * TYPICAL GRAPHICAL NOTATION * SEMANTIC NETWORKS *</pattern>
+		<template>
+		For Example, a MemberOf link between Mary and FemalePersons, corresponding to the logical assertion Mary ∈ FemalePersons; similarly, the SisterOf link between Mary and John corresponds to the assertion SisterOf (Mary, John). We can connect categories using SubsetOf links, and so on.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * DOUBLE BOXED *</pattern>
+		<template>
+		For example, we know that persons have female persons as mothers, so can we draw a HasMother link from Persons to FemalePersons? The answer is no, because HasMother is a relation between a person and his or her mother, and categories do not have mothers.5 For this reason, we have used a special notation-the double-boxed link
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * INHERITANCE * SEMANTIC NETWORKS *</pattern>
+		<template>
+		For example, by virtue of being a person, Mary inherits the property of having two legs. Thus, to find out how many legs Mary has, the inheritance algorithm follows the MemberOf link from Mary to the category she belongs to, and then follows SubsetOf links up the hierarchy until it finds a category for which there is a boxed Legs link-in this case, the Persons category. 
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * BINARY RELATIONS * SEMANTIC NETWORKS *</pattern>
+		<template>
+		For example, the sentence Fly(Shankar, NewYork, NewDelhi, Yesterday) cannot be asserted directly in a semantic network. Nonetheless, we can obtain the effect of n-ary assertions by reifying the proposition itself as an event belonging to an appropriate event category.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * DRAWBACK * SEMANTIC NETWORKS *</pattern>
+		<template>
+		For example, the sentence Fly(Shankar, NewYork, NewDelhi, Yesterday) cannot be asserted directly in a semantic network. Nonetheless, we can obtain the effect of n-ary assertions by reifying the proposition itself as an event belonging to an appropriate event category.
+		</template>
+	</category>
+	<category>
+		<pattern>* GIVE * NOTATION * DESCRIPTION LOGIC *</pattern>
+		<template>
+		For example, to say that bachelors are unmarried adult males we would write: Bachelor = And(Unmarried, Adult, Male) .
+		</template>
+	</category>
+	
 	<!-- Synomyns -->
 	<category>
 		<pattern>* DEFINE *</pattern>
@@ -3028,5 +3588,70 @@
 		<template>
 			<srai><star index="1"/> WHY <star index="2"/></srai>
 		</template>
+	</category>
+	<category>
+		<pattern>* DEVELOP *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+			<srai><star index="1"/> evolve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEVISE *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIFFERENTIATE *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EFFECT *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ELISION *</pattern>
+		<template>
+			<srai><star index="1"/> exceptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXCLUSION *</pattern>
+		<template>
+			<srai><star index="1"/> exceptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXCOGITATE *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HI *</pattern>
+		<template>
+			<srai><star index="1"/> hello <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW DO YOU DO</pattern>
+		<template>
+			<srai><star index="1"/> hello <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INFO *</pattern>
+		<template>
+			<srai><star index="1"/> information <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<template>I do not have an answer</template>
 	</category>
 </aiml>

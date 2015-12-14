@@ -3029,4 +3029,2902 @@
 			<srai><star index="1"/> WHY <star index="2"/></srai>
 		</template>
 	</category>
+	<category>
+		<pattern>* 2 *</pattern>
+		<template>
+			<srai><star index="1"/> two <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ABJURE *</pattern>
+		<template>
+			<srai><star index="1"/> retracted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ACCOUNT *</pattern>
+		<template>
+			<srai><star index="1"/> explanation <star index="2"/></srai>
+			<srai><star index="1"/> explanations <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ACQUAINT *</pattern>
+		<template>
+			<srai><star index="1"/> introduce <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ACT *</pattern>
+		<template>
+			<srai><star index="1"/> behave <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ACTION *</pattern>
+		<template>
+			<srai><star index="1"/> actions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ADD *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ADHD *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ADJUDICATE *</pattern>
+		<template>
+			<srai><star index="1"/> resolved <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ADVISE *</pattern>
+		<template>
+			<srai><star index="1"/> propose <star index="2"/></srai>
+			<srai><star index="1"/> proposed <star index="2"/></srai>
+			<srai><star index="1"/> suggests <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AFFECT *</pattern>
+		<template>
+			<srai><star index="1"/> involve <star index="2"/></srai>
+			<srai><star index="1"/> involved <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AGENT *</pattern>
+		<template>
+			<srai><star index="1"/> agents <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AI *</pattern>
+		<template>
+			<srai><star index="1"/> ai <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AIM *</pattern>
+		<template>
+			<srai><star index="1"/> purpose <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AIRS *</pattern>
+		<template>
+			<srai><star index="1"/> poses <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ALTERNATIVELY *</pattern>
+		<template>
+			<srai><star index="1"/> instead <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AMOUNT_OF_MONEY *</pattern>
+		<template>
+			<srai><star index="1"/> amount <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ANIMAL *</pattern>
+		<template>
+			<srai><star index="1"/> animals <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ANIMATE_BEING *</pattern>
+		<template>
+			<srai><star index="1"/> animals <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* APPLY *</pattern>
+		<template>
+			<srai><star index="1"/> used <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ARGUMENT *</pattern>
+		<template>
+			<srai><star index="1"/> debate <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ARGUMENTATION *</pattern>
+		<template>
+			<srai><star index="1"/> debate <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ARISE *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ARMY_INTELLIGENCE *</pattern>
+		<template>
+			<srai><star index="1"/> ai <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ARRIVE *</pattern>
+		<template>
+			<srai><star index="1"/> arrives <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ASSERT *</pattern>
+		<template>
+			<srai><star index="1"/> asserted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ASSEVERATE *</pattern>
+		<template>
+			<srai><star index="1"/> asserted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ASSORTMENT *</pattern>
+		<template>
+			<srai><star index="1"/> classification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ASSUMPTION *</pattern>
+		<template>
+			<srai><star index="1"/> assumptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ASTIR *</pattern>
+		<template>
+			<srai><star index="1"/> about <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATM *</pattern>
+		<template>
+			<srai><star index="1"/> atms <star index="2"/></srai>
+			<srai><star index="1"/> atmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATMOSPHERE *</pattern>
+		<template>
+			<srai><star index="1"/> atms <star index="2"/></srai>
+			<srai><star index="1"/> atmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATOMIC_NUMBER_69 *</pattern>
+		<template>
+			<srai><star index="1"/> tms <star index="2"/></srai>
+			<srai><star index="1"/> tmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATOMIC_NUMBER_74 *</pattern>
+		<template>
+			<srai><star index="1"/> w <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATTACK *</pattern>
+		<template>
+			<srai><star index="1"/> approach <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATTENTION_DEFICIT_DISORDER *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATTENTION_DEFICIT_HYPERACTIVITY_DISORDER *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATTITUDE *</pattern>
+		<template>
+			<srai><star index="1"/> attitudes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATTRACTION *</pattern>
+		<template>
+			<srai><star index="1"/> attractions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ATTRACTIVE_FORCE *</pattern>
+		<template>
+			<srai><star index="1"/> attractions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* AXIOM *</pattern>
+		<template>
+			<srai><star index="1"/> axioms <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BAN *</pattern>
+		<template>
+			<srai><star index="1"/> banned <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BASH *</pattern>
+		<template>
+			<srai><star index="1"/> do <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BATH *</pattern>
+		<template>
+			<srai><star index="1"/> tub <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BATHING_TUB *</pattern>
+		<template>
+			<srai><star index="1"/> tub <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BATHTUB *</pattern>
+		<template>
+			<srai><star index="1"/> tub <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BE *</pattern>
+		<template>
+			<srai><star index="1"/> exist <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BEAST *</pattern>
+		<template>
+			<srai><star index="1"/> animals <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BECOME *</pattern>
+		<template>
+			<srai><star index="1"/> becomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BELIEF *</pattern>
+		<template>
+			<srai><star index="1"/> beliefs <star index="2"/></srai>
+			<srai><star index="1"/> notion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BELONGINGS *</pattern>
+		<template>
+			<srai><star index="1"/> properties <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BENJAMIN_PEIRCE *</pattern>
+		<template>
+			<srai><star index="1"/> peirce <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BLOCK *</pattern>
+		<template>
+			<srai><star index="1"/> blocks <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BODY *</pattern>
+		<template>
+			<srai><star index="1"/> consistency <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BODY-BUILD *</pattern>
+		<template>
+			<srai><star index="1"/> build <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BRAND *</pattern>
+		<template>
+			<srai><star index="1"/> make <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BRAWL *</pattern>
+		<template>
+			<srai><star index="1"/> do <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BROADEN *</pattern>
+		<template>
+			<srai><star index="1"/> extend <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BROBDINGNAGIAN *</pattern>
+		<template>
+			<srai><star index="1"/> vast <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BRUTE *</pattern>
+		<template>
+			<srai><star index="1"/> animals <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BUILD *</pattern>
+		<template>
+			<srai><star index="1"/> built <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* BUSINESS_DEAL *</pattern>
+		<template>
+			<srai><star index="1"/> deal <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CALL *</pattern>
+		<template>
+			<srai><star index="1"/> called <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CARE *</pattern>
+		<template>
+			<srai><star index="1"/> maintenance <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CATEGORISATION *</pattern>
+		<template>
+			<srai><star index="1"/> classification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CATEGORIZATION *</pattern>
+		<template>
+			<srai><star index="1"/> classification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CATEGORY *</pattern>
+		<template>
+			<srai><star index="1"/> categories <star index="2"/></srai>
+			<srai><star index="1"/> classes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CAVITY *</pattern>
+		<template>
+			<srai><star index="1"/> pits <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CENSOR *</pattern>
+		<template>
+			<srai><star index="1"/> banned <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CHANGEOVER *</pattern>
+		<template>
+			<srai><star index="1"/> conversion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CHARLES *</pattern>
+		<template>
+			<srai><star index="1"/> charles <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CHARLES_IX *</pattern>
+		<template>
+			<srai><star index="1"/> charles <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CLASS *</pattern>
+		<template>
+			<srai><star index="1"/> categories <star index="2"/></srai>
+			<srai><star index="1"/> category <star index="2"/></srai>
+			<srai><star index="1"/> classes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CLEAR *</pattern>
+		<template>
+			<srai><star index="1"/> open <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CLIP *</pattern>
+		<template>
+			<srai><star index="1"/> time <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CLUMP *</pattern>
+		<template>
+			<srai><star index="1"/> bunch <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CLUSTER *</pattern>
+		<template>
+			<srai><star index="1"/> bunch <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CLUSTERING *</pattern>
+		<template>
+			<srai><star index="1"/> bunch <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CO-OCCURRENT *</pattern>
+		<template>
+			<srai><star index="1"/> simultaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COGNITION *</pattern>
+		<template>
+			<srai><star index="1"/> knowledge <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COINCIDENT *</pattern>
+		<template>
+			<srai><star index="1"/> simultaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COINCIDENTAL *</pattern>
+		<template>
+			<srai><star index="1"/> simultaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COINCIDING *</pattern>
+		<template>
+			<srai><star index="1"/> simultaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COME *</pattern>
+		<template>
+			<srai><star index="1"/> arrives <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPARABILITY *</pattern>
+		<template>
+			<srai><star index="1"/> compare <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPARISON *</pattern>
+		<template>
+			<srai><star index="1"/> compare <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPARTMENTALISATION *</pattern>
+		<template>
+			<srai><star index="1"/> classification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPARTMENTALIZATION *</pattern>
+		<template>
+			<srai><star index="1"/> classification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPLEXNESS *</pattern>
+		<template>
+			<srai><star index="1"/> complexity <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPLICATE *</pattern>
+		<template>
+			<srai><star index="1"/> complicated <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPONENT *</pattern>
+		<template>
+			<srai><star index="1"/> portion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPONENT_PART *</pattern>
+		<template>
+			<srai><star index="1"/> portion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPOSITE *</pattern>
+		<template>
+			<srai><star index="1"/> complex <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COMPRISE *</pattern>
+		<template>
+			<srai><star index="1"/> contain <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONCLUSION *</pattern>
+		<template>
+			<srai><star index="1"/> decision <star index="2"/></srai>
+			<srai><star index="1"/> decisions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONCURRENT *</pattern>
+		<template>
+			<srai><star index="1"/> simultaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONNOTE *</pattern>
+		<template>
+			<srai><star index="1"/> connotes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONSEQUENCE *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONSIDER *</pattern>
+		<template>
+			<srai><star index="1"/> considering <star index="2"/></srai>
+			<srai><star index="1"/> viewed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONSIST *</pattern>
+		<template>
+			<srai><star index="1"/> consists <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONSISTENCE *</pattern>
+		<template>
+			<srai><star index="1"/> consistency <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONSTITUENT *</pattern>
+		<template>
+			<srai><star index="1"/> portion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONSTRUCT *</pattern>
+		<template>
+			<srai><star index="1"/> built <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CONTRIVE *</pattern>
+		<template>
+			<srai><star index="1"/> designed <star index="2"/></srai>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COOCCURRING *</pattern>
+		<template>
+			<srai><star index="1"/> simultaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CORRESPOND *</pattern>
+		<template>
+			<srai><star index="1"/> represent <star index="2"/></srai>
+			<srai><star index="1"/> representing <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COSMOS *</pattern>
+		<template>
+			<srai><star index="1"/> world <star index="2"/></srai>
+			<srai><star index="1"/> worlds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* COUNT *</pattern>
+		<template>
+			<srai><star index="1"/> counts <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CREATION *</pattern>
+		<template>
+			<srai><star index="1"/> world <star index="2"/></srai>
+			<srai><star index="1"/> worlds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* CREATURE *</pattern>
+		<template>
+			<srai><star index="1"/> animals <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEBATABLE *</pattern>
+		<template>
+			<srai><star index="1"/> problematic <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DECIDE *</pattern>
+		<template>
+			<srai><star index="1"/> resolved <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DECISION *</pattern>
+		<template>
+			<srai><star index="1"/> conclusion <star index="2"/></srai>
+			<srai><star index="1"/> decisions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFEAT *</pattern>
+		<template>
+			<srai><star index="1"/> overcome <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFICIENCY *</pattern>
+		<template>
+			<srai><star index="1"/> lack <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINE *</pattern>
+		<template>
+			<srai><star index="1"/> defined <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEFINITION *</pattern>
+		<template>
+			<srai><star index="1"/> definitions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DELIMIT *</pattern>
+		<template>
+			<srai><star index="1"/> define <star index="2"/></srai>
+			<srai><star index="1"/> defined <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DELIMITATE *</pattern>
+		<template>
+			<srai><star index="1"/> define <star index="2"/></srai>
+			<srai><star index="1"/> defined <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DELINEATE *</pattern>
+		<template>
+			<srai><star index="1"/> define <star index="2"/></srai>
+			<srai><star index="1"/> defined <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEMAND *</pattern>
+		<template>
+			<srai><star index="1"/> need <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEPICT *</pattern>
+		<template>
+			<srai><star index="1"/> describe <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DESCRIPTION *</pattern>
+		<template>
+			<srai><star index="1"/> descriptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DESIGN *</pattern>
+		<template>
+			<srai><star index="1"/> designed <star index="2"/></srai>
+			<srai><star index="1"/> purpose <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DESIGNATE *</pattern>
+		<template>
+			<srai><star index="1"/> pointed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DESIGNING *</pattern>
+		<template>
+			<srai><star index="1"/> design <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DETAIL *</pattern>
+		<template>
+			<srai><star index="1"/> detailed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DETERMINATION *</pattern>
+		<template>
+			<srai><star index="1"/> conclusion <star index="2"/></srai>
+			<srai><star index="1"/> decision <star index="2"/></srai>
+			<srai><star index="1"/> decisions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEUCE *</pattern>
+		<template>
+			<srai><star index="1"/> two <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEVELOP *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+			<srai><star index="1"/> evolve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DEVISE *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIFFERENTIATE *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIFFERENTIATION *</pattern>
+		<template>
+			<srai><star index="1"/> distinction <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIFFICULT *</pattern>
+		<template>
+			<srai><star index="1"/> hardest <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIRECT_CONTRAST *</pattern>
+		<template>
+			<srai><star index="1"/> contrast <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISADVANTAGE *</pattern>
+		<template>
+			<srai><star index="1"/> disadvantages <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISASSOCIATE *</pattern>
+		<template>
+			<srai><star index="1"/> disjoint <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCERNIBLE *</pattern>
+		<template>
+			<srai><star index="1"/> observable <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCONNECTEDNESS *</pattern>
+		<template>
+			<srai><star index="1"/> disjunction <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCONNECTION *</pattern>
+		<template>
+			<srai><star index="1"/> disjunction <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISCUS *</pattern>
+		<template>
+			<srai><star index="1"/> discuss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISJUNCTURE *</pattern>
+		<template>
+			<srai><star index="1"/> disjunction <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISSOCIATE *</pattern>
+		<template>
+			<srai><star index="1"/> disjoint <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISTINCT *</pattern>
+		<template>
+			<srai><star index="1"/> discrete <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DISUNITE *</pattern>
+		<template>
+			<srai><star index="1"/> disjoint <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIVIDER *</pattern>
+		<template>
+			<srai><star index="1"/> partition <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DIVORCE *</pattern>
+		<template>
+			<srai><star index="1"/> disjoint <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DO *</pattern>
+		<template>
+			<srai><star index="1"/> behave <star index="2"/></srai>
+			<srai><star index="1"/> made <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DRAW *</pattern>
+		<template>
+			<srai><star index="1"/> describe <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* DWELL *</pattern>
+		<template>
+			<srai><star index="1"/> consist <star index="2"/></srai>
+			<srai><star index="1"/> consists <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EFFECT *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ELISION *</pattern>
+		<template>
+			<srai><star index="1"/> exceptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EMPLOY *</pattern>
+		<template>
+			<srai><star index="1"/> used <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EMPLOYMENT *</pattern>
+		<template>
+			<srai><star index="1"/> use <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ENGLISH *</pattern>
+		<template>
+			<srai><star index="1"/> english <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ENGLISH_LANGUAGE *</pattern>
+		<template>
+			<srai><star index="1"/> english <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ENQUIRY *</pattern>
+		<template>
+			<srai><star index="1"/> queries <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ENVIRONMENT *</pattern>
+		<template>
+			<srai><star index="1"/> environments <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EQUIVALENCE *</pattern>
+		<template>
+			<srai><star index="1"/> compare <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ETERNITY *</pattern>
+		<template>
+			<srai><star index="1"/> infinity <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EUBSTANCE *</pattern>
+		<template>
+			<srai><star index="1"/> consistency <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EVENT *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+			<srai><star index="1"/> events <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EVIDENT *</pattern>
+		<template>
+			<srai><star index="1"/> observable <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXAMPLE *</pattern>
+		<template>
+			<srai><star index="1"/> examples <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXCEPTION *</pattern>
+		<template>
+			<srai><star index="1"/> exceptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXCLUSION *</pattern>
+		<template>
+			<srai><star index="1"/> exceptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXCOGITATE *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXERCISE *</pattern>
+		<template>
+			<srai><star index="1"/> use <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXISTENCE *</pattern>
+		<template>
+			<srai><star index="1"/> world <star index="2"/></srai>
+			<srai><star index="1"/> worlds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXOGENIC *</pattern>
+		<template>
+			<srai><star index="1"/> exogenous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXPLANATION *</pattern>
+		<template>
+			<srai><star index="1"/> explanations <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXPLICATE *</pattern>
+		<template>
+			<srai><star index="1"/> explain <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* EXPRESS *</pattern>
+		<template>
+			<srai><star index="1"/> limited <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FACET *</pattern>
+		<template>
+			<srai><star index="1"/> aspect <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FAILURE *</pattern>
+		<template>
+			<srai><star index="1"/> failures <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FAMILY *</pattern>
+		<template>
+			<srai><star index="1"/> categories <star index="2"/></srai>
+			<srai><star index="1"/> category <star index="2"/></srai>
+			<srai><star index="1"/> classes <star index="2"/></srai>
+			<srai><star index="1"/> families <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FAUNA *</pattern>
+		<template>
+			<srai><star index="1"/> animals <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FEATURE *</pattern>
+		<template>
+			<srai><star index="1"/> characteristic <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FEELING *</pattern>
+		<template>
+			<srai><star index="1"/> notion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FIGURE *</pattern>
+		<template>
+			<srai><star index="1"/> number <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FIGURE_OUT *</pattern>
+		<template>
+			<srai><star index="1"/> solve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FILTER *</pattern>
+		<template>
+			<srai><star index="1"/> filtering <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FILTER_OUT *</pattern>
+		<template>
+			<srai><star index="1"/> filtering <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FILTRATE *</pattern>
+		<template>
+			<srai><star index="1"/> filtering <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FINAL_RESULT *</pattern>
+		<template>
+			<srai><star index="1"/> outcomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FIXTURE *</pattern>
+		<template>
+			<srai><star index="1"/> regular <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FORGE *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FORM *</pattern>
+		<template>
+			<srai><star index="1"/> kinds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FORMULATE *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FORSWEAR *</pattern>
+		<template>
+			<srai><star index="1"/> retracted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FRAMEWORK *</pattern>
+		<template>
+			<srai><star index="1"/> model <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FULL-OF-THE-MOON *</pattern>
+		<template>
+			<srai><star index="1"/> full <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FULL_GENERAL *</pattern>
+		<template>
+			<srai><star index="1"/> general <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FULL_MOON *</pattern>
+		<template>
+			<srai><star index="1"/> full <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* FULL_PHASE_OF_THE_MOON *</pattern>
+		<template>
+			<srai><star index="1"/> full <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GAP *</pattern>
+		<template>
+			<srai><star index="1"/> gaps <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GERMINATE *</pattern>
+		<template>
+			<srai><star index="1"/> evolve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GET *</pattern>
+		<template>
+			<srai><star index="1"/> arrives <star index="2"/></srai>
+			<srai><star index="1"/> becomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GET_THE_BETTER_OF *</pattern>
+		<template>
+			<srai><star index="1"/> overcome <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GO *</pattern>
+		<template>
+			<srai><star index="1"/> becomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GRIP *</pattern>
+		<template>
+			<srai><star index="1"/> handle <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GROUND *</pattern>
+		<template>
+			<srai><star index="1"/> reason <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GROUNDS *</pattern>
+		<template>
+			<srai><star index="1"/> evidence <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* GROW *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HABITUE *</pattern>
+		<template>
+			<srai><star index="1"/> regular <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HABITUS *</pattern>
+		<template>
+			<srai><star index="1"/> build <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HANDGRIP *</pattern>
+		<template>
+			<srai><star index="1"/> handle <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HARD *</pattern>
+		<template>
+			<srai><star index="1"/> difficult <star index="2"/></srai>
+			<srai><star index="1"/> hardest <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HAVE *</pattern>
+		<template>
+			<srai><star index="1"/> having <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HAVE_GOT *</pattern>
+		<template>
+			<srai><star index="1"/> having <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HERITAGE *</pattern>
+		<template>
+			<srai><star index="1"/> inheritance <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HI *</pattern>
+		<template>
+			<srai><star index="1"/> hello <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOLD *</pattern>
+		<template>
+			<srai><star index="1"/> defy <star index="2"/></srai>
+			<srai><star index="1"/> handle <star index="2"/></srai>
+			<srai><star index="1"/> having <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOLDING *</pattern>
+		<template>
+			<srai><star index="1"/> properties <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOLD_UP *</pattern>
+		<template>
+			<srai><star index="1"/> defy <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOME *</pattern>
+		<template>
+			<srai><star index="1"/> families <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOUSE *</pattern>
+		<template>
+			<srai><star index="1"/> families <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOUSECOAT *</pattern>
+		<template>
+			<srai><star index="1"/> wrappers <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOUSEHOLD *</pattern>
+		<template>
+			<srai><star index="1"/> families <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOW-DO-YOU-DO *</pattern>
+		<template>
+			<srai><star index="1"/> hello <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HOWDY *</pattern>
+		<template>
+			<srai><star index="1"/> hello <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HUGE *</pattern>
+		<template>
+			<srai><star index="1"/> vast <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HULLO *</pattern>
+		<template>
+			<srai><star index="1"/> hello <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HYPERKINETIC_SYNDROME *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HYPOSTATISATION *</pattern>
+		<template>
+			<srai><star index="1"/> reification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* HYPOSTATIZATION *</pattern>
+		<template>
+			<srai><star index="1"/> reification <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* II *</pattern>
+		<template>
+			<srai><star index="1"/> two <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ILLATION *</pattern>
+		<template>
+			<srai><star index="1"/> inference <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ILLUSTRATION *</pattern>
+		<template>
+			<srai><star index="1"/> example <star index="2"/></srai>
+			<srai><star index="1"/> examples <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* IMMENSE *</pattern>
+		<template>
+			<srai><star index="1"/> vast <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* IMPLEMENT *</pattern>
+		<template>
+			<srai><star index="1"/> implements <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* IMPLY *</pattern>
+		<template>
+			<srai><star index="1"/> connote <star index="2"/></srai>
+			<srai><star index="1"/> connotes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* IMPRESSION *</pattern>
+		<template>
+			<srai><star index="1"/> notion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INCLUDE *</pattern>
+		<template>
+			<srai><star index="1"/> includes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INCORPORATE *</pattern>
+		<template>
+			<srai><star index="1"/> contain <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INDICATE *</pattern>
+		<template>
+			<srai><star index="1"/> pointed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INDIVIDUALISATION *</pattern>
+		<template>
+			<srai><star index="1"/> individuation <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INDIVIDUALIZATION *</pattern>
+		<template>
+			<srai><star index="1"/> individuation <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INFO *</pattern>
+		<template>
+			<srai><star index="1"/> information <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INQUIRY *</pattern>
+		<template>
+			<srai><star index="1"/> queries <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INSTANCE *</pattern>
+		<template>
+			<srai><star index="1"/> example <star index="2"/></srai>
+			<srai><star index="1"/> examples <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INSTANT *</pattern>
+		<template>
+			<srai><star index="1"/> instantaneous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INTENT *</pattern>
+		<template>
+			<srai><star index="1"/> purpose <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INTENTION *</pattern>
+		<template>
+			<srai><star index="1"/> purpose <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INTERNAL_REPRESENTATION *</pattern>
+		<template>
+			<srai><star index="1"/> representation <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INTERROGATION *</pattern>
+		<template>
+			<srai><star index="1"/> queries <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INTRINSICAL *</pattern>
+		<template>
+			<srai><star index="1"/> intrinsic <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INVENT *</pattern>
+		<template>
+			<srai><star index="1"/> devised <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* INVOLVE *</pattern>
+		<template>
+			<srai><star index="1"/> involved <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ISSUE *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+			<srai><star index="1"/> issues <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ITINERARY *</pattern>
+		<template>
+			<srai><star index="1"/> routes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* JOB *</pattern>
+		<template>
+			<srai><star index="1"/> problem <star index="2"/></srai>
+			<srai><star index="1"/> problems <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* KIND *</pattern>
+		<template>
+			<srai><star index="1"/> kinds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LAPP *</pattern>
+		<template>
+			<srai><star index="1"/> same <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LAPPLANDER *</pattern>
+		<template>
+			<srai><star index="1"/> same <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LICK *</pattern>
+		<template>
+			<srai><star index="1"/> solve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LIE *</pattern>
+		<template>
+			<srai><star index="1"/> consist <star index="2"/></srai>
+			<srai><star index="1"/> consists <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LIE_IN *</pattern>
+		<template>
+			<srai><star index="1"/> consist <star index="2"/></srai>
+			<srai><star index="1"/> consists <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LIMITATION *</pattern>
+		<template>
+			<srai><star index="1"/> restriction <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LINGUAL *</pattern>
+		<template>
+			<srai><star index="1"/> linguistic <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LISTING *</pattern>
+		<template>
+			<srai><star index="1"/> list <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LONE *</pattern>
+		<template>
+			<srai><star index="1"/> only <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LONESOME *</pattern>
+		<template>
+			<srai><star index="1"/> only <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LOSE *</pattern>
+		<template>
+			<srai><star index="1"/> missing <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LUDWIG_JOSEF_JOHAN_WITTGENSTEIN *</pattern>
+		<template>
+			<srai><star index="1"/> wittgenstein <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* LUDWIG_WITTGENSTEIN *</pattern>
+		<template>
+			<srai><star index="1"/> wittgenstein <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MACROCOSM *</pattern>
+		<template>
+			<srai><star index="1"/> world <star index="2"/></srai>
+			<srai><star index="1"/> worlds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MAINTAIN *</pattern>
+		<template>
+			<srai><star index="1"/> asserted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MAKE *</pattern>
+		<template>
+			<srai><star index="1"/> built <star index="2"/></srai>
+			<srai><star index="1"/> create <star index="2"/></srai>
+			<srai><star index="1"/> made <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MAP *</pattern>
+		<template>
+			<srai><star index="1"/> function <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MAPPING *</pattern>
+		<template>
+			<srai><star index="1"/> function <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MATERIAL *</pattern>
+		<template>
+			<srai><star index="1"/> stuff <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MATHEMATICAL_FUNCTION *</pattern>
+		<template>
+			<srai><star index="1"/> function <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MAXIM *</pattern>
+		<template>
+			<srai><star index="1"/> axiom <star index="2"/></srai>
+			<srai><star index="1"/> axioms <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MAY *</pattern>
+		<template>
+			<srai><star index="1"/> may <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MBD *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MEASURE *</pattern>
+		<template>
+			<srai><star index="1"/> measures <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MEET *</pattern>
+		<template>
+			<srai><star index="1"/> converge <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MENAGE *</pattern>
+		<template>
+			<srai><star index="1"/> families <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MENTAL_ATTITUDE *</pattern>
+		<template>
+			<srai><star index="1"/> attitudes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MENTAL_REPRESENTATION *</pattern>
+		<template>
+			<srai><star index="1"/> representation <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MINIMAL_BRAIN_DAMAGE *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MINIMAL_BRAIN_DYSFUNCTION *</pattern>
+		<template>
+			<srai><star index="1"/> add <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MINOR_PREMISE *</pattern>
+		<template>
+			<srai><star index="1"/> subsumption <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MINOR_PREMISS *</pattern>
+		<template>
+			<srai><star index="1"/> subsumption <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MISS *</pattern>
+		<template>
+			<srai><star index="1"/> missing <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MODAL_AUXILIARY *</pattern>
+		<template>
+			<srai><star index="1"/> modal <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MODAL_AUXILIARY_VERB *</pattern>
+		<template>
+			<srai><star index="1"/> modal <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MODAL_VERB *</pattern>
+		<template>
+			<srai><star index="1"/> modal <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* MODIFY *</pattern>
+		<template>
+			<srai><star index="1"/> modifying <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NAME *</pattern>
+		<template>
+			<srai><star index="1"/> called <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NATURAL_EVENT *</pattern>
+		<template>
+			<srai><star index="1"/> happening <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NEGLIGE *</pattern>
+		<template>
+			<srai><star index="1"/> wrappers <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NEGLIGEE *</pattern>
+		<template>
+			<srai><star index="1"/> wrappers <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NEST *</pattern>
+		<template>
+			<srai><star index="1"/> nested <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NOESIS *</pattern>
+		<template>
+			<srai><star index="1"/> knowledge <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NON *</pattern>
+		<template>
+			<srai><star index="1"/> not <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NOWADAYS *</pattern>
+		<template>
+			<srai><star index="1"/> present <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* NUMBER_ONE *</pattern>
+		<template>
+			<srai><star index="1"/> first <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OCCURRENCE *</pattern>
+		<template>
+			<srai><star index="1"/> happening <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OCCURRENT *</pattern>
+		<template>
+			<srai><star index="1"/> happening <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OFFPRINT *</pattern>
+		<template>
+			<srai><star index="1"/> separate <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OF_IMPORT *</pattern>
+		<template>
+			<srai><star index="1"/> important <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ONE_BY_ONE *</pattern>
+		<template>
+			<srai><star index="1"/> individually <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ONTOLOGY *</pattern>
+		<template>
+			<srai><star index="1"/> ontologies <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ON_AN_INDIVIDUAL_BASIS *</pattern>
+		<template>
+			<srai><star index="1"/> individually <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OPERATE *</pattern>
+		<template>
+			<srai><star index="1"/> operating <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OPINION *</pattern>
+		<template>
+			<srai><star index="1"/> notion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ORIGINATE *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OR_ELSE *</pattern>
+		<template>
+			<srai><star index="1"/> instead <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OUTCOME *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+			<srai><star index="1"/> outcomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OVERRIDE *</pattern>
+		<template>
+			<srai><star index="1"/> overriding <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OVERRULE *</pattern>
+		<template>
+			<srai><star index="1"/> overriding <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OVERTHROW *</pattern>
+		<template>
+			<srai><star index="1"/> overriding <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* OVERTURN *</pattern>
+		<template>
+			<srai><star index="1"/> overriding <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PART *</pattern>
+		<template>
+			<srai><star index="1"/> partially <star index="2"/></srai>
+			<srai><star index="1"/> portion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PARTLY *</pattern>
+		<template>
+			<srai><star index="1"/> partially <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PATH *</pattern>
+		<template>
+			<srai><star index="1"/> routes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PEIGNOIR *</pattern>
+		<template>
+			<srai><star index="1"/> wrappers <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PEIRCE *</pattern>
+		<template>
+			<srai><star index="1"/> peirce <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PERPLEX *</pattern>
+		<template>
+			<srai><star index="1"/> complicated <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PERTINENCE *</pattern>
+		<template>
+			<srai><star index="1"/> applicability <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PERTINENCY *</pattern>
+		<template>
+			<srai><star index="1"/> applicability <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PHYSICAL_OBJECT *</pattern>
+		<template>
+			<srai><star index="1"/> object <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PHYSIQUE *</pattern>
+		<template>
+			<srai><star index="1"/> build <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PIT *</pattern>
+		<template>
+			<srai><star index="1"/> pits <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PLACEHOLDER *</pattern>
+		<template>
+			<srai><star index="1"/> placeholders <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PLAN *</pattern>
+		<template>
+			<srai><star index="1"/> designed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PLAN_OF_ATTACK *</pattern>
+		<template>
+			<srai><star index="1"/> approach <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* POINT *</pattern>
+		<template>
+			<srai><star index="1"/> pointed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* POSE *</pattern>
+		<template>
+			<srai><star index="1"/> poses <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PREDICATE *</pattern>
+		<template>
+			<srai><star index="1"/> predicates <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PREFER *</pattern>
+		<template>
+			<srai><star index="1"/> preferred <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PREMISE *</pattern>
+		<template>
+			<srai><star index="1"/> assumptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PREMISS *</pattern>
+		<template>
+			<srai><star index="1"/> assumptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PRESENT *</pattern>
+		<template>
+			<srai><star index="1"/> introduce <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PRESUME *</pattern>
+		<template>
+			<srai><star index="1"/> assume <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PRIMARY_ELECTION *</pattern>
+		<template>
+			<srai><star index="1"/> primary <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PRIMITIVE_PERSON *</pattern>
+		<template>
+			<srai><star index="1"/> primitive <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROBLEM *</pattern>
+		<template>
+			<srai><star index="1"/> problems <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROBLEMATICAL *</pattern>
+		<template>
+			<srai><star index="1"/> problematic <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROCEDURE *</pattern>
+		<template>
+			<srai><star index="1"/> process <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROCURATOR *</pattern>
+		<template>
+			<srai><star index="1"/> placeholders <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROJECT *</pattern>
+		<template>
+			<srai><star index="1"/> designed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROPERTY *</pattern>
+		<template>
+			<srai><star index="1"/> properties <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROPOSE *</pattern>
+		<template>
+			<srai><star index="1"/> proposed <star index="2"/></srai>
+			<srai><star index="1"/> suggests <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROPOSITION *</pattern>
+		<template>
+			<srai><star index="1"/> propositions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PROXY *</pattern>
+		<template>
+			<srai><star index="1"/> placeholders <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* PUZZLE_OUT *</pattern>
+		<template>
+			<srai><star index="1"/> solve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* QUERY *</pattern>
+		<template>
+			<srai><star index="1"/> queries <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* QUESTION *</pattern>
+		<template>
+			<srai><star index="1"/> queries <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* QUINE *</pattern>
+		<template>
+			<srai><star index="1"/> quine <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REAL_NUMBER *</pattern>
+		<template>
+			<srai><star index="1"/> real <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RECANT *</pattern>
+		<template>
+			<srai><star index="1"/> retracted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RECKON *</pattern>
+		<template>
+			<srai><star index="1"/> considering <star index="2"/></srai>
+			<srai><star index="1"/> viewed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REFERENCE *</pattern>
+		<template>
+			<srai><star index="1"/> mention <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REGARD *</pattern>
+		<template>
+			<srai><star index="1"/> considering <star index="2"/></srai>
+			<srai><star index="1"/> involve <star index="2"/></srai>
+			<srai><star index="1"/> involved <star index="2"/></srai>
+			<srai><star index="1"/> viewed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REIFY *</pattern>
+		<template>
+			<srai><star index="1"/> reifies <star index="2"/></srai>
+			<srai><star index="1"/> reifying <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REPLACING *</pattern>
+		<template>
+			<srai><star index="1"/> replacement <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REPRESENT *</pattern>
+		<template>
+			<srai><star index="1"/> representing <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REPRESENTATIVE *</pattern>
+		<template>
+			<srai><star index="1"/> example <star index="2"/></srai>
+			<srai><star index="1"/> examples <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REPRINT *</pattern>
+		<template>
+			<srai><star index="1"/> separate <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RESILE *</pattern>
+		<template>
+			<srai><star index="1"/> retracted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RESOLVE *</pattern>
+		<template>
+			<srai><star index="1"/> resolved <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RESULT *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+			<srai><star index="1"/> outcomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RESULTANT *</pattern>
+		<template>
+			<srai><star index="1"/> outcomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RETRACT *</pattern>
+		<template>
+			<srai><star index="1"/> retracted <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* REVERSE *</pattern>
+		<template>
+			<srai><star index="1"/> overriding <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RIGOROUS *</pattern>
+		<template>
+			<srai><star index="1"/> strict <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RISE *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* ROUTE *</pattern>
+		<template>
+			<srai><star index="1"/> routes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* RUN *</pattern>
+		<template>
+			<srai><star index="1"/> operating <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SAAME *</pattern>
+		<template>
+			<srai><star index="1"/> same <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SAAMI *</pattern>
+		<template>
+			<srai><star index="1"/> same <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SAME *</pattern>
+		<template>
+			<srai><star index="1"/> same <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SAMI *</pattern>
+		<template>
+			<srai><star index="1"/> same <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SECERN *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SECERNATE *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEE *</pattern>
+		<template>
+			<srai><star index="1"/> considering <star index="2"/></srai>
+			<srai><star index="1"/> seen <star index="2"/></srai>
+			<srai><star index="1"/> viewed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEPARATE *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEPARATELY *</pattern>
+		<template>
+			<srai><star index="1"/> individually <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEPARATE_OUT *</pattern>
+		<template>
+			<srai><star index="1"/> filtering <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SETTLE *</pattern>
+		<template>
+			<srai><star index="1"/> resolved <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEVERALISE *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEVERALIZE *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SEVERALLY *</pattern>
+		<template>
+			<srai><star index="1"/> individually <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SHOW *</pattern>
+		<template>
+			<srai><star index="1"/> display <star index="2"/></srai>
+			<srai><star index="1"/> pointed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SINGLE-VALUED_FUNCTION *</pattern>
+		<template>
+			<srai><star index="1"/> function <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SINGLY *</pattern>
+		<template>
+			<srai><star index="1"/> individually <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SLIPPERY *</pattern>
+		<template>
+			<srai><star index="1"/> tricky <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SOLE *</pattern>
+		<template>
+			<srai><star index="1"/> only <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SOLITARY *</pattern>
+		<template>
+			<srai><star index="1"/> only <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SOME_OTHER *</pattern>
+		<template>
+			<srai><star index="1"/> another <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SORT *</pattern>
+		<template>
+			<srai><star index="1"/> kinds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SPACE-TIME_CONTINUUM *</pattern>
+		<template>
+			<srai><star index="1"/> space-time <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SPECIFY *</pattern>
+		<template>
+			<srai><star index="1"/> define <star index="2"/></srai>
+			<srai><star index="1"/> defined <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SPREAD *</pattern>
+		<template>
+			<srai><star index="1"/> gaps <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SPRING *</pattern>
+		<template>
+			<srai><star index="1"/> give <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SPRINGINESS *</pattern>
+		<template>
+			<srai><star index="1"/> give <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SPRING_UP *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STANDARD_ATMOSPHERE *</pattern>
+		<template>
+			<srai><star index="1"/> atms <star index="2"/></srai>
+			<srai><star index="1"/> atmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STANDARD_PRESSURE *</pattern>
+		<template>
+			<srai><star index="1"/> atms <star index="2"/></srai>
+			<srai><star index="1"/> atmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STAND_FOR *</pattern>
+		<template>
+			<srai><star index="1"/> represent <star index="2"/></srai>
+			<srai><star index="1"/> representing <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STEP *</pattern>
+		<template>
+			<srai><star index="1"/> measure <star index="2"/></srai>
+			<srai><star index="1"/> measures <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STRAIN *</pattern>
+		<template>
+			<srai><star index="1"/> filtering <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STRENGTH *</pattern>
+		<template>
+			<srai><star index="1"/> strengths <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* STRESS *</pattern>
+		<template>
+			<srai><star index="1"/> tension <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SUGGEST *</pattern>
+		<template>
+			<srai><star index="1"/> propose <star index="2"/></srai>
+			<srai><star index="1"/> proposed <star index="2"/></srai>
+			<srai><star index="1"/> suggests <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SUM *</pattern>
+		<template>
+			<srai><star index="1"/> amount <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SUM_OF_MONEY *</pattern>
+		<template>
+			<srai><star index="1"/> amount <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SYNONYMITY *</pattern>
+		<template>
+			<srai><star index="1"/> synonymy <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* SYNONYMOUSNESS *</pattern>
+		<template>
+			<srai><star index="1"/> synonymy <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TAKE_FOR_GRANTED *</pattern>
+		<template>
+			<srai><star index="1"/> assume <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TALK *</pattern>
+		<template>
+			<srai><star index="1"/> talking <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TELL *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TELL_APART *</pattern>
+		<template>
+			<srai><star index="1"/> distinguish <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TENSENESS *</pattern>
+		<template>
+			<srai><star index="1"/> tension <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TERMINATION *</pattern>
+		<template>
+			<srai><star index="1"/> outcomes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* THEORETICAL_ACCOUNT *</pattern>
+		<template>
+			<srai><star index="1"/> model <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* THOUGHT *</pattern>
+		<template>
+			<srai><star index="1"/> idea <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* THULIUM *</pattern>
+		<template>
+			<srai><star index="1"/> tms <star index="2"/></srai>
+			<srai><star index="1"/> tmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TIN *</pattern>
+		<template>
+			<srai><star index="1"/> can <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TIN_CAN *</pattern>
+		<template>
+			<srai><star index="1"/> can <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TM *</pattern>
+		<template>
+			<srai><star index="1"/> tms <star index="2"/></srai>
+			<srai><star index="1"/> tmss <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TOMATO *</pattern>
+		<template>
+			<srai><star index="1"/> tomatoes <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRADE *</pattern>
+		<template>
+			<srai><star index="1"/> deal <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRADE-OFF *</pattern>
+		<template>
+			<srai><star index="1"/> tradeoffs <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRADEOFF *</pattern>
+		<template>
+			<srai><star index="1"/> tradeoffs <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRANSITION *</pattern>
+		<template>
+			<srai><star index="1"/> conversion <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRANSPARENCE *</pattern>
+		<template>
+			<srai><star index="1"/> transparency <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRIGON *</pattern>
+		<template>
+			<srai><star index="1"/> triangle <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TRILATERAL *</pattern>
+		<template>
+			<srai><star index="1"/> triangle <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TROUBLE *</pattern>
+		<template>
+			<srai><star index="1"/> difficulty <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TUNGSTEN *</pattern>
+		<template>
+			<srai><star index="1"/> w <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TURN_OUT *</pattern>
+		<template>
+			<srai><star index="1"/> prove <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* TURN_UP *</pattern>
+		<template>
+			<srai><star index="1"/> prove <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UNINTERRUPTED *</pattern>
+		<template>
+			<srai><star index="1"/> continuous <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UNIT *</pattern>
+		<template>
+			<srai><star index="1"/> units <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UNIT_OF_MEASUREMENT *</pattern>
+		<template>
+			<srai><star index="1"/> units <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UNIVERSE *</pattern>
+		<template>
+			<srai><star index="1"/> world <star index="2"/></srai>
+			<srai><star index="1"/> worlds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UNNEEDED *</pattern>
+		<template>
+			<srai><star index="1"/> unnecessary <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UPKEEP *</pattern>
+		<template>
+			<srai><star index="1"/> maintenance <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UPRISE *</pattern>
+		<template>
+			<srai><star index="1"/> arises <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UPSHOT *</pattern>
+		<template>
+			<srai><star index="1"/> consequences <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* USAGE *</pattern>
+		<template>
+			<srai><star index="1"/> use <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* USE *</pattern>
+		<template>
+			<srai><star index="1"/> used <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UTILE *</pattern>
+		<template>
+			<srai><star index="1"/> useful <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UTILISATION *</pattern>
+		<template>
+			<srai><star index="1"/> use <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UTILISE *</pattern>
+		<template>
+			<srai><star index="1"/> used <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UTILIZATION *</pattern>
+		<template>
+			<srai><star index="1"/> use <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* UTILIZE *</pattern>
+		<template>
+			<srai><star index="1"/> used <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* VANTAGE *</pattern>
+		<template>
+			<srai><star index="1"/> advantage <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* VARIETY *</pattern>
+		<template>
+			<srai><star index="1"/> kinds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* VERBAL_DESCRIPTION *</pattern>
+		<template>
+			<srai><star index="1"/> descriptions <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* VIEW *</pattern>
+		<template>
+			<srai><star index="1"/> considering <star index="2"/></srai>
+			<srai><star index="1"/> viewed <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* W *</pattern>
+		<template>
+			<srai><star index="1"/> w <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* W._V._QUINE *</pattern>
+		<template>
+			<srai><star index="1"/> quine <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WANT *</pattern>
+		<template>
+			<srai><star index="1"/> lack <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WHEREFORE *</pattern>
+		<template>
+			<srai><star index="1"/> why <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WHO *</pattern>
+		<template>
+			<srai><star index="1"/> who <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WIDEN *</pattern>
+		<template>
+			<srai><star index="1"/> extend <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WILLARD_VAN_ORMAN_QUINE *</pattern>
+		<template>
+			<srai><star index="1"/> quine <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WITHSTAND *</pattern>
+		<template>
+			<srai><star index="1"/> defy <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WITTGENSTEIN *</pattern>
+		<template>
+			<srai><star index="1"/> wittgenstein <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WOLFRAM *</pattern>
+		<template>
+			<srai><star index="1"/> w <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WORK *</pattern>
+		<template>
+			<srai><star index="1"/> solve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WORK_OUT *</pattern>
+		<template>
+			<srai><star index="1"/> solve <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WORLD *</pattern>
+		<template>
+			<srai><star index="1"/> reality <star index="2"/></srai>
+			<srai><star index="1"/> worlds <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WORLD_HEALTH_ORGANIZATION *</pattern>
+		<template>
+			<srai><star index="1"/> who <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WRAPPER *</pattern>
+		<template>
+			<srai><star index="1"/> wrappers <star index="2"/></srai>
+		</template>
+	</category>
+	<category>
+		<pattern>* WRONGFULNESS *</pattern>
+		<template>
+			<srai><star index="1"/> wrong <star index="2"/></srai>
+		</template>
+	</category>	
 </aiml>

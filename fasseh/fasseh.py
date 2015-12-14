@@ -16,6 +16,9 @@ import socket
 import json
 import time
 
+
+sys.setrecursionlimit(1000000)
+
 class Faseeh(QtGui.QMainWindow) :
 
 	def __init__(self) :
@@ -25,13 +28,25 @@ class Faseeh(QtGui.QMainWindow) :
 		self.log = logging.getLogger('fasseh.main')
 		self.log.info('Faseeh Started')
 
-		self.questions = ['What is upper ontology?', 'What is ontological engineering?', 'What is reification?']
+		self.questions = [
+			'Hi', 
+			'How are you?', 
+			'what is justification-based truth maintenance system?',
+			'why Situation calculus is limited in its applicability?',
+			'what does "action" and "event" connotes?',
+			'state one characteristic of Categories of composite objects?',
+			'list 4 routes used to build existing ontologies.',
+			'give some example of extrinsic properties?',
+			'describe one approach to truth maintenance?',
+			'mention the main tradeoff involved when taking decisions ?'
+		]
+
 		self.enemy_direction = 1
 		self.my_direction = 0
 
 		self.SERVER_PORT = 5678
 		self.BUFFER_SIZE = 1024
-		self.TIME_OUT = 10		# 10 seconds
+		self.TIME_OUT = 50		# 50 seconds
 
 		# Core
 		self.kernel = aiml.Kernel()
@@ -40,7 +55,7 @@ class Faseeh(QtGui.QMainWindow) :
 		self.no_answer_string = 'I do not have an answer'
 
 		self.blob = TextBlob('What is upper ontology')
-		self.parser.get_all_question_combinations(self.blob.tags)
+		self.parser.get_all_question_combinations(self.blob.tags, 'What is upper ontology')
 
 		# classifier
 		self.classifier = NaiveBayesClassifier(open(os.getcwd() + '/fasseh/db/train.json', 'r'), format='json')
@@ -61,12 +76,6 @@ class Faseeh(QtGui.QMainWindow) :
 		QtCore.QObject.connect(self.ui2.textEdit, QtCore.SIGNAL("sendMessage"), self.human_work)
 		self.ui2.pushButton_3.clicked.connect(self.human_work)
 
-		# self.HumanWorker = HumanWorkThread(self)
-		# worker = Worker()
-		# self.ui2.pushButton_4.connect(worker, QtCore.SIGNAL('clicked()'), lambda:worker.test) 			# back_button
-		# self.ui.pushButton.connect(worker, QtCore.SIGNAL('clicked()'), lambda:worker.test)    		# human_button
-		# self.ui.pushButton_2.connect(worker, QtCore.SIGNAL('clicked()'), lambda:worker.test)  		# machine_button
-
 		self.MainWindow.show()                             				# MAIN PAGE WINDOW    
 
 		if len(sys.argv) == 2 :
@@ -75,7 +84,7 @@ class Faseeh(QtGui.QMainWindow) :
 	
 	def answer_the_question(self, question) : 
 		question = question.lower()
-		question = self.parser.replace_not(question)
+		# question = self.parser.replace_not(question)
 		if self.parser.check_yes_ques(question) :
 			prob = self.classifier.prob_classify(question)
 			prob_yes = prob.prob('YES')
@@ -86,7 +95,7 @@ class Faseeh(QtGui.QMainWindow) :
 				return 'NO'
 		else :
 			self.blob = TextBlob(question)
-			question_combinations = self.parser.get_all_question_combinations(self.blob.tags)
+			question_combinations = self.parser.get_all_question_combinations(self.blob.tags, question)
 			response = ''
 			for sample_question in question_combinations :
 				self.log.info('sample_question: ' + sample_question)
@@ -99,66 +108,44 @@ class Faseeh(QtGui.QMainWindow) :
 			return response
 
 	def client_work(self, ServerIP) :
-		try :
-			self.log.info('client started')
-			comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			comm_socket.settimeout(self.TIME_OUT)
-			comm_socket.connect((ServerIP, self.SERVER_PORT))
-			self.log.info('client connected')
-			for question in self.questions :
-				self.log.info('question: ' + question)
-				comm_socket.send( question + '#' )
-				self.ui2.add_new_label(0, question)
-				answer = str( comm_socket.recv(self.BUFFER_SIZE) )
-				while not '#' in answer:
-					answer = str( comm_socket.recv(BUFFER_SIZE) )
-				self.log.info('answer: ' + answer)
-				self.ui2.add_new_label(1, answer)
+		self.client_worker = client_work_thread(self, ServerIP)
+		self.connect(self.client_worker, SIGNAL("update_enemy(QString)"), self.client_enemy_work_callback)
+		self.connect(self.client_worker, SIGNAL("update_my(QString)"), self.client_my_work_callback)
+		self.client_worker.start()
 
-			comm_socket.close()	
-		except Exception, e:
-			print (str(e))
+	def client_enemy_work_callback(self, question) :
+		self.ui2.add_new_label(self.enemy_direction, question)
+
+	def client_my_work_callback(self, answer) :
+		self.ui2.add_new_label(self.my_direction, answer)
 
 	def server_work(self, ServerIP) :
-		try :
-			self.log.info('server started')
-			comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			comm_socket.bind((ServerIP, self.SERVER_PORT))
-			comm_socket.listen(1)
-			conn, addr = comm_socket.accept()
-			conn.settimeout(self.TIME_OUT)
-			self.log.info('server connected')
-			for i in range (len(self.questions)):
-				question = str( conn.recv(self.BUFFER_SIZE) )
-				while not '#' in question:
-					question = str( conn.recv(self.BUFFER_SIZE) )
+		self.server_worker = server_work_thread(self, ServerIP)
+		self.connect(self.server_worker, SIGNAL("update_enemy(QString)"), self.server_enemy_work_callback)
+		self.connect(self.server_worker, SIGNAL("update_my(QString)"), self.server_my_work_callback)
+		self.server_worker.start()
 
-				self.ui2.add_new_label(self.enemy_direction, question)
-				self.log.info('question: ' + question)
-				answer = self.answer_the_question(question)
-				self.log.info('answer: ' + answer)
-				self.ui2.add_new_label(self.my_direction, answer)
-				conn.send( answer + '#' )
+	def server_enemy_work_callback(self, question) :
+		self.ui2.add_new_label(self.enemy_direction, question)
 
-			conn.close()
-		except Exception, e:
-			print (str(e))
+	def server_my_work_callback(self, answer) :
+		self.ui2.add_new_label(self.my_direction, answer)
 
 	def human_work(self) :
-		question = str( self.ui2.textEdit.toPlainText() )
-		if question :
-			self.ui2.add_new_label(self.enemy_direction, question)
-			answer = self.answer_the_question(question)
-			self.ui2.add_new_label(self.my_direction, answer)
-		else :
-			print 'Write your question first'
+		question = self.ui2.textEdit.toPlainText()
+		self.ui2.add_new_label(self.enemy_direction, question)
+		self.human_worker = human_work_thread(self, question)
+		self.connect(self.human_worker, SIGNAL("finished(QString)"), self.human_work_callback)
+		self.human_worker.start()
+
+	def human_work_callback(self, answer) :
+		self.ui2.add_new_label(self.my_direction, answer)
 
 	def gochat(self, mode) :
-		self.ChatWindow.show()
-		self.MainWindow.hide()
-
 		# Machine To Machine
 		if mode == 'MTM' :
+			self.ChatWindow.show()
+			self.MainWindow.hide()
 			ServerIP = self.ui.lineEdit.text()
 			self.log.info('ServerIP: ' + ServerIP)
 
@@ -186,7 +173,100 @@ class Faseeh(QtGui.QMainWindow) :
 		self.MainWindow.show()
 		self.ChatWindow.close()
 
+class human_work_thread(QThread):
+    def __init__(self, faseeh, question):
+        QThread.__init__(self)
+        self.faseeh = faseeh
+        self.question = str(question)
+
+    def __del__(self):
+        self.wait()
+
+    def run(self):
+		print 'in thread'
+		if self.question :
+			answer = self.faseeh.answer_the_question(self.question)
+		else :
+			print 'Write your question first'
+		self.emit(SIGNAL('finished(QString)'), answer)
+
+class client_work_thread(QThread):
+    def __init__(self, faseeh, ServerIP):
+        QThread.__init__(self)
+        self.faseeh = faseeh
+        self.ServerIP = ServerIP
+
+    def __del__(self):
+        self.wait()
+
+    def run(self):
+		try :
+			print 'ServerIP', self.ServerIP, 'port', self.faseeh.SERVER_PORT
+			self.faseeh.log.info('client started')
+			self.comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.comm_socket.settimeout(self.faseeh.TIME_OUT)
+			self.comm_socket.connect((self.ServerIP, self.faseeh.SERVER_PORT))
+			self.faseeh.log.info('client connected')
+			for question in self.faseeh.questions :
+				self.faseeh.log.info('question: ' + question)
+				print 'question', question
+				self.comm_socket.send( question + '#' )
+				self.emit(SIGNAL('update_my(QString)'), question)
+				answer = str( self.comm_socket.recv(self.faseeh.BUFFER_SIZE) )
+				while not '#' in answer:
+					answer = str( self.comm_socket.recv(self.faseeh.BUFFER_SIZE) )
+				self.faseeh.log.info('answer: ' + answer)
+				print 'answer', answer
+				answer = answer[:-1]
+				self.emit(SIGNAL('update_enemy(QString)'), answer)
+				self.sleep(1)
+
+			self.comm_socket.close()	
+		except Exception, e:
+			print (str(e))
+
+class server_work_thread(QThread):
+    def __init__(self, faseeh, ServerIP):
+        QThread.__init__(self)
+        self.faseeh = faseeh
+        self.ServerIP = ServerIP
+
+    def __del__(self):
+        self.wait()
+
+    def run(self):
+		try :
+			self.faseeh.log.info('server started')
+			print 'ServerIP', self.ServerIP, 'port', self.faseeh.SERVER_PORT
+			self.comm_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.comm_socket.bind((self.ServerIP, self.faseeh.SERVER_PORT))
+			self.comm_socket.listen(1)
+			self.conn, addr = self.comm_socket.accept()
+			self.conn.settimeout(self.faseeh.TIME_OUT)
+			self.faseeh.log.info('server connected')
+			for i in range (len(self.faseeh.questions)):
+				question = str( self.conn.recv(self.faseeh.BUFFER_SIZE) )
+				while not '#' in question:
+					question = str( self.conn.recv(self.faseeh.BUFFER_SIZE) )
+
+				question = question[:-1]
+				self.emit(SIGNAL('update_enemy(QString)'), question)
+				self.sleep(1)
+				print 'question', question
+				self.faseeh.log.info('question: ' + question)
+				answer = self.faseeh.answer_the_question(question)
+				self.faseeh.log.info('answer: ' + answer)
+				print 'answer', answer
+				self.conn.send( answer + '#' )
+				self.emit(SIGNAL('update_my(QString)'), answer)
+				self.sleep(1)
+
+			self.conn.close()
+		except Exception, e:
+			print (str(e))
+
 if __name__ == '__main__':
+	
 	app = QtGui.QApplication(sys.argv)	
 	faseeh = Faseeh()
 	sys.exit(app.exec_())

@@ -33,7 +33,7 @@ def represent_line(string) :
 
 
 def get_synomyns(string) :
-	dictionary = {}
+	dictionary = defaultdict(list)
 	words = string.split('*')
 	for word in words :
 		word = word.strip()
@@ -45,21 +45,20 @@ def get_synomyns(string) :
 				for synomyn in synomyns :
 					if synomyn and synomyn != word :
 						synomyn = synomyn.upper()
-						if synomyn not in dictionary :
-							# print synomyn, 'no int', dictionary.keys()
+						if not dictionary.has_key(synomyn) :
 							dictionary[synomyn] = []
 						if word not in dictionary[synomyn] :
 							dictionary[synomyn].append(word)
 
-	print dictionary.keys()
-	for key in dictionary :
-		print key, dictionary[key]
-		for item in dictionary[key] :
-			print '	<category>'
-			print '		<pattern>*', key , '*</pattern>'
-			print '		<template>'
-			print '			<srai><star index="1"/>', item ,'<star index="2"/></srai>'
-			print '		</template>'
+	for key, value in dictionary.iteritems() :
+		print key, value[0]
+		# print key, dictionary[key]
+		# for item in dictionary[key] :
+		# 	print '	<category>'
+		# 	print '		<pattern>*', key , '*</pattern>'
+		# 	print '		<template>'
+		# 	print '			<srai><star index="1"/>', item ,'<star index="2"/></srai>'
+		# 	print '		</template>'
 
 sys.stdout = open('test.xml', 'w')
 

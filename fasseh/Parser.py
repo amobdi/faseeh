@@ -10,7 +10,7 @@ class Parser(object):
 		self.noun_tags = ['NN','NNS','NNP','NNPS']
 		self.adjective_tags = ['JJ','JJR','JJS','VBG']
 		self.question_tags = ['WP','WP$','WRB','WDT']
-		self.verb_tags = ['VB','VBZ','VBP','VBD','VBG','VP','VPN']
+		self.verb_tags = ['VB','VBZ','VBP','VBD','VP','VPN']
 		self.neglect = ['is','are','was','were','be','am','do','did','does','doing','done','has','have','had','having']
 		self.yes_no = ['is','are','was','were','do','did','does','has','have','had']
 		self.separator = ' H '
@@ -69,8 +69,9 @@ class Parser(object):
 	# 	words_tags : list of pair of the word and its tag 
 	# return:
 	#	list of all patterns of the keywords in the statement
-	def get_all_question_combinations(self, words_tags) :
+	def get_all_question_combinations(self, words_tags, question) :
 		result = []
+		result.append(question)
 		nouns = self.get_nouns(words_tags)
 		question_words = self.get_question_words(words_tags)
 		verbs = self.get_verbs(words_tags)
@@ -108,11 +109,14 @@ class Parser(object):
 	# return :
 	#	true if yes/no question , otherwise false
 	def check_yes_ques(self, string) :
-		ques = string.split()[0]
-		tag = TextBlob(ques)
-		ques_tag = tag.pos_tags[0][1]
-		print 'ques', ques, 'ques_tag', ques_tag
-		if ques in self.yes_no or ques_tag == "MD" :
-			return True
+		if string : 
+			ques = string.split()[0]
+			tag = TextBlob(ques)
+			ques_tag = tag.pos_tags[0][1]
+			print 'ques', ques, 'ques_tag', ques_tag
+			if ques in self.yes_no or ques_tag == "MD" :
+				return True
+			else : 
+				return False
 		else : 
 			return False

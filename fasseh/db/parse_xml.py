@@ -44,7 +44,7 @@ def get_synomyns(string) :
 				synomyns = word_syn.synsets[0].lemma_names()
 				for synomyn in synomyns :
 					if synomyn and synomyn != word :
-						synomyn.upper()
+						synomyn = synomyn.upper()
 						if synomyn not in dictionary :
 							# print synomyn, 'no int', dictionary.keys()
 							dictionary[synomyn] = []
@@ -52,14 +52,14 @@ def get_synomyns(string) :
 							dictionary[synomyn].append(word)
 
 	print dictionary.keys()
-	# for key in dictionary :
-	# 	print key, dictionary[key]
-	# 	for item in dictionary[key] :
-	# 		print '	<category>'
-	# 		print '		<pattern>*', key , '*</pattern>'
-	# 		print '		<template>'
-	# 		print '			<srai><star index="1"/>', item ,'<star index="2"/></srai>'
-	# 		print '		</template>'
+	for key in dictionary :
+		print key, dictionary[key]
+		for item in dictionary[key] :
+			print '	<category>'
+			print '		<pattern>*', key , '*</pattern>'
+			print '		<template>'
+			print '			<srai><star index="1"/>', item ,'<star index="2"/></srai>'
+			print '		</template>'
 
 sys.stdout = open('test.xml', 'w')
 

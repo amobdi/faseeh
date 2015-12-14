@@ -1,5 +1,8 @@
 import xml.etree.ElementTree as xe
 import sys
+from textblob import Word
+from textblob.wordnet import VERB, NOUN
+from collections import defaultdict
 
 def clear_string(string) :
 	line = ''
@@ -16,39 +19,50 @@ def clear_string(string) :
 		line = line[0:len(line)-1]
 	return line
 
-def clear_string_only_words(string) :
+def represent_line(string) :
 	line = ''
-	words = string.split()
+	words = string.split('*')
 	for word in words :
-		if word.isalnum() :
+		word = word.strip()
+		if word :
 			if line :
-				line = line + ' ' + word
+				line = line + ' * ' + word
 			else :
 				line = word
-	
 	return line
+
+
+def get_synomyns(string) :
+	dictionary = {}
+	words = string.split('*')
+	for word in words :
+		word = word.strip()
+		word = word.lower()
+		if word :
+			word_syn = Word(word)
+			if len(word_syn.synsets) > 0 :
+				synomyns = word_syn.synsets[0].lemma_names()
+				for synomyn in synomyns :
+					if synomyn and synomyn != word :
+						synomyn.upper()
+						if synomyn not in dictionary :
+							# print synomyn, 'no int', dictionary.keys()
+							dictionary[synomyn] = []
+						if word not in dictionary[synomyn] :
+							dictionary[synomyn].append(word)
+
+	print dictionary.keys()
+	# for key in dictionary :
+	# 	print key, dictionary[key]
+	# 	for item in dictionary[key] :
+	# 		print '	<category>'
+	# 		print '		<pattern>*', key , '*</pattern>'
+	# 		print '		<template>'
+	# 		print '			<srai><star index="1"/>', item ,'<star index="2"/></srai>'
+	# 		print '		</template>'
 
 sys.stdout = open('test.xml', 'w')
 
-print ('<?xml version="1.0" encoding="UTF-8"?>')
-print ('<aiml version="1.0.1" encoding="UTF-8">')
-
-root = xe.parse('train.xml').getroot()
-
-i = 0
+root = xe.parse('final.xml').getroot()
 for child in root :
-
-	child[0].text = clear_string_only_words(child[0].text)
-	child[1].text = clear_string(child[1].text)
-
-	if child[0].text and child[0].text[0] != '*' :
-		child[0].text = '* ' + child[0].text 
-	if child[0].text and child[0].text[-1] != '*' :
-		child[0].text = child[0].text + ' *' 
-	
-	print ("	<category>")
-	print ("		<pattern>" + child[0].text + "</pattern>")
-	print ("		<template>" + child[1].text + "</template>")
-	print ("	</category>")
-
-print ('</aiml>')
+	get_synomyns(child[0].text)

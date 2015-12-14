@@ -1,4 +1,5 @@
 import itertools
+from textblob import TextBlob
 from textblob import Word
 
 # class Parser is responsible to parse the tags of the statement to get all nouns, verbs, questions words and generate all patterns
@@ -11,6 +12,7 @@ class Parser(object):
 		self.question_tags = ['WP','WP$','WRB','WDT']
 		self.verb_tags = ['VB','VBZ','VBP','VBD','VBG','VP','VPN']
 		self.neglect = ['is','are','was','were','be','am','do','did','does','doing','done','has','have','had','having']
+		self.yes_no = ['is','are','was','were','do','did','does','has','have','had']
 		self.separator = ' H '
 	
 	# parse the tags to extract the nouns
@@ -90,3 +92,27 @@ class Parser(object):
 				sample_question = sample_question + self.separator
 				result.append(sample_question)
 		return result
+
+	# replace n't to not
+	# args:
+	#	string : the string to be converted
+	# return :
+	#	the string after convertion
+	def replace_not(self, string) :
+		string = string.replace("n't"," not")
+		return  string
+	
+	# check if the question is (YES | NO)
+	# args:
+	#	string : the string to be checked
+	# return :
+	#	true if yes/no question , otherwise false
+	def check_yes_ques(self, string) :
+		ques = string.split()[0]
+		tag = TextBlob(ques)
+		ques_tag = tag.pos_tags[0][1]
+		print 'ques', ques, 'ques_tag', ques_tag
+		if ques in self.yes_no or ques_tag == "MD" :
+			return True
+		else : 
+			return False

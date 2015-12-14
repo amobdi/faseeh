@@ -1,0 +1,1310 @@
+Does the inheritance mechanism in semantic networks implement the overriding of defaults in a simple and natural way?
+yes
+
+Does the inheritance mechanism in semantic networks doesn't implement the overriding of defaults in a simple and natural way?
+No
+
+Does a property inherited by all members of a category in a semantic network could be overridden by more specific information for a subcategory? 
+Yes
+
+Does a property inherited by all members of a category in a semantic network couldn't be overridden by more specific information for a subcategory ? 
+No
+
+Does simple introspection suggest that these failures of monotonicity are widespread in commonsense reasoning?
+yes
+
+Does simple introspection doesn't suggest that these failures of monotonicity are widespread in commonsense reasoning?
+No
+
+Does Nonmonotonic logics have been devised with modified notions of truth and entailment in order to capture such behavior ?
+Yes
+
+Can Circumscription be seen as a more powerful  and precise version of the closedworld assumption?
+yes
+
+Is the idea of Circumscription is to specify particular predicates that are assumed to be as false as possible?
+yes
+
+Is the idea of Circumscription is to not specify particular predicates that are assumed to be as false as possible?
+No
+
+Can Circumscription  be viewed as an example of a model preference logic?
+yes
+
+Can't Circumscription  be viewed as an example of a model preference logic?
+No
+
+Circumscription can be viewed as an example of a model preference logic?
+yes
+
+Circumscription can't be viewed as an example of a model preference logic?
+No
+
+For circumscription one model is preferred to another if it has fewer abnormal objects?
+yes
+
+For circumscription one model is preferred to another if it has more abnormal objects?
+No
+
+The standard example for which multiple inheritance is problematic is called the Nixon diamond ?
+Yes
+
+Is the Nixon diamond standard example for which multiple inheritance is problematic?
+yes
+
+Can we use a formalism called prioritized circumscription to give preference to models where Abnormal 3 is minimized?
+Yes
+
+Is Default logic is a formalism in which default rules can be written to generate contingent, nonmonotonic conclusions?
+Yes
+
+Default logic is a formalism in which default rules can be written to generate contingent, nonmonotonic conclusions?
+yes
+
+Default logic is not a formalism in which default rules can be written to generate contingent, nonmonotonic conclusions?
+No
+
+To interpret what the default rules mean,  we define the notion of an extension of a default theory to be a maximal set of consequences of the theory?
+Yes
+
+Does an extension S consists of the original known facts and a set of conclusions from the default rules?
+Yes
+
+In an extension S no additional conclusions can be drawn from S and the justifications of every default conclusion in S are consistent with S?
+Yes
+
+In an extension S additional conclusions can be drawn from S and the justifications of every default conclusion in S are consistent with S?
+No
+
+Does a great deal of progress has been made in understanding their mathematical properties when nonmonotonic logics were first proposed?
+Yes
+
+Is how can beliefs that have default status be used to make decisions is the hardest issue for default reasoning?
+Yes
+
+Is how can beliefs that have default status be used to make decisions is not the hardest issue for default reasoning?
+No
+
+Decisions often involve tradeoffs?
+Yes
+
+Does Decisions often involve tradeoffs?
+Yes
+
+Decisions often don't involve tradeoffs?
+No
+
+Does Decisions often don't  involve tradeoffs?
+No
+
+We need to compare the strengths of belief in the outcomes of different actions, and the costs of making a wrong decision?
+Yes
+
+We don't need to compare the strengths of belief in the outcomes of different actions, and the costs of making a wrong decision?
+No
+
+In cases where the same kinds of decisions are being made repeatedly, it is possible to interpret default rules as "threshold probability" statements?
+Yes
+
+In cases where the same kinds of decisions are being made repeatedly, it is not possible to interpret default rules as "threshold probability" statements?
+No
+
+Is it possible to interpret default rules as "threshold probability" statements in cases where the same kinds of decisions are being made repeatedly?
+Yes
+
+Does some considerations have led some researchers to consider how to embed default reasoning within probability theory or utility theory?
+Yes
+
+Does many of the inferences drawn by a knowledge representation system will have only default status, rather than being absolutely certain ? 
+Yes
+
+Does many of the inferences drawn by a knowledge representation system will not  have only default status, rather than being absolutely certain ? 
+No
+
+Is belief revision is some of the inferred facts will turn out to be wrong and will have to be retracted  in the face of new information ? 
+Yes
+
+Are Truth maintenance systems, or TMSs,  designed  to handle exactly these kinds of complications ? 
+Yes
+
+Are Truth maintenance systems designed  to handle exactly these kinds of complications ? 
+Yes
+
+Are TMSs designed  to handle exactly these kinds of complications ? 
+Yes
+
+One simple approach to truth maintenance is to keep track of the order in which sentences are told to the knowledge base by numbering them from P1 to Pn ? 
+Yes
+
+Is JTMS a more efficient approach rather than numbering the sentences ? 
+Yes
+
+In JTMS each sentence in the knowledge base is annotated with a justification consisting of the set of sentences from which it was inferred ? 
+Yes
+
+Does the JTMS assume that sentences that are considered once will probably be considered again?
+Yes
+
+Does the JTMS don't assume that sentences that are considered once will probably be considered again?
+No
+
+Do we mark the sentence as being back in if a subsequent assertion restores one of the justifications in JTMS?
+Yes
+
+Does the JTMS retain all the inference chains that it uses and need not rederive sentences when a justification becomes valid again?
+Yes
+
+Does the JTMS don't retain all the inference chains that it uses and need not rederive sentences when a justification becomes valid again?
+No
+
+Can TMSs  be used to speed up the analysis of multiple hypothetical situations?
+Yes
+
+Does ATMS make contextswitching between hypothetical worlds particularly efficient?
+Yes
+
+Can ATMS makes contextswitching between hypothetical worlds particularly efficient?
+Yes
+
+In a JTMS, the maintenance of justifications allows you to move quickly from one state to another by making a few retractions and assertions, but at any time only one state is represented?
+Yes
+
+Does,In a JTMS, the maintenance of justifications allow you to move quickly from one state to another by making a few retractions and assertions, but at any time only one state is represented?
+Yes
+
+Does,In a JTMS, the maintenance of justifications don't allow you to move quickly from one state to another by making a few retractions and assertions, but at any time only one state is represented?
+No
+
+Does an ATMS represent all the states that have ever been considered at the same time?
+Yes
+
+Does an ATMS don't represent all the states that have ever been considered at the same time?
+No
+
+Does a JTMS label each sentence as being in or out?
+Yes
+
+Does an ATMS keep track, for each sentence, of which assumptions would cause the sentence to be true?
+Yes
+
+Does the  Truth maintenance systems  provide a mechanism for generating explanations?
+Yes
+
+Is the computational complexity of the truth maintenance problem is less than that of propositional inference ? 
+No
+
+Is the computational complexity of the truth maintenance problem is  at least as great as that of propositional inference ? 
+Yes
+
+Is the complexity of the truth maintenance problem is NP-hard?
+Yes
+
+Can TMS provide a substantial increase in the ability of a logical system to handle complex environments and hypotheses?
+Yes
+
+Agents that have beliefs can deduce new beliefs? 
+Yes
+
+Agents that have beliefs can't deduce new beliefs?
+No
+
+Agents that  don't have beliefs can deduce new beliefs?
+No
+
+
+Does KNowledge about one’s own kNowledge and reasoning processes useful for controlling inference ? 
+Yes
+
+Does KNowledge about one’s own kNowledge and reasoning processes Not useful for controlling inference ? 
+No
+
+
+Is  KNowledge about the kNowledge of other agents  important ? 
+Yes
+
+Is  KNowledge about the kNowledge of other agents Not important ? 
+No
+
+Do we need a model of mental objects that are in someone’s head (or something’s kNowledge base) and of mental processes that manipulate those mental objects? 
+Yes 
+
+Don't we need a model of mental objects that are in someone’s head (or something’s kNowledge base) and of mental processes that manipulate those mental objects? 
+No
+
+Do the model of mental objects and mental process that manipulate those objects need to be detailed ?
+No
+
+Do the model of mental objects and mental process that manipulate those objects needn't to be detailed ?
+Yes
+
+do we have to be able to predict how many milliseconds it will take for a particular agent to make a deduction? 
+No
+
+don't we have to be able to predict how many milliseconds it will take for a particular agent to make a deduction? 
+Yes
+
+do we begin with the propositional attitudes that an agent can have toward mental objects ?
+Yes
+
+we don't begin with the propositional attitudes that an agent can have toward mental objects  is this true ?
+No
+
+Believes, KNows, Wants, Intends, and Informs are examples of propositional attitudes ? 
+Yes
+
+Believes, KNows, Wants, Intends, and Informs aren't examples of propositional attitudes ? 
+No
+
+do propositional attitudes behave like Normal predicates ? 
+No
+
+do propositional attitudes  don't behave like Normal predicates ? 
+Yes
+
+is equality reasoning  built into logic ? 
+Yes 
+
+is equality reasoning  Not built into logic ? 
+No
+
+does it matter  what term a logic uses to refer to an object ? 
+No 
+
+doesn't it matter  what term a logic uses to refer to an object ? 
+Yes
+
+does it matter the object that the term names ? 
+Yes
+
+doesn't  it matter the object that the term names ? 
+No
+
+for propositional attitudes like believes and kNows do we like to have referential opacity ?
+Yes
+
+for propositional attitudes like believes and kNows don't we like to have referential opacity ?
+No 
+
+Regular logic is concerned with a single modality, the modality of  ? 
+Yes 
+
+Regular logic is Not  concerned with a single modality, the modality of truth ? 
+No 
+
+does Modal logic include special modal operators that take sentences (rather than terms) as arguments ? 
+Yes
+
+does Modal logic include special modal operators that take sentences (rather than terms) as arguments ? 
+Yes
+
+does Modal logic doesn't include special modal operators that take sentences (rather than terms) as arguments ? 
+No
+
+is The syntax of modal logic and firstorder logic is the same ? 
+Yes
+
+is The syntax of modal logic and firstorder logic isNot the same ? 
+No
+
+in modal logic  sentences can also be formed with modal operators ?
+Yes
+
+in modal logic  sentences can't be formed with modal operators ?
+No
+
+is The semantics of modal logic  complicated ? 
+Yes
+
+is The semantics of modal logic Not complicated ? 
+No
+
+In firstorder logic does a  model contain a set of objects and an interpretation that maps each name to the appropriate object, relation, or function ? 
+Yes 
+
+In firstorder logic does a  model  doesn't contain a set of objects and an interpretation that maps each name to the appropriate object, relation, or function ? 
+No
+
+In modal logic we will need a more complicated model  that consists of a collection of possible worlds rather than just one true ?
+Yes
+
+In modal logic we won't need a more complicated model  that consists of a collection of possible worlds rather than just one true ?
+No
+
+in  model, one that consists of a collection of possible worlds  the worlds are connected in a graph by accessibility relations ? 
+Yes
+
+in  model, one that consists of a collection of possible worlds  the worlds aren't connected in a graph by accessibility relations ? 
+No
+
+We say that world w1 is accessible from world w0 with respect to the modal operator KA if everything in w1 is consistent with what A kNows in w0 ? 
+Yes
+
+We say that world w1 is accessible from world w0 with respect to the modal operator KA if everything in w1 isNot consistent with what A kNows in w0 ? 
+Yes
+
+In general, a kNowledge atom KAP is true in world w if and only if P is true in every world accessible from w ? 
+Yes 
+
+In general, a kNowledge atom KAP is true in world w if and only if P isn't true in every world accessible from w ? 
+No 
+
+The truth of more complex sentences is derived by recursive application of the rule that " a kNowledge atom KAP is true in world w if and only if P is true in every world accessible from w " and the Normal rules of firstorder logic ? 
+Yes 
+
+The truth of more complex sentences isn't derived by recursive application of the rule that " a kNowledge atom KAP is true in world w if and only if P is true in every world accessible from w " and the Normal rules of firstorder logic ? 
+No
+
+modal logic can be used to reason about nested kNowledge sentences ? 
+Yes
+
+modal logic can't be used to reason about nested kNowledge sentences ? 
+No
+
+is there an infinite number of possible worlds ? 
+Yes
+
+is there an finite number of possible worlds ? 
+No 
+
+A new possible world is needed to talk about different possible facts , or to talk about different states of kNowledge  ? 
+Yes 
+
+No new possible world is needed to talk about different possible facts , or to talk about different states of kNowledge  ? 
+No 
+
+two possible worlds,might have the same base facts about the world ?
+Yes
+
+two possible worlds,can't have the same base facts about the world ?
+No
+
+in general, there will be lots of propositions that an agent does Not kNow to be true and does Not kNow to be false ? 
+Yes
+
+kNowledge is justified true belief ? 
+Yes 
+
+kNowledge isn't justified true belief ? 
+No
+
+logical agents should be able to introspect on their own kNowledge ? 
+Yes
+
+logical agents shouldn't be able to introspect on their own kNowledge ? 
+No
+
+one problem with the modal logic approach is that it assumes logical omniscience ? 
+Yes
+
+logical omniscience on the part of agents. means if an agent kNows a set of axioms, then it kNows all consequences of those axioms ?
+Yes 
+
+logical omniscience on the part of agents. means if an agent kNows a set of axioms, then it  don't kNow all consequences of those axioms ?
+No
+
+belief has more conNotation of referring to things that are physically represented in the agent ?
+Yes 
+
+belief don't have more conNotation of referring to things that are physically represented in the agent ?
+No
+
+There are attempts to define a form of limited rationality for agents ?
+Yes 
+
+There are No attempts to define a form of limited rationality for agents ?
+No
+
+can real world can be seen as consisting of primitive objects and composite objects built from them ? 
+Yes
+
+can real world can be Not seen as consisting of primitive objects and composite objects built from them ? 
+No
+
+By reasoning at the level of large objects such as apples and cars, we can overcome the complexity involved in dealing with vast numbers of primitive ? 
+Yes
+
+By reasoning at the level of large objects such as apples and cars, we can't overcome the complexity involved in dealing with vast numbers of primitive ? 
+No
+
+There is a significant portion of reality that seems to defy any obvious individuation ? 
+Yes
+
+There is a significant portion of reality that seems  Not to defy any obvious individuation ? 
+No
+
+If we cut an aardvark in half  we do Not get two aardvarks  ? 
+Yes
+
+If we cut an aardvark in half  we do get two aardvarks  ? 
+No
+
+any part of a butter-object is also a butter-object ?
+Yes
+
+any part of a butter-object isn't a butter-object ?
+No
+
+The English language distinguishes clearly between stuff and things ? 
+Yes
+
+The English language doesn't distinguish  between stuff and things ? 
+No
+
+aardvarks, holes, and theorems are count names ? 
+Yes
+
+aardvarks, holes, and theorems aren't count names ? 
+No
+
+butter, water, and energy are mass Nouns ?
+Yes
+
+butter, water, and energy aren't  mass Nouns ?
+No
+
+to represent stuffs properly We need to have as objects in our ontology at least the gross "lumps" of stuff we interact with ? 
+Yes
+
+to represent stuffs properly We don't need to have as objects in our ontology at least the gross "lumps" of stuff we interact with ? 
+No
+
+is PoundOfButter, which includes as  members all butter-objects weighing one pound a kind of stuff ? 
+No 
+
+is PoundOfButter, which includes as  members all butter-objects weighing one pound isn't a kind of stuff ? 
+Yes
+
+intrinsic properties  belong to the very substance of the object, rather than to the object as a whole ?
+Yes
+
+intrinsic properties don't belong to the very substance of the object, rather than to the object as a whole ?
+No
+
+When you cut an instance of stuff in half, the two pieces retain the intrinsic properties ? 
+Yes 
+
+When you cut an instance of stuff in half, the two pieces dont retain the intrinsic properties ? 
+No
+
+extrinsic properties are retained under subdivision ? 
+No
+
+extrinsic properties are Not retained under subdivision ? 
+Yes 
+
+A category of objects that includes in its definition only intrinsic properties is then a substance, or mass Noun ? 
+Yes
+
+A category of objects that includes in its definition only intrinsic properties is Not  a substance, or Not mass Noun ? 
+No
+
+Is categories of composite  objects are  characterized by structural relations among parts ?
+Yes
+
+Is PartPartition relation analogous is the Partition relation for categories?
+Yes
+
+Are simple, quantitative measures easy to represent ? 
+Yes
+
+Are simple, quantitative measures hard to represent?
+No
+
+Can we compare  measures ? 
+Yes
+
+Is situation calculus limited in its applicability ?
+Yes
+
+Is not situation calculus limited in its applicability ?
+No
+
+Isn't situation calculus limited in its applicability ?
+No
+
+Isn't situation calculus unlimited in its applicability ?
+Yes
+
+Is not situation calculus unlimited in its applicability ?
+Yes
+
+Is situation calculus unlimited in its applicability ?
+No
+
+Was situation calculus designed to describe a world in which actions are discrete, instantaneous, and happen one at a time ?
+Yes
+
+Was not situation calculus designed to describe a world in which actions are discrete, instantaneous, and happen one at a time ?
+No
+
+Wasn't situation calculus designed to describe a world in which actions are discrete, instantaneous, and happen one at a time ?
+No
+
+Was situation calculus designed to describe a world in which actions are not discrete, instantaneous, and happen one at a time ?
+No
+
+Was situation calculus designed to describe a world in which actions aren't discrete, instantaneous, and happen one at a time ?
+No
+
+Was not situation calculus designed to describe a world in which actions are not discrete, instantaneous, and happen one at a time ?
+Yes
+
+Wasn't situation calculus designed to describe a world in which actions aren't discrete, instantaneous, and happen one at a time ?
+Yes
+
+Was situation calculus designed to describe a world in which actions are continuous, delayed, and happen more than one at a time ?
+No
+
+Wasn't situation calculus designed to describe a world in which actions are continuous, delayed, and happen more than one at a time ?
+Yes
+
+Was not situation calculus designed to describe a world in which actions are continuous, delayed, and happen more than one at a time ?
+Yes
+
+Was situation calculus designed to describe a world in which actions are not continuous, delayed, and happen more than one at a time ?
+Yes
+
+Wasn't situation calculus designed to describe a world in which actions are not continuous, delayed, and happen more than one at a time ?
+No
+
+Was not situation calculus designed to describe a world in which actions are not continuous, delayed, and happen more than one at a time ?
+No
+
+Can situation calculus say that the tub is empty before the action and full when the action is done ?
+Yes
+
+Can't situation calculus say that the tub is empty before the action and full when the action is done ?
+No
+
+Can not situation calculus say that the tub is empty before the action and full when the action is done ?
+No
+
+Can situation calculus say that the tub is empty after the action and full when the action is done ?
+No
+
+Can't situation calculus say that the tub is empty after the action and full when the action is done ?
+No
+
+Can not situation calculus say that the tub is empty after the action and full when the action is done ?
+Yes
+
+Can’t situation calculus talk about what happens during the action ?
+Yes
+
+Can not situation calculus talk about what happens during the action ?
+Yes
+
+Can situation calculus talk about what happens during the action ?
+No
+
+Can't situation calculus describe two actions happening at the same time ?
+Yes
+
+Can not situation calculus describe two actions happening at the same time ?
+Yes
+
+Can situation calculus describe two actions happening at the same time ?
+No
+
+Is event calculus based on points of time ?
+Yes
+
+Isn't event calculus based on points of time ?
+No
+
+Is not event calculus based on points of time ?
+No
+
+Is event calculus based on situation ?
+No
+
+Isn't event calculus based on situation ?
+Yes
+
+Is not event calculus based on situation ?
+Yes
+
+Does event calculus reify fluents and events ?
+Yes
+
+Doesn't event calculus reify fluents and events ?
+No
+
+Does not event calculus reify fluents and events ?
+No
+
+Are Events described as instances of event categories ?
+Yes
+
+Aren't Events described as instances of event categories ?
+No
+
+Are not Events described as instances of event categories ?
+No
+
+Are Events described as instances of time categories ?
+No
+
+Aren't Events described as instances of time categories ?
+Yes
+
+Are not Events described as instances of time categories ?
+Yes
+
+Are fluents and actions defined with domain-specific axioms that are similar to successor state axioms ?
+Yes
+
+Are not fluents and actions defined with domain-specific axioms that are similar to successor state axioms ?
+No
+
+Aren't fluents and actions defined with domain-specific axioms that are similar to successor state axioms ?
+No
+
+Can we make it possible to add any amount of arbitrary information about events by refiying them ?
+Yes
+
+Can't we make it possible to add any amount of arbitrary information about events by refiying them ?
+No
+
+Can not we make it possible to add any amount of arbitrary information about events by refiying them ?
+No
+
+Can we extend event calculus to make it possible to represent simultaneous events, exogenous events, continuous events and other complications ?
+Yes
+
+Can't we extend event calculus to make it possible to represent simultaneous events, exogenous events, continuous events and other complications ?
+No
+
+Can not we extend event calculus to make it possible to represent simultaneous events, exogenous events, continuous events and other complications ?
+No
+
+Can we extend event calculus to make it possible to represent two people being necessary to ride a seesaw events, the wind blowing and changing the location of an object events, he level of water in the bathtub continuously rising events and other complications ?
+Yes
+
+Can't we extend event calculus to make it possible to represent two people being necessary to ride a seesaw events, the wind blowing and changing the location of an object events, he level of water in the bathtub continuously rising events and other complications ?
+No
+
+Can not we extend event calculus to make it possible to represent two people being necessary to ride a seesaw events, the wind blowing and changing the location of an object events, he level of water in the bathtub continuously rising events and other complications ?
+No
+
+Are the events we have seen so far what we call discrete events ?
+Yes
+
+Aren't the events we have seen so far what we call discrete events ?
+No
+
+Are not the events we have seen so far what we call discrete events ?
+No
+
+Are the events we have seen so far what we call continuous events ?
+No
+
+Aren't the events we have seen so far what we call continuous events ?
+Yes
+
+Are not the events we have seen so far what we call continuous events ?
+Yes
+
+Are Categories of events with subinterval property called process categories or liquid event categories ?
+Yes
+
+Are not Categories of events with subinterval property called process categories or liquid event categories ?
+No
+
+Aren't Categories of events with subinterval property called process categories or liquid event categories ?
+No
+
+Are Categories of events with subinterval property called nonliquid event categories ?
+No
+
+Are not Categories of events with subinterval property called nonliquid event categories ?
+Yes
+
+Aren't Categories of events with subinterval property nonliquid event categories ?
+Yes
+
+Is the distinction between liquid and nonliquid events exactly analogous to the difference between substances, or stuff, and individual objects, or things ?
+Yes
+
+Isn't the distinction between liquid and nonliquid events exactly analogous to the difference between substances, or stuff, and individual objects, or things?
+No
+
+Is not the distinction between liquid and nonliquid events exactly analogous to the difference between substances, or stuff, and individual objects, or things?
+No
+
+
+Can Physical objects be viewed as generalized events?
+Yes
+
+Can't Physical objects be viewed as generalized events?
+NO
+
+Can not Physical objects be viewed as generalized events?
+No
+
+Is a physical object a chunk of space-time?
+Yes
+
+Isn't a physical object a chunk of space-time ?
+No
+
+Is not a physical object a chunk of space-time ?
+No
+
+Is an object a triangle if and only if it is not a polygon with three sides?
+No
+
+Is an object a triangle if and only if it is not a polygon with three sides is strict definition?
+No
+
+Isn't an object a triangle if and only if it is not a polygon with three sides?
+Yes
+
+Isn't an object a triangle if and only if it is not a polygon with three sides is strict definition?
+Yes
+
+Is an object a triangle if and only if it is not a polygon with three sides?
+No
+
+Is an object a triangle if and only if it is a polygon with three sides is not strict definition?
+No
+
+Isn't an object a triangle if and only if it is not a polygon with three sides?
+Yes
+
+Isn't an object a triangle if and only if it is a polygon with three sides is not strict definition?
+Yes
+
+Do most categories in the real world have no clear-cut definition?
+Yes
+
+Don't most categories in the real world have no clear-cut definition?
+No
+
+Do not most categories in the real world have no clear-cut definition?
+No
+
+Do most categories in the real world have clear-cut definition?
+No
+
+Don't most categories in the real world have clear-cut definition?
+Yes
+
+Do not most categories in the real world have clear-cut definition?
+Yes
+
+Is most categories in the real world have no clear-cut definition called natural kind categories ?
+Yes
+
+Isn't most categories in the real world have no clear-cut definition called natural kind categories ?
+No
+
+Is not most categories in the real world have no clear-cut definition called natural kind categories ?
+No
+
+Is most categories in the real world have clear-cut definition called natural kind categories ?
+No
+
+Isn't most categories in the real world have clear-cut definition called natural kind categories ?
+Yes
+
+Is not most categories in the real world have clear-cut definition called natural kind categories ?
+Yes
+
+Is useful approach to separate what is true of all instances of a category from what is true only of typical instances ?
+Yes
+
+Isn't useful approach to separate what is true of all instances of a category from what is true only of typical instances ?
+No
+
+Is not useful approach to separate what is true of all instances of a category from what is true only of typical instances ?
+No
+
+Can we write down useful facts about categories without exact definitions ?
+Yes
+
+Can't we write down useful facts about categories without exact definitions ?
+No
+
+Can not we write down useful facts about categories without exact definitions ?
+No
+
+Was the difficulty of providing exact definitions for most natural categories explained in depth by Wittgenstein ?
+Yes
+
+Wasn't the difficulty of providing exact definitions for most natural categories explained in depth by Wittgenstein ?
+No
+
+Was not the difficulty of providing exact definitions for most natural categories explained in depth by Wittgenstein ?
+No
+
+Was the difficulty of providing exact definitions for most natural categories explained in depth in 1953 ?
+Yes
+
+Wasn't the difficulty of providing exact definitions for most natural categories explained in depth in 1953 ?
+No
+
+Was not the difficulty of providing exact definitions for most natural categories explained in depth in 1953 ?
+No
+
+Did Wittgenstein use the example of games to show that members of a category shared "family resemblances" rather than necessary and sufficient characteristics ?
+Yes
+
+Didn't Wittgenstein use the example of games to show that members of a category shared "family resemblances" rather than necessary and sufficient characteristics ?
+No
+
+Did not Wittgenstein use the example of games to show that members of a category shared "family resemblances" rather than necessary and sufficient characteristics ?
+No
+
+Was the utility of the notion of strict definition also challenged by Quine ?
+Yes
+
+Wasn't the utility of the notion of strict definition also challenged by Quine ?
+No
+
+Was not the utility of the notion of strict definition also challenged by Quine ?
+No
+
+Was the utility of the notion of strict definition also challenged in 1953 ?
+Yes
+
+Wasn't the utility of the notion of strict definition also challenged in 1953 ?
+No
+
+Was not the utility of the notion of strict definition also challenged in 1953 ?
+No
+
+Did Quine point out that even the definition of "bachelor" as an unmarried adult male is suspect ?
+Yes
+
+Didn't Quine point out that even the definition of "bachelor" as an unmarried adult male is suspect ?
+No
+
+Did not Quine point out that even the definition of "bachelor" as an unmarried adult male is suspect ?
+No
+
+Did Quine point out that even the definition of "bachelor" as an unmarried adult male is not suspect ?
+No
+
+Didn't Quine point out that even the definition of "bachelor" as an unmarried adult male is not suspect ?
+Yes
+
+Did not Quine point out that even the definition of "bachelor" as an unmarried adult male is not suspect ?
+Yes
+
+Did Quine point out that even the definition of "bachelor" as an unmarried adult male isn't suspect ?
+No
+
+Didn't Quine point out that even the definition of "bachelor" as an unmarried adult male isn't suspect ?
+Yes
+
+Did not Quine point out that even the definition of "bachelor" as an unmarried adult male isn't suspect ?
+Yes
+
+Did Quine point out that even the definition of "bachelor" as a married adult male is suspect ?
+No
+
+Didn't Quine point out that even the definition of "bachelor" as a married adult male is suspect ?
+Yes
+
+Did not Quine point out that even the definition of "bachelor" as a married adult male is suspect ?
+Yes
+
+Could the tension perhaps be resolved by distinguishing between logical definitions suitable for internal knowledge representation and the more nuanced criteria for felicitous linguistic usage ?
+Yes
+
+Couldn't the tension perhaps be resolved by distinguishing between logical definitions suitable for internal knowledge representation and the more nuanced criteria for felicitous linguistic usage ?
+No
+
+Could not the tension perhaps be resolved by distinguishing between logical definitions suitable for internal knowledge representation and the more nuanced criteria for felicitous linguistic usage ?
+No
+
+Is possible that failures of linguistic usage serve as feedback for modifying internal definitions ?
+Yes
+
+Is not possible that failures of linguistic usage serve as feedback for modifying internal definitions ?
+No
+
+Isn't possible that failures of linguistic usage serve as feedback for modifying internal definitions ?
+No
+
+Is impossible that failures of linguistic usage serve as feedback for modifying internal definitions ?
+No
+
+Is not impossible that failures of linguistic usage serve as feedback for modifying internal definitions ?
+Yes
+
+Isn't impossible that failures of linguistic usage serve as feedback for modifying internal definitions ?
+Yes
+
+Does filtering become unnecessary, when failures of linguistic usage serve as feedback for modifying internal definitions?
+Yes
+
+Doesn't filtering become unnecessary, when failures of linguistic usage serve as feedback for modifying internal definitions?
+No
+
+Does not filtering become unnecessary, when failures of linguistic usage serve as feedback for modifying internal definitions?
+No
+
+Is perception on Web pages is easier than perception while driving a taxi in Cairo?
+Yes
+
+Is perception on Web pages is harder than perception while driving a taxi in Cairo?
+No
+
+Is the  agent that can deal with all of the Internet is complex as a robot that can move in the real world ?
+Yes
+
+Is th agent’s first task is to collect product offers that are relevant to a query?
+Yes
+
+Is the page relevant to the query if it can be reached by a chain of zero or more relevant category links from a store’s home page?
+Yes
+
+Do we need to have  a rich vocabulary of names for categories?
+Yes
+
+We do not need to have  a rich vocabulary of names for categories?
+No
+
+Will life  be much easier if there were a one-to-one correspondence between categories and the character strings that name them?
+Yes
+
+Will life  be much harder if there were a one-to-one correspondence between categories and the character strings that name them?
+No
+
+Does Synonymy and ambiguity cause a significant increase in the number of paths that the agent has to follow?
+Yes
+
+Synonymy and ambiguity can't cause a significant increase in the number of paths that the agent has to follow?
+No
+
+Is it possible to enumerate in advance all the ways a category can be named?
+No
+
+It is impossible to enumerate in advance all the ways a category can be named?
+Yes
+
+Is the choice of representation important in "toy" domains?
+No
+
+Do Complex domains such as shopping on the internet or driving a car in traffic require more general and flexible representations?
+Yes
+
+Is ontological engineering defined as Representing abstract concepts such as Events, Time, Physical Objects, and Beliefs that occur in many different domains?
+Yes
+
+Is the convention of drawing graphs of upper ontology drawing the general concepts at the top and the more specific concepts below them ?
+Yes
+
+Is there any difficulty to discuss the content and organization of knowledge using first order logic?
+Yes
+
+Is there any difficulty to discuss the content and organization of knowledge using FOL?
+Yes
+
+Is the ability to handle exceptions and uncertainty is extremely important?
+Yes
+
+Is the ability to handle exceptions orthogonal to the task of understanding the general ontology?
+Yes
+
+Must different areas of knowledge must be unified, in any sufficiently demanding domain?
+Yes
+
+Did the top AI applications make use of a shared ontology?
+No 
+
+Are categories the primary building blocks of large-scale kNowledge representation schemes?
+Yes
+
+Are Not categories the primary building blocks of large-scale kNowledge representation schemes?
+No
+
+Are entities the primary building blocks of large-scale kNowledge representation schemes?
+No
+
+Do semantic networks provide graphical aids for visualizing a kNowledge base and efficient algorithms for inferring properties of an object on the basis of its category membership?
+Yes
+
+Do semantic networks provide No graphical aids for visualizing a kNowledge base and No efficient algorithms for inferring properties of an object on the basis of its category membership?
+No
+
+Do semantic networks provide inefficient algorithms for inferring properties of an object on the basis of its category membership?
+No
+
+Do description logics provide a formal language for constructing and combining category definitions and efficient algorithms for deciding subset and superset relationships between categories?
+Yes
+
+Do description logics provide an informal language for constructing and combining No category definitions and inefficient algorithms for deciding subset and superset relationships between categories?
+No
+
+Do existential graphs that he called "the logic of the future"?
+Yes
+
+Do Not existential graphs that he called "the logic of the future"?
+No
+
+Do existential graphs that he called "the historical logic"?
+No
+
+Does Charles S. Peirce propose a graphical Notation of Nodes and edges called existential graphs?
+Yes
+
+Does Not Charles S. Peirce propose a graphical Notation of Nodes and edges called existential graphs?
+No
+
+Does Charles S. Peirce propose a graphical Notation of Nodes and edges called existential trees?
+No
+
+Does the debate between advocates of "logic" and advocates of "semantic networks" obscured the fact that semantics networks are a form of logic?
+Yes
+
+Does the debate between advocates of "logic" and advocates of "semantic networks" obscured the fact that semantics networks are Not a form of logic?
+No
+
+If we strip away the "human interface" issues, do the underlying concepts-objects, relations, and quantification of semantic networks and logic are the same?
+Yes
+
+If we strip away the "human interface" issues, do the underlying concepts-objects, relations, and quantification of semantic networks and logic are Not the same?
+No
+
+If we strip away the "human interface" issues, do the underlying concepts-objects, relations, and quantification of semantic networks and logic are different?
+No
+
+Do all variants of semantic networks are capable of representing individual objects, categories of objects, and relations among objects?
+Yes
+
+Do all variants of semantic networks are Not capable of representing individual objects, categories of objects, and relations among objects?
+No
+
+Does a typical graphical Notation of semantic networks display object or category names in ovals or boxes, and connect them with labelled links?
+Yes
+
+Does Not a typical graphical Notation of semantic networks display object or category names in ovals or boxes, and connect them with labelled links?
+No
+
+Does a typical graphical Notation of semantic networks display object or category names in triangles or circles, and connects them with labelled links?
+No
+
+Is the single-boxed link used to assert properties of every member of a category?
+Yes
+
+Is Not the single-boxed link used to assert properties of every member of a category?
+No
+
+Is the double-boxed link used to assert properties of every member of a category?
+No
+
+Does the semantic network Notation make it convenient to perform inheritance?
+Yes
+
+Does Not the semantic network Notation make it convenient to perform inheritance?
+No
+
+Does the semantic network Notation make it inconvenient to perform inheritance?
+No
+
+Has the simplicity and efficiency of this inference mechanism been one of the main attractions of semantic networks?
+Yes
+
+Has Not the simplicity and efficiency of this inference mechanism been one of the main attractions of semantic networks?
+No
+
+Does Inheritance become complicated when an object can belong to more than one category or when a category can be a subset of more than one other category?
+Yes
+
+Does Not Inheritance become complicated when an object can belong to more than one category or when a category can be a subset of more than one other category?
+No
+
+Does Inheritance become simple when an object can belong to more than one category or when a category can be a subset of more than one other category?
+No
+
+Is multiple inheritance when an object can belong to more than one category or when a category can be a subset of more than one other category?
+Yes
+
+Is Not multiple inheritance when an object can belong to more than one category or when a category can be a subset of more than one other category?
+No
+
+Is multiple inheritance banned in some Object-Oriented programming languages?
+Yes
+
+Is Not multiple inheritance banned in some Object-Oriented programming languages?
+No
+
+Is multiple inheritance usually allowed in semantic networks?
+Yes
+
+Is multiple inheritance usually banned in semantic networks?
+No
+
+Does links between bubbles represent only binary relations in semantic networks?
+Yes
+
+Does Not links between bubbles represent only binary relations in semantic networks?
+No
+
+Does links between bubbles represent all n-ary relations in semantic networks?
+No
+
+Can we obtain the effect of n-ary assertions by reifying the proposition itself as an event belonging to an appropriate event category?
+Yes
+
+Can Not we obtain the effect of n-ary assertions by reifying the proposition itself as an event belonging to an appropriate event category?
+No
+
+Does reification of propositions make it possible to represent every ground, function-free atomic sentence of first-order logic in the semantic network Notation?
+Yes
+
+Does Not reification of propositions make it possible to represent every ground, function-free atomic sentence of first-order logic in the semantic network Notation?
+No
+
+Are negation, disjunction, nested function symbols, and existential quantification all missing from semantic networks?
+Yes
+
+Are Not negation, disjunction, nested function symbols, and existential quantification all missing from semantic networks?
+No
+
+Are the simplicity and transparency of the inference processes the main advantages of semantic networks?
+Yes
+
+Are Not the simplicity and transparency of the inference processes the main advantages of semantic networks?
+No
+
+Are the simplicity and transparency of the inference processes the main disadvantages of semantic networks?
+No
+
+Is it easy to visualize the steps that the inference procedure will go through?
+Yes
+
+Is Not it easy to visualize the steps that the inference procedure will go through?
+No
+
+Is it hard to visualize the steps that the inference procedure will go through?
+No
+
+Is the query language in some cases so simple that difficult queries canNot be posed?
+Yes
+
+Is Not the query language in some cases so simple that difficult queries canNot be posed?
+No
+
+Do many semantic network systems provide for procedural attachment to fill in the gaps?
+Yes
+
+Do Not many semantic network systems provide for procedural attachment to fill in the gaps?
+No
+
+Is Procedural attachment a technique whereby a query about a certain relation results in a call to a special procedure?
+Yes
+
+Is Not Procedural attachment a technique whereby a query about a certain relation results in a call to a special procedure?
+No
+
+Is semantic networks' ability to represent default values for categories One of the most important aspects of semantic networks?
+Yes
+
+Is Not semantic networks' ability to represent default values for categories One of the most important aspects of semantic networks?
+No
+
+Can the default values be overridden?
+Yes
+
+Can Not the default values be overridden?
+No
+
+Is the syntax of first-order logic designed to make it easy to say things about objects?
+Yes
+
+Is Not the syntax of first-order logic designed to make it easy to say things about objects?
+No
+
+Are the description logics Notations that are designed to make it easier to describe definitions and properties of categories?
+Yes
+
+Are Not the description logics Notations that are designed to make it easier to describe definitions and properties of categories?
+No
+
+Are Not the description logics Notations that are designed to make it harder to describe definitions and properties of categories?
+No
+
+Are the principal inference tasks for description logics are subsumption, classification, and consistency of a category definition?
+Yes
+
+Are Not the principal inference tasks for description logics are subsumption, classification, and consistency of a category definition?
+No
+
+Is The CLASSIC language (Borgida et al., 1989) a typical description logic?
+Yes
+
+Is Not The CLASSIC language (Borgida et al., 1989) a typical description logic?
+No
+
+Can any description in CLASSIC be translated into an equivalent first-order sentence?
+Yes
+
+Can Not any description in CLASSIC be translated into an equivalent first-order sentence?
+No
+
+Is the most important aspect of description logics their emphasis on tractability of inference?
+Yes
+
+Is Not the most important aspect of description logics their emphasis on tractability of inference?
+No
+
+Is a problem instance solved by describing it and then asking if it is subsumed by one of several possible solution categories?
+Yes
+
+Is Not a problem instance solved by describing it and then asking if it is subsumed by one of several possible solution categories?
+No
+
+In standard first-order logic systems, Is predicting the solution time often impossible?
+Yes
+
+In standard first-order logic systems, Is predicting the solution time often possible?
+No
+
+In description logic systems, Is it ensured that subsumption-testing can be solved in time polyNomial in the size of the descriptions?
+Yes
+
+In description logic systems, Is Not it ensured that subsumption-testing can be solved in time polyNomial in the size of the descriptions?
+No
+
+Do the tractability results shed light on what sorts of constructs cause problems?
+Yes
+
+Do Not the tractability results shed light on what sorts of constructs cause problems?
+No
+
+Do the tractability results help the user to understand how different representations behave?
+Yes
+
+Do Not the tractability results help the user to understand how different representations behave?
+No
+
+Do description logics usually lack negation and disjunction?
+Yes
+
+Do Not description logics usually lack negation and disjunction?
+No
+
+Do description logics usually have penalty of negation and disjunction?
+No
+
+Does CLASSIC allow only a limited form of disjunction in the Fills and OneOf constructs?
+Yes
+
+Does Not CLASSIC allow only a limited form of disjunction in the Fills and OneOf constructs?
+No
+
+With disjunctive descriptions, Can nested definitions lead easily to an exponential number of alternative routes by which one category can subsume aNother?
+Yes
+
+With disjunctive descriptions, Can Not nested definitions lead easily to an exponential number of alternative routes by which one category can subsume aNother?
+No
+
+Does physical composition mean that one object can be part from another?
+Yes
+
+Is The organization of objects into categories a vital part of knowledge representation?
+Yes

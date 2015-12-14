@@ -2,21 +2,26 @@ import logging
 import logger
 
 from textblob import TextBlob
+from textblob.classifiers import *
 import aiml
 from Parser import *
 import os
 
-import chat, main
 from PyQt4 import QtGui, QtCore
-import sys
+from PyQt4.QtCore import QThread, SIGNAL
+import chat, main
 
+import sys
 import socket
-import thread
+import json
 import time
 
-class Faseeh(object) :
+class Faseeh(QtGui.QMainWindow) :
+
 	def __init__(self) :
 		
+		super(self.__class__, self).__init__()
+
 		self.log = logging.getLogger('fasseh.main')
 		self.log.info('Faseeh Started')
 
@@ -37,8 +42,10 @@ class Faseeh(object) :
 		self.blob = TextBlob('What is upper ontology')
 		self.parser.get_all_question_combinations(self.blob.tags)
 
+		# classifier
+		self.classifier = NaiveBayesClassifier(open(os.getcwd() + '/fasseh/db/train.json', 'r'), format='json')
+
 		# GUI
-		self.app = QtGui.QApplication(sys.argv)
 		self.MainWindow = QtGui.QMainWindow()
 		self.ChatWindow = QtGui.QMainWindow()
 
@@ -50,27 +57,46 @@ class Faseeh(object) :
 		self.ui2.pushButton_4.clicked.connect(lambda:self.goback()) 			# back_button
 		self.ui.pushButton.clicked.connect(lambda:self.gochat('HTM'))    		# human_button
 		self.ui.pushButton_2.clicked.connect(lambda:self.gochat('MTM'))  		# machine_button
+
+		QtCore.QObject.connect(self.ui2.textEdit, QtCore.SIGNAL("sendMessage"), self.human_work)
+		self.ui2.pushButton_3.clicked.connect(self.human_work)
+
+		# self.HumanWorker = HumanWorkThread(self)
+		# worker = Worker()
+		# self.ui2.pushButton_4.connect(worker, QtCore.SIGNAL('clicked()'), lambda:worker.test) 			# back_button
+		# self.ui.pushButton.connect(worker, QtCore.SIGNAL('clicked()'), lambda:worker.test)    		# human_button
+		# self.ui.pushButton_2.connect(worker, QtCore.SIGNAL('clicked()'), lambda:worker.test)  		# machine_button
+
 		self.MainWindow.show()                             				# MAIN PAGE WINDOW    
 
 		if len(sys.argv) == 2 :
 			self.log.info('work as ' + sys.argv[1]) 
 			self.gochatTest('MTM', '127.0.0.1', sys.argv[1])
-
-		sys.exit(self.app.exec_())
 	
 	def answer_the_question(self, question) : 
-		self.blob = TextBlob(question)
-		question_combinations = self.parser.get_all_question_combinations(self.blob.tags)
-		response = ''
-		for sample_question in question_combinations :
-			self.log.info('sample_question: ' + sample_question)
-			response = self.kernel.respond(sample_question)
-			if response != self.no_answer_string :
-				break
+		question = question.lower()
+		question = self.parser.replace_not(question)
+		if self.parser.check_yes_ques(question) :
+			prob = self.classifier.prob_classify(question)
+			prob_yes = prob.prob('YES')
+			prob_no = prob.prob('NO')
+			if prob_yes > prob_no :
+				return 'YES'
+			else :
+				return 'NO'
+		else :
+			self.blob = TextBlob(question)
+			question_combinations = self.parser.get_all_question_combinations(self.blob.tags)
+			response = ''
+			for sample_question in question_combinations :
+				self.log.info('sample_question: ' + sample_question)
+				response = self.kernel.respond(sample_question)
+				if response != self.no_answer_string :
+					break
 
-		self.log.info('response: ' + response)
-		self.log.info('---------------------------------------------------------------------')	
-		return response
+			self.log.info('response: ' + response)
+			self.log.info('---------------------------------------------------------------------')	
+			return response
 
 	def client_work(self, ServerIP) :
 		try :
@@ -142,10 +168,6 @@ class Faseeh(object) :
 				self.server_work(ServerIP)
 			else :
 				print 'Invalid Arguements, Please fill the required fields'
-		else :
-			# Human To Machine
-			QtCore.QObject.connect(self.ui2.textEdit, QtCore.SIGNAL("sendMessage"), lambda:self.human_work())
-			self.ui2.pushButton_3.clicked.connect(lambda:self.human_work())
 		
 	def gochatTest(self, mode, ServerIP, conn_mode) :
 		# Machine To Machine
@@ -161,8 +183,10 @@ class Faseeh(object) :
 
 
 	def goback(self) :
-		MainWindow.show()
-		ChatWindow.close()
+		self.MainWindow.show()
+		self.ChatWindow.close()
 
 if __name__ == '__main__':
+	app = QtGui.QApplication(sys.argv)	
 	faseeh = Faseeh()
+	sys.exit(app.exec_())
